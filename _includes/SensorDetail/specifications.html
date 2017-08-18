@@ -1,0 +1,85 @@
+ {% raw %}
+ <div class="section-wrapper section-padding">
+    <div class="container">
+        <div class="row ">
+        	<div class="col-xs-12">
+            	<div class="heading">Key Specifications</div>
+        	</div>
+        	<div class="col-xs-12">
+              <ul class="specifications-list">
+                {{#each Specifications}}
+                    <li>
+                      <span class="specification-key"><b>{{@key}}{{#ifnonempty this.unit}}&nbsp;({{this.unit}}){{/ifnonempty}}</b></span>
+                          {{#ifobject this}}
+                            <span class="specification-value">
+                              {{#each this as |childValue childKey|}}
+                                  {{#ifequal @childKey 'unit'}}
+                                  {{else ifarray childValue}}
+                                    </span></li>
+                                        <ul>
+                                            {{#each childValue as |innerchildValue innerchildKey|}}
+                                            <li>
+                                              <span class="specification-key">{{@childKey}}{{#ifnonempty innerchildValue.unit}}&nbsp;({{innerchildValue.unit}}){{/ifnonempty}}</span>
+                                              <span class="specification-value">
+                                                {{#each innerchildValue as |innermostchildValue innermostchildKey|}}
+                                                    {{#ifequal @innermostchildKey 'unit'}}
+                                                      {{else}}
+                                                          {{innermostchildKey}} = {{innermostchildValue}}
+                                                      {{/ifequal}}
+                                                  {{/each}}
+                                              </span>
+                                            </li>
+                                          {{/each}}
+                                        </ul>
+                                  {{else ifobject childValue}}
+                                        </span></li>
+                                        <ul>
+                                            <li>
+                                              <span class="specification-key">{{@childKey}}{{#ifnonempty childValue.unit}}&nbsp;({{childValue.unit}}){{/ifnonempty}}</span>
+                                              <span class="specification-value">
+                                                  {{#each childValue as |innerchildValue innerchildKey|}}
+                                                    {{#ifequal @innerchildKey 'unit'}}
+                                                    {{else}}
+                                                        {{innerchildKey}} = {{innerchildValue}}
+                                                    {{/ifequal}}
+                                                  {{/each}}
+                                              </span>
+                                            </li>
+                                        </ul>
+                                  {{else}}
+                                      {{childKey}} = {{childValue}}
+                                  {{/ifequal}}
+
+                              {{/each}}
+
+                            </span>
+                          {{else ifarray this}}
+                             <ul>
+                             {{#each this as |childValue childKey|}}
+                                <li>
+                                  {{#each this as |innerchildValue innerchildKey|}}
+
+                                      {{#if @first}}
+                                      <span class="specification-key">{{innerchildValue}}
+                                      {{else ifequal @innerchildKey 'unit'}}
+                                            {{this.unit}}&nbsp;&nbsp;</span>
+                                      {{else}}
+                                            {{innerchildKey}} = {{innerchildValue}}
+                                      {{/if}}
+                                  {{/each}}
+                                </li>
+                              {{/each}}
+                            </ul>
+                          {{else}}
+                              &nbsp;{{this}}
+                          {{/ifobject}}
+                    </li>
+
+
+                {{/each}}
+              </ul>
+        	</div>
+		</div>
+	</div>
+</div>
+{% endraw %}

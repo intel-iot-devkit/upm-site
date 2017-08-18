@@ -1,0 +1,54 @@
+---
+layout: compress
+---
+{% include header.html %}
+
+    <main>
+        <div class="main-container inner-pages">
+            <div class="container">
+                {% include titlebar.html %}
+
+                {% if page.find_sensor %}
+                    {{content}}
+                {% endif %}
+            </div>
+
+            {% if page.sensor_detail %}
+                {{content}}
+            {% endif %}
+
+            {% if page.mraaDoc %}
+                {{content}}
+            {% endif %}
+
+            {% if page.upmDoc %}
+                {{content}}
+            {% endif %}
+
+            {% if page.moduleNaming %}
+                {{content}}
+            {% endif %}
+
+            {% if page.buildingUpm %}
+                {{content}}
+            {% endif %}
+
+            {% if page.contributingRules %}
+                {{content}}
+            {% endif %}
+
+            {% if page.documentation %}
+                {{content}}
+            {% endif %}
+
+           {% if page.add_sensor %}
+                {{content}}
+            {% endif %}
+
+           {% if page.howIt_works %}
+                {{content}}
+            {% endif %}
+
+        </div>
+            {% include footer.html %}
+    </main>

@@ -1,0 +1,46 @@
+{% raw %}
+<div class="section-wrapper section-padding">
+    <div class="container">
+        <div class="row ">
+        	<div class="col-sm-8">
+            	<div class="heading">Compatible Platforms</div>
+        	</div>
+            <div class="col-sm-4 ">
+                <div class="btn-area pull-right compatible-btn platform-btn">
+                    <a target="_blank" class="button-style btn-color btn-style-no-width" href="https://software.intel.com/en-us/iot/hardware/compare">Compare Platforms</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="sub-title">
+                    This sensor's connection type enables it to be implemented in projects based on these development platforms:
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-xs-12">
+
+                <ul class="platform-list">
+                {{#each Platforms}}
+                    <li>
+                      <b>{{@key}}</b>
+                      {{#ifnonempty this.Notes}}
+                              <ul>
+                                {{#each this.Notes}}
+                                <li>
+                                    &nbsp;{{this}}
+                                </li>
+                                {{/each}}
+                              </ul>
+                        {{/ifnonempty}}
+                    </li>
+                   
+                      
+                {{/each}}
+              </ul>  
+        	</div>
+		</div>
+	</div>
+</div>
+{% endraw %}

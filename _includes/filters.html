@@ -1,0 +1,44 @@
+<!-- <button class="visible-xs " aria-expanded="false" id="menu-hide">
+      <span></span>
+      <span></span>
+      <span></span>
+</button> -->
+
+<a class="visible-xs" id="menu-hide">
+  <img src="{{site.baseurl}}/assets/images/filter_arrow.png" class="filter-img"/>
+</a>
+
+<aside class="left-container pull-left" id="leftSection">
+	<div class="panel-group" id="accordion">
+
+	</div>
+</aside>
+
+{% raw %}
+<script id="accordianTemplate" type="text/x-handlebars-template">
+<h4 class="filter-title">Filter</h4>
+{{#each facets}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse-{{id}}">
+              {{name}}
+            </a>
+          </h4>
+        </div>
+        <div id="collapse-{{id}}" class="panel-collapse collapse in">
+          <div class="panel-body read-more">
+            {{#each type}}
+                <div class="type-name"><input type="checkbox" onchange="FilterLurData()" class="checkbox-style" value="{{toLowerCase .}}" name="{{../name}}" />{{.}}</div>
+            {{/each}}
+          </div>
+        <div class="show-more" style="display: none">See more...</div>                
+        </div>
+    </div>
+{{/each}}
+</script> 
+
+{% endraw %}
+
+
+

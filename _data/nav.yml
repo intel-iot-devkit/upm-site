@@ -1,0 +1,5 @@
+main:
+    - { url: '/findSensor.html', text: 'Find', class: 'icon find-sensor'  }
+    - { url: '/addSensor.html', text: 'Join', class: 'icon add-sensor' }
+    - { url: '/Documentation/docindex.html', text: 'Documentation', class: 'icon documentation' }
+    - { url: 'https://github.com/intel-iot-devkit/upm', text: 'Github', class: 'icon github github-mobile', desktopShow: 'github-desktop' }    

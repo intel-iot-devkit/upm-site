@@ -1,0 +1,48 @@
+{% raw %}
+<div class="section-wrapper section-padding " id="carousel-section">
+    <div class="container">
+        <div class="row ">
+            <div class="col-xs-12">
+            	<div class="heading">Wiring Examples</div>
+            </div>
+            <div class="col-xs-12">
+
+            	<div id="myCarousel" class="carousel slide carousel-container">
+<!-- Indicators -->
+				    <ol class="carousel-indicators">
+		              {{#each Platforms}}
+		              	{{#ifnonempty this.Images}}
+		              		{{#each this.Images}}
+				      		<li data-target="#myCarousel" data-slide-to="{{@index}}"></li>
+		              		{{/each}}
+				      	{{/ifnonempty}}
+  		              {{/each}}
+				    </ol>
+
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner">
+		              {{#each Platforms}}
+		              	{{#ifnonempty this.Images}}	
+			              	{{#each this.Images}}	              
+						      <div class="item">
+						        {% endraw %}<img src="{{site.data.global.imageUrl}}/{% raw %}{{.}}" style="display: inline-block;height: 297px;">	
+						      </div>
+						    {{/each}}  
+				      	{{/ifnonempty}}					      
+		             {{/each}}
+
+				    </div>
+
+				    <!-- Left and right controls -->
+				    <a class="left carousel-control left-active carousel-img" href="#myCarousel" data-slide="prev">
+				    </a>
+				    <a class="right carousel-control right-active carousel-img" href="#myCarousel" data-slide="next">
+				    </a>
+				  </div>
+            </div>
+
+
+         </div>
+    </div>
+</div>
+{% endraw %}

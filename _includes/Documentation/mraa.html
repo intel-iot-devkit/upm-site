@@ -1,0 +1,92 @@
+<div class="section-wrapper installingMraa">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Installing on Ubuntu</div>
+                <div class="sub-title">Here is a PPA for installing on ubuntu: https://launchpad.net/~mraa/+archive/ubuntu/mraa</div>
+            </div>
+            <div class="col-sm-12">
+	            <div class="description">
+	            	<div><strong>sudo add-apt-repository ppa:mraa/mraa</strong></div>
+	            	<div><strong>sudo apt-get update</strong></div>
+	            	<div><strong>sudo apt-get install libmraa1 libmraa-dev mraa-tools python-mraa python3-mraa</strong></div>
+	            	<div><strong>Node.js package is available seperately.</strong></div>
+	            </div>
+	        </div>    
+        </div>
+    </div>
+</div>        
+
+<div class="section-wrapper installingMraa background-theme">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Install on Arch Linux</div>
+                <div class="sub-title">There is an AUR package for mraa here: https://aur.archlinux.org/packages/mraa</div>
+            </div>
+        </div>  
+	</div>
+</div>
+<div class="section-wrapper installingMraa ">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Install on openSUSE</div>
+                <div class="description">
+                    <strong>
+                    	REPO="openSUSE_Tumbleweed"<br />
+    					if test "$(arch)" == "aarch64"; then <br />
+    					  REPO="openSUSE_Factory_ARM" <br />
+    					fi <br />
+    					sudo zypper ar http://download.opensuse.org/repositories/hardware/$REPO/hardware.repo <br />
+    					sudo zypper in mraa <br />
+                    </strong>
+                </div>
+            </div>                
+        </div>  
+    </div>
+</div>
+<div class="section-wrapper installingMraa background-theme">
+    <div class="container">          
+
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Installing for Node.js only</div>
+            </div>
+            <div class="col-sm-12">
+	            <div class="description">
+	            	<div class="document-padding">You can also install just the node.js mraa module by using npm. You will need a C++ compiler and the node development headers, however it's not required to have SWIG installed.</div>
+	            	<div><strong>npm install mraa</strong></div>
+	            	<div class="document-padding">Note that installing mraa in this way builds mraa without json-c so you cannot use mraa_init_json_platform(). Also building this way means the mraa.node includes a static version of libmraa rather than relying on a dynamic library in /usr/lib.</div>
+	            </div>
+	        </div>    
+        </div>
+
+    </div>
+</div>
+<div class="section-wrapper installingMraa">
+    <div class="container">          
+
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Installing on Intel 32bit Yocto based opkg image</div>
+            </div>
+            <div class="col-sm-12">
+	            <div class="description">
+	            	<div class="document-padding">See the section below on compiling or use our repository to install on a glibc based yocto poky image that supports opkg. Adding this repository is as simple as and you'll have the latest stable tagged build of mraa installed!</div>
+	            	<div><strong>echo "src mraa-upm http://iotdk.intel.com/repos/3.5/intelgalactic/opkg/i586" > /etc/opkg/mraa-upm.conf</strong></div>
+	            	<div><strong>opkg update</strong></div>
+	            	<div><strong>opkg install mraa</strong></div>
+	            	<div class="document-padding">If you would like to get the latest & greatest builds from master HEAD you can use our -dev repository</div>
+	            	<div><strong>echo "src mraa-upm http://iotdk.intel.com/repos/3.5/intelgalactic-dev/opkg/i586" > /etc/opkg/mraa-upm.conf</strong></div>
+	            	<div><strong>opkg update</strong></div>
+	            	<div><strong>opkg install mraa</strong></div>
+	            </div>
+	        </div>    
+        </div>
+
+    </div>
+</div>
+
+
+

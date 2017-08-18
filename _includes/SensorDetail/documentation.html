@@ -1,0 +1,29 @@
+{% raw %}
+    <div class="section-wrapper">
+        <div class="container">
+            <div class="row ">
+            	<div class="col-xs-12">
+                	<div class="heading">Documentation</div>
+            	</div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-12">
+                	<div class="detail-link ">
+                        <table class="documentation-table">
+                            {{#each Urls}}
+                                {{#ifeven @index}}
+                                   <tr>
+                                        <td><a target="_blank" class="link" href="{{this}}">  {{@key}}</a></td>
+                                {{else}}
+                                        <td><a target="_blank" class="link" href="{{this}}">  {{@key}}</a></td>
+                                         </tr>
+                                {{/ifeven}}
+                            {{/each}}
+                        </table>
+
+                	</div>
+                </div>
+             </div>
+        </div>
+    </div>
+{% endraw %}

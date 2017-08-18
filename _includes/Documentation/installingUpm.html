@@ -1,0 +1,86 @@
+<div class="section-wrapper installingMraa">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="sub-title">UPM packages are provided for some of the major supported distributions, making it very easy to install UPM and its dependencies without having to go through a full build.</div>
+
+                <div class="title">Poky Linux</div>
+                <div class="description">Yocto Project based Poky Linux builds are provided for Intel Galileo, Intel Edison and Minnowboard. These are the official images released with the Intel IoT Developer Kit and can found here.</div>
+            </div>
+            <div class="col-sm-12">
+	            <div class="description">
+                    <div class="document-padding">To update to the latest stable UPM version:</div>
+	            	<div><strong>    echo "src intel-iotdk https://iotdk.intel.com/repos/3.5/intelgalactic/opkg/i586/" > /etc/opkg/intel-iotdk.conf</strong></div>
+	            	<div><strong>opkg update</strong></div>
+	            	<div><strong>opkg upgrade mraa upm</strong></div>
+                    <div class="document-padding">If you would like to try the development version use intelgalactic-dev instead.</div>
+	            </div>
+	        </div>    
+        </div>
+    </div>
+</div>        
+
+<div class="section-wrapper installingMraa background-theme">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">WindRiver Pulsar Linux</div>
+                <div class="sub-title">WR Pulsar uses SmartPM for software updates. Updating to the latest UPM version requires:</div>
+                <div class="description">
+                    <div><strong>smart channel -y --add upm_mraa_channel type=rpm-md name="MRAA/UPM" baseurl=http://iotdk.intel.com/repos/pulsar/8/x64 </strong></div>
+                    <div><strong>smart update</strong></div>
+                    <div><strong>smart install -y mraa upm</strong></div>
+                    <div class="document-padding">For Pulsar 7 use the following baseurl instead: baseurl=http://iotdk.intel.com/repos/pulsar/7/x64</div>
+                    <div>Wind River Linux 7 uses 01.org repositories and will have a default update channel that includes MRAA & UPM. Thus you only have to update and install.</div>
+                </div>
+
+            </div>
+        </div>  
+	</div>
+</div>
+
+<div class="section-wrapper installingMraa ">
+    <div class="container">
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Ubuntu Desktop/Server</div>
+                <div class="description">
+                    <div class="document-padding">MRAA and UPM are available through a Personal Package Archive (PPA) on Ubuntu that can be found here.</div>
+                    <div class="document-padding">To install :</div>
+                    <div><strong>sudo add-apt-repository ppa:mraa/mraa </strong></div>
+                    <div><strong>smart update</strong></div>
+                    <div><strong>sudo apt-get install libupm-dev python-upm python3-upm upm-examples</strong></div>
+                    <div class="document-padding">Note that the Ubuntu PPA only provides the C/C++ and Python packages. Node.js developers will have to install MRAA and UPM using NPM instead.</div>
+
+                </div>
+            </div>                
+        </div>  
+    </div>
+</div>
+<div class="section-wrapper installingMraa background-theme">
+    <div class="container">          
+
+        <div class="row "> 
+            <div class="col-sm-12">
+                <div class="title">Node.js bindings only (NPM)</div>
+            </div>
+            <div class="col-sm-12">
+	            <div class="description">
+	            	<div class="document-padding">This option allows compiling MRAA/UPM on any system with npm and node-gyp.</div>
+                    <div class="document-padding">The UPM modules have a hard dependency on MRAA, thus you will have to install it first. Also, make sure Node can find MRAA by updating the NODE_PATH variable if necessary. A global installation is preferred:</div>
+	            	<div><strong>npm install mraa -g</strong></div>
+                    <div class="document-padding" >After this, to install a UPM module using npm simply type:</div>
+                    <div><strong>npm install jsupm_&lt;module-name&gt; -g</strong></div>
+	            	<div class="document-padding">In order to initialize the platform, require MRAA before you load a UPM module in your code:</div>
+                    <div><strong>require('mraa');&lt;module-name&gt; -g</strong></div>
+                    <div><strong>var lib = require('jsupm_&lt;module-name&gt; ; &lt; module-name&gt; -g</strong></div>
+
+	            </div>
+	        </div>    
+        </div>
+
+    </div>
+</div>
+
+
+

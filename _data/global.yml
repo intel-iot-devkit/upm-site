@@ -1,0 +1,31 @@
+# Site Settings
+title: 'UPM'
+description: 'Sensor framework for IoT developers'
+heading: 'Find your IoT sensor.'
+subHeading: 'Connect. Deploy.'
+url: 'http://127.0.0.1:4000' # the base hostname & protocol for your site, CURRENTLY BEING IGNORED
+footer_text: 'This text is footer text. Footer text goes here.'
+
+# Section for rendering/fetching the Code Sampples on Detail Screen
+apiUrl: 'http://iotdk.intel.com/docs/master/upm'
+apiurl_java: 'java/group__'
+apiurl_node: 'node/modules/'
+apiurl_C: 'group__'
+apiurl_Cpp: 'group__'
+apiurl_python: 'python/pyupm_'
+apiurl_default: 'group__'
+
+# Baseurl for GetSourceCode button above CodeSample
+sourceCodeUrl: 'https://github.com/intel-iot-devkit/upm/tree/master/src'
+
+# Baseurl for Fetching the SourceCode Sample for Sensor Detail page
+codeSnippetUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/upm/master/examples'
+
+# Baseurl For fetching the Sensor Images
+imageUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/upm/master/docs/images'
+
+# Cache breaking for AJAX Calls i.e. SensorDetail and Facets
+ajaxVersion: '1'
+
+# Cache breaking for static resources like CSS/JS and Images
+resourceVersion: '1'

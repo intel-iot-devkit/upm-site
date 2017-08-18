@@ -1,0 +1,43 @@
+{% raw %}
+<div class="section-wrapper section-padding">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-12">
+                <div class="heading padding-btm">Code Samples</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="btn-area source-btn">
+                    <a target="_blank" class="button-style btn-color btn-style-no-width" href={% endraw %}"
+                        {{site.data.global.sourceCodeUrl}}"{% raw %}>Get Source Code<span class="sensor-detail-sprite sourcecode-git"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-8 code-section">
+                <div id="codeSection">
+                    <ul  class="nav nav-pills nav-justified">
+                        {{#each Examples}}
+                            <li {{#if @first}} class="active"{{/if}} data-value="{{this}}" data-parent="{{codeSnippetFolder @key}}" data-id = "{{@index}}">
+                                <a  href="#{{@index}}" role="tab" data-toggle="tab" aria-expanded="true">{{@key}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <div class="tab-content clearfix">
+                        {{#each Examples}}
+                            <div class="tab-pane {{#if @first}}active{{/if}}" id="{{@index}}" role="tabpanel">
+                                <pre style="max-height:250px; min-height: 250px;"><code class="{{language @key}} hljs"></code></pre>
+                            </div>
+                        {{/each}}
+                    </div>
+                 </div>
+                 {{#ifMultipleElements Examples}}
+                   <div class="additional-code">
+                      {% endraw %}  <a class="link" target="_blank" href="{{site.data.global.sourceCodeUrl}}{% raw %}/{{Library}}">Check out additional code samples<span class="sensor-detail-sprite github-img"></span></a>
+                    </div>
+                {{/ifMultipleElements}}
+            </div>
+        </div>
+    </div>
+</div>
+{% endraw %}

@@ -1,0 +1,19 @@
+<div class="section-wrapper installingMraa">
+    <div class="container">
+        <div class="row "> 
+            <div class=" col-sm-12">
+                <div class="description">
+                    UPM attempts to follow a clear naming pattern. Modules should be sensibly named and then placed in ${libdir}/upm and headers in ${includedir}/upm, all modules should be prefixed with libupm-. The upm_module_init will automatically name python UPM modules as pyupm_ and javascript modules as jsupm_. For example for src/grove/ the library built will be libupm-grove.so, the python module pyupm_grove and the js module jsupm_grove.</div>
+                <div class="title">Choosing a name for a new module</div>
+                <div class="description">
+                    Pick a name and stick with it. Usually, the chip name makes the most sense. If not, try to pick a generic name so people with a similar sensor can inherit your class if they only have minor changes.
+                    <div>• All modules should be prefixed with libupm-.</div>
+                    <div>• Avoid brand names.</div>
+                    <div>• Your lib must belong to the UPM namespace.</div>
+                </div>
+                <div class="title">Questions?</div>
+                <div class="description">Ping us via email: mihai.tudor.panu@intel.com or brendan.le.foll@intel.com and we'll suggest some useful names.</div>
+            </div>    
+        </div>    
+    </div>
+</div>

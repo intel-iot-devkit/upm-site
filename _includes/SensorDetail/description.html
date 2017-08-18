@@ -1,0 +1,83 @@
+ {% raw %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+             {% endraw %}<a class="breadcrum" href="{{ site.baseurl }}{% raw %}/findSensor.html">< Find your sensor</a>
+            </div>
+            <div class="col-xs-12">
+                <div class="page-heading">
+                        {{Name}} <span class="details"> ({{concat Aliases}})</span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="section-wrapper">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-6">
+
+                    <div class="sensor-img">
+                    <img id="imgMainSensor" style="display:none;" src="{{imagelinkDetail Image}}" {% endraw %} onload="ResizeImage(this);" onerror="this.src='{{site.baseurl}}{% raw %}/assets/images/FPO-Detail.png'"/>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                        <div class="heading padding-mobile">
+                          {{#concat Categories}}
+                          {{/concat}}
+                          <span class="see-all">
+                            {{#getCategoryBacklinks Categories}}{{/getCategoryBacklinks}}
+                         </span>
+                        </div>
+
+                    <div class="text">
+                        <span class="title">Manufacturer:</span>
+                        <span class="value">
+                          {{#concat Manufacturers}}
+                          {{/concat}}
+                        </span>
+                    </div>
+                    <div class="text">
+                        <span class="title">Designed for:</span>
+                        <span class="value">
+                          {{#concat [Project Type]}}
+                          {{/concat}}
+                        </span>
+                    </div>
+                    <div class="text">
+                        <span class="title">Connection Type:</span>
+                        <span class="value">
+                          {{#concat Connections}}
+                          {{/concat}}
+                        </span>
+                    </div>
+                    <div class="detail-link">
+
+                    </div>
+
+                	<div class="description">
+                		<div class="heading">Description</div>
+                		{{#Description}}{{.}}{{/Description}}
+                	</div>
+                    {{#if Urls.Datasheets}}
+                        <div class="btn-area">
+                            <a target="_blank" class="button-style btn-color btn-style-width" href="{{Urls.Datasheets}}">Data sheet</a>
+                        </div>
+                    {{/if}}
+                    <div class="detail-api">
+                        <div class="heading">API {% endraw %}<a target="_blank" class="sensor-detail-sprite github-img" href="{{ site.data.global.apiUrl }}{% raw %}"></a></div>
+                    </div>
+                    <div class=languages-supported>
+                        <ul class="content">
+                            {{#each Examples}}
+                                <li>
+                                <a target="_blank" href="{{sourceURL @key}}{{../Library}}.html">
+                                {{@key}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endraw %}

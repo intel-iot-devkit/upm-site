@@ -1,0 +1,41 @@
+<div class="inner-pages right-container find-sensor pull-right" id="findSensor">
+    <div class="content">
+
+    </div>
+    <div class="page_navigation"></div>
+</div>
+
+{% raw %}
+<script id="findSensorDetail" type="text/x-handlebars-template">
+{{#each this}}
+    <div class="section-row" >
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                  <div class="find-sensor-img">
+                    <img src="{{imagelink Image}}" {% endraw %} onerror="this.src='{{site.baseurl}}{% raw %}/assets/images/FPO.png'"/>
+                  </div>
+                  <div class="sensor-data">
+                    {% endraw %}
+                      <span class="sensor-name-container"><a class="sensor-name" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{name}}">{{Brief}}<span class="details">&nbsp;({{concat PartNumbers}})</span></a></span>
+                      <span class="btn-area pull-right compatible-btn find-sensor-btn hidden-xs">
+                      {% endraw %}
+                          <a class="button-style btn-color btn-style-no-width overview-btn" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{name}}">Learn More</a>
+                      </span>
+                      <div class="categories-data">
+                          {{#concat Categories}}
+                          {{/concat}}
+                      </div>
+                      <div class="best-for"><span class="key">Best for: </span>
+                        <span class="value">
+                            {{#concat ProjectType}}
+                            {{/concat}}
+                        </span></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+</script>
+{% endraw %}
