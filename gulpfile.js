@@ -35,7 +35,7 @@ var deploy         = require('gulp-gh-pages');
 var pump           = require('pump');
 var minifyJS       = require('gulp-minify');
 var fs             = require('fs');
-var path             = require('path');
+var path           = require('path');
 var file           = require('gulp-file');
 var lunr           = require('lunr');
 var elasticlunr    = require('elasticlunr');
@@ -250,7 +250,7 @@ gulp.task('build:content', function() {
  * First set UPM src directory in _assets/gulp_config/paths.js. This task generates the array of all sensor JSONs.
  */
 gulp.task('build:sensordata', function() {
-    var path = paths.sensorDataSrc;
+    var path = paths.sensorDataSrc ? paths.sensorDataSrc : console.log("Please first define sensor data source!");
     var sensorsJSON = [];
     fs.readdirSync(path).forEach(function(file){
         if(fs.statSync(path+'/'+file).isDirectory()){
