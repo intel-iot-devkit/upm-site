@@ -43,6 +43,7 @@ paths.jsPattern            = '/**/*.js';
 paths.facetFile            = '/facets.json';
 paths.jsonPattern          = '/**/*.json';
 paths.sensorDataFile       = '/sensorDetail.json';
+paths.sensorDataSrc        == "" //point to the UPM project src directory
 paths.indexFile            = '/LunrIndex.json';
 paths.imagePattern         = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
 paths.imageFilesGlob       = paths.imageFiles + paths.imagePattern;

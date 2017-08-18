@@ -244,9 +244,13 @@ gulp.task('build:content', function() {
       .pipe(gulp.dest(paths.siteContentFiles));
 });
 
+/**
+ * Task: build:sesordata
+ *
+ * First set UPM src directory in _assets/gulp_config/paths.js. This task generates the array of all sensor JSONs.
+ */
 gulp.task('build:sensordata', function() {
-
-    var path = "/Users/wailunpo/Documents/GitHub/upm/src";
+    var path = paths.sensorDataSrc;
     var sensorsJSON = [];
     fs.readdirSync(path).forEach(function(file){
         if(fs.statSync(path+'/'+file).isDirectory()){

@@ -37,7 +37,7 @@ excerpt_separator: "\n\n"
 # Serving
 detach:  false
 port:    443
-host:    w4ilun.github.io
+host:    intel-iot-devkit.github.io
 #baseurl: "" # does not include hostname
 baseurl: "/upm" # does not include hostname
 
