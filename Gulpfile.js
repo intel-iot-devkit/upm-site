@@ -15,30 +15,29 @@
 // Define variables.
 var appendPrepend  = require('gulp-append-prepend');
 var autoprefixer   = require('autoprefixer');
+var babel          = require('gulp-babel');
 var browserSync    = require('browser-sync').create();
 var cache          = require('gulp-cache');
 var cleancss       = require('gulp-clean-css');
 var concat         = require('gulp-concat');
 var del            = require('del');
+var deploy         = require('gulp-gh-pages');
+var file           = require('gulp-file');
+var fs             = require('fs');
 var gulp           = require('gulp');
 var gutil          = require('gulp-util');
 var imagemin       = require('gulp-imagemin');
 var jpegRecompress = require('imagemin-jpeg-recompress');
+var jsonminify     = require('gulp-jsonminify');
 var notify         = require('gulp-notify');
+var path           = require('path');
 var postcss        = require('gulp-postcss');
+var pump           = require('pump');
 var rename         = require('gulp-rename');
 var run            = require('gulp-run');
 var runSequence    = require('run-sequence');
 var sass           = require('gulp-ruby-sass');
 var uglify         = require('gulp-uglify');
-var deploy         = require('gulp-gh-pages');
-var pump           = require('pump');
-var minifyJS       = require('gulp-minify');
-var path           = require('path');
-var fs             = require('fs');
-var path           = require('path');
-var file           = require('gulp-file');
-var jsonminify = require('gulp-jsonminify');
 
 // Include paths.
 var paths          = require('./_assets/gulp_config/paths');
@@ -117,11 +116,14 @@ gulp.task('build:scripts', function() {
     return gulp.src([
         paths.jsFiles + paths.jsPattern
     ])
-        .pipe(uglify())
-        .pipe(appendPrepend.prependFile('./_assets/gulp_config/front-matter.txt'))
-        .pipe(gulp.dest(paths.jekyllJsFiles))
-        .pipe(gulp.dest(paths.siteJsFiles))
-        .on('error', gutil.log);
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .pipe(uglify())
+    .pipe(appendPrepend.prependFile('./_assets/gulp_config/front-matter.txt'))
+    .pipe(gulp.dest(paths.jekyllJsFiles))
+    .pipe(gulp.dest(paths.siteJsFiles))
+    .on('error', gutil.log);
 });
 
 /**
