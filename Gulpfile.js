@@ -38,8 +38,6 @@ var path           = require('path');
 var fs             = require('fs');
 var path           = require('path');
 var file           = require('gulp-file');
-var lunr           = require('lunr');
-var elasticlunr    = require('elasticlunr');
 var jsonminify = require('gulp-jsonminify');
 
 // Include paths.
@@ -182,51 +180,6 @@ function bindapi(value){
     return examplesArray;
 }
 
-/**
- * Task: build:index
- */
-gulp.task('build:index', function() {
-    var sensorDataFile = require('./' + paths.contentFiles + paths.sensorDataFile);
-
-    var index = elasticlunr(function() {
-      this.setRef('id');              this.addField('Categories');  this.addField('Connections');
-      this.addField('Manufacturer');  this.addField('ProjectType'); this.addField('APILanguageSupport');
-      this.addField('StarterKit');    this.addField('Brief');       this.addField('PartNumbers')
-      this.addField('name');          this.addField('Image');
-    });
-
-    var sensorData = [];
-    for (var i=0; i < sensorDataFile.length ; i++) { // Add the data to lunr
-        var sensorDataLibrary = sensorDataFile[i]["Sensor Class"]
-        for(key in sensorDataLibrary){
-            sensorData.push({
-                'id': key,
-                'name': key,
-                'Brief' : sensorDataLibrary[key]["Name"],
-                'PartNumbers' : (sensorDataLibrary[key])["Aliases"],
-                'Categories': sensorDataLibrary[key].Categories.map(UnsanitizeToken),
-                'Connections': sensorDataLibrary[key].Connections.map(UnsanitizeToken),
-                'Image': (sensorDataLibrary[key].Image)?sensorDataLibrary[key].Image:'',
-                'Manufacturer': sensorDataLibrary[key].Manufacturers.map(UnsanitizeToken),
-                'ProjectType': (sensorDataLibrary[key])["Project Type"].map(UnsanitizeToken),
-                'StarterKit': (sensorDataLibrary[key].Kits)?sensorDataLibrary[key].Kits.map(UnsanitizeToken):'',
-                'APILanguageSupport': (sensorDataLibrary[key]["Examples"])?
-                        bindapi((sensorDataLibrary[key])["Examples"]):''
-          });
-        }
-    }
-
-    sensorData.sort(function(a, b) {
-      return compareStrings(a["Brief"], b["Brief"]);
-    });
-
-    for (var i=0; i < sensorData.length ; i++) {
-        index.addDoc(sensorData[i]);
-    }
-
-    file(paths.jekyllContentFiles + paths.indexFile, JSON.stringify(index), {src: true})
-    .pipe(gulp.dest('.'))
-});
 
 function compareStrings(a, b) {
   // Assuming you want case-insensitive comparison
@@ -333,7 +286,7 @@ gulp.task('build:jekyll:local', function() {
  */
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content', 'build:index'],
+        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content'],
         'build:jekyll',
         callback);
 });
@@ -344,7 +297,7 @@ gulp.task('build', function(callback) {
  */
 gulp.task('build:local', function(callback) {
     runSequence('clean',
-        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content', 'build:index'],
+        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content'],
         ['build:jekyll:local'], callback);
 });
 

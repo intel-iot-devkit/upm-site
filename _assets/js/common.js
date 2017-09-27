@@ -1,4 +1,4 @@
-  var idx, parsedObject;
+  var parsedObject;
 
   // Check for Empty Strings
   Handlebars.registerHelper('ifnonempty', function(conditional, options) {
@@ -229,8 +229,4 @@ function getQueryVariable(variable) {
         }
     }
     return "";
-}
-
-function PrepareLunrIndex(response){
-   idx = elasticlunr.Index.load(response);    //index = lunr.Index.load();
 }

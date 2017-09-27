@@ -44,7 +44,6 @@ paths.facetFile            = '/facets.json';
 paths.jsonPattern          = '/**/*.json';
 paths.sensorDataFile       = '/sensorDetail.json';
 paths.sensorDataSrc        = null || process.env.UPM_SRC_DIR,
-paths.indexFile            = '/LunrIndex.json';
 paths.imagePattern         = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
 paths.imageFilesGlob       = paths.imageFiles + paths.imagePattern;
 

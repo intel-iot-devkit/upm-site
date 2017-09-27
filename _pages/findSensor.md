@@ -15,6 +15,5 @@ find_sensor: true
 
 <script src="{{ site.baseurl }}/assets/js/library/jquery-ui.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/library/jquery.pajinate.js"></script>
-<script src="{{ site.baseurl }}/assets/js/library/elasticlunr.js"></script>
 <script src="{{ site.baseurl }}/assets/js/common.js?v={{site.data.global.resourceVersion}}"></script>
 <script src="{{ site.baseurl }}/assets/js/search.js?v={{site.data.global.resourceVersion}}"></script>

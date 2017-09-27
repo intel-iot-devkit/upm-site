@@ -53,6 +53,5 @@ sensor_detail: true
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/library/jquery-ui.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/library/elasticlunr.js"></script>
 <script src="{{ site.baseurl }}/assets/js/common.js?v={{site.data.global.resourceVersion}}"></script>  
 <script src="{{ site.baseurl }}/assets/js/sensorDetail.js?v={{site.data.global.resourceVersion}}"></script>
