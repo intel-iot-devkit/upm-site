@@ -34,6 +34,7 @@ var uglify         = require('gulp-uglify');
 var deploy         = require('gulp-gh-pages');
 var pump           = require('pump');
 var minifyJS       = require('gulp-minify');
+var path           = require('path');
 var fs             = require('fs');
 var path           = require('path');
 var file           = require('gulp-file');
@@ -250,26 +251,41 @@ gulp.task('build:content', function() {
  * First set UPM src directory in _assets/gulp_config/paths.js. This task generates the array of all sensor JSONs.
  */
 gulp.task('build:sensordata', function() {
-    var path = paths.sensorDataSrc ? paths.sensorDataSrc : console.log("Please first define sensor data source!");
-    var sensorsJSON = [];
-    fs.readdirSync(path).forEach(function(file){
-        if(fs.statSync(path+'/'+file).isDirectory()){
-            var sensorDir = file;
-            fs.readdirSync(path+'/'+file).forEach(function(file){
-                if(file.indexOf("json") > -1){
-                    var sensorObj = JSON.parse(fs.readFileSync(path+'/'+sensorDir+'/'+file, 'utf8'));
-                    sensorsJSON.push(sensorObj);
-                }
-            })
-        }
-    })
+    if (!paths.sensorDataSrc) {
+        throw new Error('UPM src directory not found: set `paths.sensorDataSrc` or `UPM_SRC_DIR`');
+    }
 
-    var content = JSON.stringify(sensorsJSON);
-    var outputPath = './' + paths.contentFiles + paths.sensorDataFile;
-    fs.writeFileSync(outputPath, content, 'utf8', function(err){
-        if(err) throw err;
+    let contents = fs.readdirSync(paths.sensorDataSrc);
+    if (!contents.includes('upm.i')) {
+        throw new Error('UPM src directory does not contain upm.i');
+    }
+
+    let dirs = contents.filter(file => {
+        let filePath = path.join(paths.sensorDataSrc, file);
+        return fs.statSync(filePath).isDirectory();
     });
 
+    let jsonFilePaths = dirs.reduce((memo, dir) => {
+        let dirPath = path.join(paths.sensorDataSrc, dir);
+        let contents = fs.readdirSync(dirPath);
+
+        let jsonFiles = contents.filter(file => file.endsWith('.json'));
+        let jsonFilePaths = jsonFiles.map(jsonFile => path.join(paths.sensorDataSrc, dir, jsonFile));
+        return memo.concat(jsonFilePaths);
+    }, []);
+
+    let sensorData = jsonFilePaths.reduce((memo, jsonFilePath) => {
+        let obj = require(jsonFilePath);
+        let sensor = Object.keys(obj['Sensor Class']).map(key =>
+            Object.assign({ id: key }, obj['Sensor Class'][key]));
+
+        return memo.concat(sensor);
+    }, []);
+
+    let sensorDataJson = JSON.stringify(sensorData, null, 2);
+
+    let sensorDataPath = path.join('.', paths.contentFiles, paths.sensorDataFile);
+    fs.writeFileSync(sensorDataPath, sensorDataJson, 'utf8');
 });
 
 /**
@@ -317,7 +333,7 @@ gulp.task('build:jekyll:local', function() {
  */
 gulp.task('build', function(callback) {
     runSequence('clean',
-        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content', 'build:sensordata', 'build:index'],
+        ['build:images'], ['build:styles'], ['build:scripts'], ['build:content', 'build:index'],
         'build:jekyll',
         callback);
 });
