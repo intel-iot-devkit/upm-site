@@ -32,7 +32,6 @@ var jsonminify     = require('gulp-jsonminify');
 var notify         = require('gulp-notify');
 var path           = require('path');
 var postcss        = require('gulp-postcss');
-var pump           = require('pump');
 var rename         = require('gulp-rename');
 var run            = require('gulp-run');
 var runSequence    = require('run-sequence');
@@ -158,8 +157,7 @@ gulp.task('build:images', function() {
             imagemin.svgo()
         ])))
         .pipe(gulp.dest(paths.jekyllImageFiles))
-        .pipe(gulp.dest(paths.siteImageFiles))
-        .pipe(browserSync.stream());
+        .pipe(gulp.dest(paths.siteImageFiles));
 });
 
 /**
@@ -377,8 +375,8 @@ gulp.task('serve', ['build:local'], function() {
     // Watch .js files.
     gulp.watch('_assets/js/**/*.js', ['build:scripts:watch']);
 
-    // Watch image files; changes are piped to browserSync.
-    gulp.watch('_assets/img/**/*', ['build:images']);
+    // Watch image files
+    gulp.watch('_assets/images/**/*', ['build:images']);
 
     // Watch HTML and markdown files.
     gulp.watch(

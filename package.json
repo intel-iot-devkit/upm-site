@@ -47,10 +47,5 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "jshint": "^2.9.3",
     "run-sequence": "^2.2.0"
-  },
-  "dependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp-minify": "^1.0.0",
-    "pump": "^1.0.2"
   }
 }
