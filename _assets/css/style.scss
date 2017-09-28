@@ -8,8 +8,6 @@ $headerColor: #729dbf;
 %secondaryFont { font-family: 'Roboto', sans-serif; }
 %primaryFontColor {color : #333745;}
 
-
-
 #codeSection {
     .tab-content {
         color: #fff;
@@ -120,6 +118,9 @@ html,body {
     -webkit-font-smoothing: antialiased;
     padding-top: 43px;
     min-height: 50vh;
+}
+body {
+    overflow-y: scroll;
 }
 p {
     margin-bottom: 30px;
@@ -639,7 +640,7 @@ nav.navbar {
  }
 .no-results{
     text-align: center;
-    padding: 30% 0;
+    padding: 10% 0;
     font-size: 24px;
     color: #8e8e8e;
     font-weight: 700;
@@ -734,7 +735,7 @@ a.breadcrum{
     color: #696969;
     border-radius: 5px;
     border: 1px solid #ccc;
-    padding: 0px 15px;
+    padding: 20px;
     font-size: 14px;
     line-height: 1;
     font-weight: 400;
@@ -1025,6 +1026,7 @@ input.input-style::placeholder {
     font-size: 18px;
     text-transform: capitalize;
     line-height: 1.5;
+    margin-top: 1em;
 }
 .best-for{
     line-height: 1.5;
@@ -1056,7 +1058,7 @@ input.input-style::placeholder {
     line-height: 23px
 }
 .value{
-    color:#265f8a;
+    color:#333333;
     font-size: 14px;
     line-height: 23px
 }
@@ -1183,9 +1185,6 @@ input.input-style::placeholder {
     }
     .categories-data{
         font-size: 14px;
-    }
-    .no-results{
-        padding: 70% 0;
     }
     .navbar-text{
         font-size: 50px;

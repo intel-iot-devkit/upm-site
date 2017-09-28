@@ -29,7 +29,7 @@
         <div id="collapse-{{id}}" class="panel-collapse collapse in">
           <div class="panel-body read-more">
             {{#each type}}
-                <div class="type-name"><input type="checkbox" onchange="FilterLurData()" class="checkbox-style" value="{{toLowerCase .}}" name="{{../name}}" />{{.}}</div>
+                <div class="type-name"><input type="checkbox" class="checkbox-style facet-filter" value="{{toLowerCase .}}" name="{{../name}}" />{{.}}</div>
             {{/each}}
           </div>
         <div class="show-more" style="display: none">See more...</div>                

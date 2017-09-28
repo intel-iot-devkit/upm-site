@@ -14,23 +14,35 @@
                 <div>
                   <div class="find-sensor-img">
                     <img src="{{imagelink Image}}" {% endraw %} onerror="this.src='{{site.baseurl}}{% raw %}/assets/images/FPO.png'"/>
+
                   </div>
                   <div class="sensor-data">
                     {% endraw %}
-                      <span class="sensor-name-container"><a class="sensor-name" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{name}}">{{Brief}}<span class="details">&nbsp;({{concat PartNumbers}})</span></a></span>
-                      <span class="btn-area pull-right compatible-btn find-sensor-btn hidden-xs">
-                      {% endraw %}
-                          <a class="button-style btn-color btn-style-no-width overview-btn" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{name}}">Learn More</a>
+                      <span class="sensor-name-container">
+                        <div class="sensor-name">
+                          <a class="sensor-name" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{id}}">{{Name}}</a><br>
+                          <span class="details">({{ concat Aliases }})</span>
+                        </div>
                       </span>
+
+                      <span class="btn-area pull-right compatible-btn find-sensor-btn hidden-xs">
+                        {% endraw %}
+                        <a class="button-style btn-color btn-style-no-width overview-btn" href="{{ site.baseurl }}/{% raw %}sensorDetail.html?name={{id}}">Learn More</a>
+                      </span>
+
                       <div class="categories-data">
-                          {{#concat Categories}}
-                          {{/concat}}
-                      </div>
-                      <div class="best-for"><span class="key">Best for: </span>
+                        <span class="key">Categories: </span>
                         <span class="value">
-                            {{#concat ProjectType}}
-                            {{/concat}}
-                        </span></div>
+                          {{ concat Categories }}
+                        </span>
+                      </div>
+
+                      <div class="best-for">
+                        <span class="key">Best for: </span>
+                        <span class="value">
+                          {{ concat [Project Type] }}
+                        </span>
+                      </div>
                   </div>
                 </div>
             </div>
