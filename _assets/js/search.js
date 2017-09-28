@@ -8,23 +8,16 @@ $(() => {
   let facetsTemplate = Handlebars.compile($('#accordianTemplate').html());
   let searchResultsTemplate = Handlebars.compile($('#findSensorDetail').html());
 
-  /**
-   * Get facets which define the filterable attributes
-   *
-   * @return {Promise<Array>}
-   */
-  let getFacetsData = () => {
-    return $.getJSON('{{ site.baseurl }}/assets/content/facets.json?_={{site.data.global.ajaxVersion}}');
+  let cacheJson = url => {
+    let data = null;
+
+    return () => {
+      return data ? Promise.resolve(data) : $.getJSON(url).then(res => data = res);
+    };
   };
 
-  /**
-   * Get the combined sensor data (concatenated from individual sensor JSON files)
-   *
-   * @return {Promise<Array>}
-   */
-  let getSensorDetail = () => {
-    return $.getJSON('{{ site.baseurl }}/assets/content/sensorDetail.json?_={{site.data.global.ajaxVersion}}');
-  };
+  let getFacetsData = cacheJson('{{ site.baseurl }}/assets/content/facets.json?_={{ site.data.global.ajaxVersion }}');
+  let getSensorDetail = cacheJson('{{ site.baseurl }}/assets/content/sensorDetail.json?_={{ site.data.global.ajaxVersion }}');
 
   /**
    * Render filter selection sidebar
@@ -59,7 +52,7 @@ $(() => {
       hidePagination();
     }
 
-    return $$searchResults;
+    return $searchResults;
   };
 
   let showPagination = () => {
@@ -76,5 +69,9 @@ $(() => {
 
   renderFacets();
   getSensorDetail().then(renderSearchResults); // show all sensors by default
+
+  $searchBox.on('input', _.debounce(e => {
+    console.log(e);
+  }, 500));
 
 });
