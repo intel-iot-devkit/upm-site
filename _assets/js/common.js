@@ -30,24 +30,8 @@
   });
 
   // Concatenate Array
-  Handlebars.registerHelper('concat', function(context, options) {
-    var ret = "";
-
-    for(var i=0, j=context.length; i<j; i++) {
-
-      if(i == 0){
-        ret = SanitizeToken(context[i]);
-      }
-      else if(i == (j-1)){
-        ret += " & " + SanitizeToken(context[i]);
-      }
-      else{
-        ret += ", " + SanitizeToken(context[i]);
-      }
-
-    }
-
-    return ret;
+  Handlebars.registerHelper('concat', function(context = [], options) {
+    return context.join(', ');
   });
 
   Handlebars.registerHelper('ifeven', function(val, options) {
@@ -179,29 +163,6 @@ Handlebars.registerHelper('imagelink', function(source) {
   else
     return "{{site.baseurl}}/assets/images/FPO.png"
 });
-
-function ConcatenateArray(arr){
-  var result = "";
-  for(var i=0, j=arr.length; i<j; i++) {
-    if(i == 0){
-      result = (arr[i]);
-    }
-    else if(i == (j-1)){
-      result += " & " + (arr[i]);
-    }
-    else{
-      result += ", " + (arr[i]);
-    }
-  }
-
-  return result;
-}
-
-
-// Replace Special Seperator with " ", as against how we did while generating index in gulpfile
-function SanitizeToken(item){
-  return item.replace(/(_\|_)/g," ");
-}
 
 function ResizeImage(sourceimage){
   var $container = $(sourceimage).parent();
