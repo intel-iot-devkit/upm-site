@@ -117,7 +117,8 @@ gulp.task('build:scripts', function() {
         paths.jsFiles + paths.jsPattern
     ])
     .pipe(babel({
-        presets: ['es2015']
+        presets: ['es2015'],
+        ignore: 'library/*.js'
     }))
     .pipe(uglify())
     .pipe(appendPrepend.prependFile('./_assets/gulp_config/front-matter.txt'))
@@ -412,7 +413,3 @@ gulp.task('update:gems', function() {
 });
 
 gulp.task('deploy',['build:jekyll'], function () {return gulp.src("./_site/**/*").pipe(deploy()) });
-
-function UnsanitizeToken(item, index){
-  return item.replace(/\s+/g,"_|_");
-}
