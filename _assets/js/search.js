@@ -17,7 +17,7 @@ $(() => {
   };
 
   let getFacetsData = cacheJson('{{ site.baseurl }}/assets/content/facets.json?_={{ site.data.global.ajaxVersion }}');
-  let getSensorDetail = cacheJson('{{ site.baseurl }}/assets/content/sensorDetail.json?_={{ site.data.global.ajaxVersion }}');
+  let getSensorDetails = cacheJson('{{ site.baseurl }}/assets/content/sensorDetail.json?_={{ site.data.global.ajaxVersion }}');
 
   /**
    * Render filter selection sidebar
@@ -37,7 +37,7 @@ $(() => {
   /**
    * Render a set of search results
    *
-   * @param {Array} [results] - subset of items from getSensorDetail
+   * @param {Array} [results] - subset of items from getSensorDetails
    * @return {jQuery}
    */
   let renderSearchResults = (results = []) => {
@@ -68,10 +68,25 @@ $(() => {
   };
 
   renderFacets();
-  getSensorDetail().then(renderSearchResults); // show all sensors by default
+  getSensorDetails().then(renderSearchResults); // show all sensors by default
 
   $searchBox.on('input', _.debounce(e => {
-    console.log(e);
-  }, 500));
+    let query = e.target.value.toLowerCase();
+
+    getSensorDetails().then(sensorDetails => {
+      if (!query) {
+        return renderSearchResults(sensorDetails);
+      }
+
+      let results = _.chain(sensorDetails).filter(sensor => {
+        return sensor.id.toLowerCase().includes(query) || sensor.Name.toLowerCase().includes(query);
+      }).sortBy(sensor => {
+        return Levenshtein.get(query, sensor.Name.toLowerCase());
+      }).value();
+
+      renderSearchResults(results);
+    });
+
+  }, 250));
 
 });
