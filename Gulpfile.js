@@ -156,8 +156,9 @@ gulp.task('build:images', function() {
             imagemin.optipng(),
             imagemin.svgo()
         ])))
-        .pipe(gulp.dest(paths.jekyllImageFiles))
-        .pipe(gulp.dest(paths.siteImageFiles));
+        .pipe(gulp.dest(paths.siteImageFiles))
+        .pipe(gulp.dest(paths.jekyllImageFiles));
+
 });
 
 /**
