@@ -1,5 +1,11 @@
 <div class="row">
-	<div class="col-sm-8 col-xs-12 ">
+    {% if page.search_bar %}
+        <div class="col-sm-5  col-xs-12 text-right pull-right">
+                <input type="text" id="searchBox" class="input-style" name="sensor" placeholder="Sensor name or part number" />
+        </div>
+    {% endif %}
+
+	<div class="col-sm-7 col-xs-12 ">
         {% if page.title %}
 		<div class="page-heading">
 			{{ page.title_text }}
@@ -11,12 +17,6 @@
                 <div class="page-sub-heading">
                     {{page.sub_title_text}}
                 </div>
-            </div>    
-        {% endif %}
-
-        {% if page.search_bar %}
-            <div class="col-sm-12" style="padding-left: 0">
-                    <input type="text" id="searchBox" class="input-style" name="sensor" placeholder="Sensor name or part #" />
             </div>
         {% endif %}
 	</div>
