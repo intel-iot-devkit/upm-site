@@ -8,6 +8,12 @@ $(() => {
   let facetsTemplate = Handlebars.compile($('#accordianTemplate').html());
   let searchResultsTemplate = Handlebars.compile($('#findSensorDetail').html());
 
+  /**
+   * Fetch JSON and cache it on success for future requests
+   *
+   * @param {String} url
+   * @return {Promise}
+   */
   let cacheJson = url => {
     let data = null;
 
@@ -35,9 +41,9 @@ $(() => {
   };
 
   /**
-   * Render a set of search results
+   * Render a pre-filtered, pre-sorted set of search results
    *
-   * @param {Array} [results] - subset of items from getSensorDetails
+   * @param {Array} [results]
    * @return {jQuery}
    */
   let renderSearchResults = (results = []) => {
@@ -70,14 +76,17 @@ $(() => {
   renderFacets();
   getSensorDetails().then(renderSearchResults); // show all sensors by default
 
+  // even though all results are available locally (search is not performed
+  // remotely), debounce the input to prevent the UI from rapidly updating
   $searchBox.on('input', _.debounce(e => {
     let query = e.target.value.toLowerCase();
 
     getSensorDetails().then(sensorDetails => {
       if (!query) {
-        return renderSearchResults(sensorDetails);
+        return renderSearchResults(sensorDetails); // render all sensors
       }
 
+      // FIXME: facet filters
       let results = _.chain(sensorDetails).filter(sensor => {
         return sensor.id.toLowerCase().includes(query) || sensor.Name.toLowerCase().includes(query);
       }).sortBy(sensor => {
