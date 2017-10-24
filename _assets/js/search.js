@@ -26,17 +26,47 @@ $(() => {
   let getSensorDetails = cacheJson('{{ site.baseurl }}/assets/content/sensorDetail.json?_={{ site.data.global.ajaxVersion }}');
 
   /**
+   *
+   */
+  let buildFacets = () => {
+    return getFacetsData().then(facets => {
+      return getSensorDetails().then(sensorDetails => {
+
+
+        return facets.map(facet => {
+          return {
+            name: facet.name,
+            values: _.chain(sensorDetails).pluck(facet.from || facet.name).flatten().compact().uniq().sort().value()
+          };
+        });
+
+
+      });
+    });
+  };
+
+  /**
    * Render filter selection sidebar
    *
    * @return {Promise<jQuery>}
    */
   let renderFacets = () => {
-    return getFacetsData().then(data => {
-      $accordion.html(facetsTemplate(data));
+
+    return buildFacets().then(facets => {
+      $accordion.html(facetsTemplate(facets));
+
       $accordion.find('.facet-filter').on('change', e => {
         // filter was changed, update results
         console.log(e);
       });
+
+      $accordion.find('.show-more').on('click', e => {
+        $(e.target).prevAll('.panel-body').removeClass('read-more').addClass('read-less');
+        $(e.target).remove();
+      });
+
+      return $accordion;
+
     });
   };
 

@@ -1,5 +1,11 @@
   var parsedObject;
 
+  Handlebars.registerHelper('ifOverflow', function(value, options) {
+    return value.length > 5 ?
+      options.fn(this) :
+      options.inverse(this);
+  });
+
   // Check for Empty Strings
   Handlebars.registerHelper('ifnonempty', function(conditional, options) {
     conditional = conditional || '';

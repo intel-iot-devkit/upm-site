@@ -16,27 +16,29 @@
 
 {% raw %}
 <script id="accordianTemplate" type="text/x-handlebars-template">
-<h4 class="filter-title">Filter</h4>
-{{#each facets}}
+<h4 class="filter-title">Filters</h4>
+{{#each this}}
     <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="accordion-toggle" data-toggle="collapse" href="#collapse-{{id}}">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse-{{@key}}">
               {{name}}
             </a>
           </h4>
         </div>
-        <div id="collapse-{{id}}" class="panel-collapse collapse in">
+        <div id="collapse-{{@key}}" class="panel-collapse collapse in">
           <div class="panel-body read-more">
-            {{#each type}}
-                <div class="type-name"><input type="checkbox" class="checkbox-style facet-filter" value="{{toLowerCase .}}" name="{{../name}}" />{{.}}</div>
+            {{#each values}}
+              <div class="type-name"><input type="checkbox" class="checkbox-style facet-filter" value="{{.}}" name="{{../name}}" />{{.}}</div>
             {{/each}}
           </div>
-        <div class="show-more" style="display: none">See more...</div>                
+          {{#ifOverflow values}}
+            <div class="show-more">See all</div>
+          {{/ifOverflow}}
         </div>
     </div>
 {{/each}}
-</script> 
+</script>
 
 {% endraw %}
 
