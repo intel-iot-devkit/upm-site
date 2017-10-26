@@ -17,7 +17,6 @@ var appendPrepend  = require('gulp-append-prepend');
 var autoprefixer   = require('autoprefixer');
 var babel          = require('gulp-babel');
 var browserSync    = require('browser-sync').create();
-var cache          = require('gulp-cache');
 var cleancss       = require('gulp-clean-css');
 var concat         = require('gulp-concat');
 var del            = require('del');
@@ -150,12 +149,12 @@ gulp.task('clean:scripts', function(callback) {
  */
 gulp.task('build:images', function() {
     return gulp.src(paths.imageFilesGlob)
-        .pipe(cache(imagemin([
+        .pipe(imagemin([
             imagemin.gifsicle(),
             jpegRecompress(),
             imagemin.optipng(),
             imagemin.svgo()
-        ])))
+        ]))
         .pipe(gulp.dest(paths.siteImageFiles))
         .pipe(gulp.dest(paths.jekyllImageFiles));
 
