@@ -5,6 +5,7 @@
  * whitespace.
  */
 
+var path = require('path');
 var paths = {};
 
 // Directory locations.
@@ -43,7 +44,7 @@ paths.jsPattern            = '/**/*.js';
 paths.facetFile            = '/facets.json';
 paths.jsonPattern          = '/**/*.json';
 paths.sensorDataFile       = '/sensorDetail.json';
-paths.sensorDataSrc        = undefined; //point to the UPM project src directory
+paths.sensorDataSrc        = path.join(__dirname, '../../upm/src'); //point to the UPM project src directory
 paths.indexFile            = '/LunrIndex.json';
 paths.imagePattern         = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
 paths.imageFilesGlob       = paths.imageFiles + paths.imagePattern;

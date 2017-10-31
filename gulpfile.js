@@ -197,7 +197,14 @@ gulp.task('build:index', function() {
     var sensorData = [];
     for (var i=0; i < sensorDataFile.length ; i++) { // Add the data to lunr
         var sensorDataLibrary = sensorDataFile[i]["Sensor Class"]
-        for(key in sensorDataLibrary){
+        for(key in sensorDataLibrary) {
+            // TODO: Temporary fix to skip the // Sensor Template item that can
+            // not be processed. This fix should be improved to something more
+            // reliable
+            if(key === '// SensorTemplate') {
+              continue;
+            }
+
             sensorData.push({
                 'id': key,
                 'name': key,

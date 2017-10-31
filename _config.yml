@@ -1,20 +1,23 @@
 # Where things are
-source:      .
-destination: ./_site
-plugins_dir:     ./_plugins
-layouts_dir:     ./_layouts
-data_dir: ./_data
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
 # collections: null
 
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      ["Gemfile",
-               "Gemfile.lock",
-               "gulpfile.js",
-               "node_modules",
-               "package.json",
-               "GemFile"]
+exclude:      [
+                "Gemfile",
+                "Gemfile.lock",
+                "gulpfile.js",
+                "node_modules",
+                "package.json",
+                "GemFile",
+                "vendor"
+              ]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -34,12 +37,17 @@ markdown:    kramdown
 lsi:         false
 excerpt_separator: "\n\n"
 
-# Serving
+# Serving upm.mraa.io
 detach:  false
 port:    443
 host:    upm.mraa.io
 baseurl: "" # does not include hostname
-#baseurl: "/upm" # does not include hostname
+
+# Serving from https://intel-iot-devkit.github.io/upm-site
+#detach:  false
+#port:    443
+#host:    https://intel-iot-devkit.github.io
+#baseurl: "/upm-site"
 
 # Outputting
 permalink:     /:title.html
