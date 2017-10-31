@@ -1,17 +1,24 @@
+# UPM Website [![Build Status](https://travis-ci.org/intel-iot-devkit/upm-site.svg?branch=master)](https://travis-ci.org/intel-iot-devkit/upm-site)
+
 ## GitHub Pages URL: https://intel-iot-devkit.github.io/upm/
 ## Dependencies:
-* NodeJs
-* Gulp
+* [NodeJs](https://nodejs.org/en/)
+* [Gulp](https://github.com/gulpjs/gulp)
+* [Python](https://www.python.org/), specifically Python 2!
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Sass](http://sass-lang.com/)
+* [Bundler](http://bundler.io/)
 * A bunch of other stuff installed through bundle and ruby gems
 
 ## Prepare Dev Environment:
-* Run npm install, in the same directory as the code. This will install all the dependencies automatically
+* Run `npm install`, in the same directory as the code. This will install all the  dependencies automatically
+* Run `bundler install` to install Gems dependencies automatically
 
 ## Gulp Tasks:
-1. clean: to clean local build directories and resources
-2. build: to generate the build for production using _config.yml, deploys to /_site
-3. build:local: to generated the build using _config_dev.yml
-4. serve: runs the app locally, using the _config_dev.yml file
+1. `gulp clean`: to clean local build directories and resources
+2. `gulp build`: to generate the build for production using _config.yml, deploys to /_site
+3. `gulp build:local`: to generated the build using _config_dev.yml
+4. `gulp serve`: runs the app locally, using the _config_dev.yml file
 
 ## Global.yml
 * Urls defined for fetching images, source code, and apis

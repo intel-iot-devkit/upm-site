@@ -1,20 +1,23 @@
 # Where things are
-source:      .
-destination: ./_site
-plugins_dir:     ./_plugins
-layouts_dir:     ./_layouts
-data_dir: ./_data
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
 # collections: null
 
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      ["Gemfile",
-               "Gemfile.lock",
-               "gulpfile.js",
-               "node_modules",
-               "package.json",
-               "GemFile"]
+exclude:      [
+                "Gemfile",
+                "Gemfile.lock",
+                "gulpfile.js",
+                "node_modules",
+                "package.json",
+                "GemFile",
+                "vendor"
+              ]
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
