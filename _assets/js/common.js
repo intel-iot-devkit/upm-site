@@ -19,7 +19,7 @@
   Handlebars.registerHelper('ifMultipleElements', function(examples, options) {
     var isMultiple = false;
 
-    for(key in examples){
+    for(var key in examples){
         if(examples[key].length > 1){
             isMultiple = true;
             break;
