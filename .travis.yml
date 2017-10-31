@@ -1,0 +1,19 @@
+dist: trusty
+sudo: required
+
+language: cpp
+
+services:
+  - docker
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+before_script:
+  - docker-compose build app
+
+script:
+  - docker-compose run app bash -c 'npm install && bundle install && gulp build'
