@@ -6,3 +6,4 @@ node_modules
 assets
 .publish/
 npm-debug.log
+vendor/

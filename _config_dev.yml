@@ -1,6 +1,6 @@
 # Serving
-detach:  false
-port:    1234
-host:    127.0.0.1
-baseurl: "" # does not include hostname
-giturl: https://github.com
+detach:     false
+port:       1234
+host:       127.0.0.1
+baseurl:    "" # does not include hostname
+giturl:     https://github.com
