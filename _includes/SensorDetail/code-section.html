@@ -25,7 +25,7 @@
                     </ul>
                     <div class="tab-content clearfix">
                         {{#each Examples}}
-                            <div class="tab-pane {{#if @first}}active{{/if}}" id="{{@index}}" role="tabpanel">
+                            <div class="tab-pane {{#if @first}}active{{/if}}" id="{{@index}}" data-parent="{{codeSnippetFolder @key}}" role="tabpanel">
                                 <pre style="max-height:250px; min-height: 250px;"><code class="{{language @key}} hljs"></code></pre>
                             </div>
                         {{/each}}
