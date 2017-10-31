@@ -1,91 +1,67 @@
-$(document).ready(function(){
-	GetSensorData();
+$(() => {
+  return $.get({
+    url: '{{ site.baseurl }}/assets/content/sensorDetail.json?_={{site.data.global.ajaxVersion}}',
+    cache: true
+  }).then(res => {
+    loadSensorDetailData(getQueryVariable('name'), res);
+    initCarousel();
+    initCodeSamples();
+  }, err => {
+    alert(err); // FIXME
+  });
 });
 
-function loadSensorDetailData(sensorname,response){ // Pass sensorname
-    for(var i =0; i<response.length; i++){
-        var libraryresponse = response[i]["Sensor Class"]
-        for (var key in libraryresponse){
-            if (key == sensorname) {
-                var item = libraryresponse[sensorname];
-                item.Library = response[i].Library;
-                var templateScript = $('#sensorDetailPageTemplate').html();
-                var template = Handlebars.compile(templateScript);
-                var rendered = template(item);
-                $('#sensorDetailPage').html(rendered);
-            }
-        }
-    }
-}
 
+let loadSensorDetailData = (id, res) => {
+  let sensor = res.find(sensor => sensor.id === id);
+  if (!sensor) {
+      return;
+  }
 
-// This method is applicable only on Search Detail Page
-// AJAX call to get the json data from sensordetail json
-function GetSensorData(){
-  $.ajax({
-        cache: true, // Set to True
-        url: '{{ site.baseurl }}/assets/content/sensorDetail.json?_={{site.data.global.ajaxVersion}}',
-        type: 'GET',
-        dataType: 'json',
-        success: function (response) {
-				 loadSensorDetailData(getQueryVariable('name'),response);
-                 InitializeCarousel(response);
-                 InitializeCodeSample();
-            },
-        error: function (r) {
-            alert('Error! Please try again.' + r.responseText);
-            console.log(r);
-        }
+  let templateScript = $('#sensorDetailPageTemplate').html() || '';
+  let template = Handlebars.compile(templateScript);
+
+  let html = template(sensor);
+  $('#sensorDetailPage').html(html);
+};
+
+let initCarousel = () => {
+  if (!$('.carousel .item').length) {
+    $('#carousel-section').hide();
+    return;
+  }
+
+  $('.carousel .item').first().addClass('active');
+  $('.carousel .carousel-indicators li').first().addClass('active');
+  $('.carousel').carousel({ interval: 2000 });
+};
+
+let initCodeSamples = () => {
+  $('#codeSection li').each((i, el) => {
+    let $el = $(el);
+
+    let language = $el.attr('data-parent');
+    let filename = $el.attr('data-value');
+
+    let $code = $(`#codeSection [role='tabpanel'][data-parent='${language}'] code`);
+
+    return fetchCodeSample(language, filename).then(code => {
+      $code.text(code);
+      hljs.highlightBlock($code[0]);
     });
-}
+  });
+};
 
-function InitializeCarousel(response){
-    if($('.carousel .item').length){
-        $('.carousel').find('.item').first().addClass('active');
-        $('.carousel').find('.carousel-indicators li').first().addClass('active');
-        $('.carousel').carousel({
-            interval: 2000
-        });
-    }
-    else
-        $('#carousel-section').hide();
-}
+let fetchCodeSample = (language, filename) => {
+  return $.get({
+    url: `{{site.data.global.codeSnippetUrl}}/${language}/${filename}`
+  }).then(res => {
 
-function InitializeCodeSample(){
-    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-        loadCodeSamples($(e.target).parent());
-    });
+    // strip comments
+    let code = language === 'python' ?
+      res.replace(/(#.*?\n){4,}/g,'') :
+      res.replace(/\/\*[^]*?\*\//g,''); // CXX, Java, JavaScript
 
-    loadCodeSamples($('.nav-pills li:first'));
-}
-
-
-function loadCodeSamples(sender){
-    var that = sender;
-    var flag = that.attr("data-flag") || 'false';
-    if(flag == 'false'){
-    	$.ajax({
-            cache: false,
-            url: '{{site.data.global.codeSnippetUrl}}/'+ sender.attr("data-parent") + '/' + sender.attr("data-value").split(',')[0],
-            success: function( response, status, xhr ){
-
-								var purgedResponse = response;
-
-								if(that.attr("data-parent") == "python"){
-									/* Remove comments from Python */
-									purgedResponse = response.replace(/(#.*?\n){4,}/g,'');
-								}
-								else{
-									/* Remove Comments from Cxx/Java and Node */
-									purgedResponse = response.replace(/\/\*[^]*?\*\//g,'');
-								}
-
-								purgedResponse = purgedResponse.replace(/^[\s]*$\n/m,'');
-
-								$('#'+that.attr("data-id")).find("code").text(purgedResponse);
-            		hljs.highlightBlock($('#' + that.attr("data-id")).find("code")[0]);
-                    that.attr("data-flag","true");
-            }
-        });
-    }
-}
+    return code.replace(/^[\s]*$\n/m,'');
+  });
+};
