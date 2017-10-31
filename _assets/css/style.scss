@@ -83,7 +83,8 @@ $headerColor: #729dbf;
         top:1px;
     }
     pre{
-        @extend %secondaryFont;
+        font-family: monospace;
+        font-size: 11px;
         background-color: #042B49;
         border: 1px solid #042B49;
         margin-bottom: 0;
@@ -92,7 +93,6 @@ $headerColor: #729dbf;
         }
         code{
             white-space: pre;
-            @extend %secondaryFont;
         }
     }
 }
