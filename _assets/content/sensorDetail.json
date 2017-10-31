@@ -1,6 +1,8 @@
 [
   {
     "id": "a1101",
+    "Library": "a110x",
+    "LibraryDescription": "A110X Hall Effect Library",
     "Name": "API for the A110X Hall Effect Sensors",
     "Description": "UPM module for the A110X (A1101, A1102, A1103, A1104, and A1106) Hall Effect sensors. It outputs a digital signal indicating whether it is detecting a magnetic field with south polarity perpendicular to the sensor element.",
     "Aliases": [
@@ -98,6 +100,8 @@
   },
   {
     "id": "a1102",
+    "Library": "a110x",
+    "LibraryDescription": "A110X Hall Effect Library",
     "Name": "API for the A110X Hall Effect Sensors",
     "Description": "UPM module for the A110X (A1101, A1102, A1103, A1104, and A1106) Hall Effect sensors. It outputs a digital signal indicating whether it is detecting a magnetic field with south polarity perpendicular to the sensor element.",
     "Aliases": [
@@ -195,6 +199,8 @@
   },
   {
     "id": "a1103",
+    "Library": "a110x",
+    "LibraryDescription": "A110X Hall Effect Library",
     "Name": "API for the A110X Hall Effect Sensors",
     "Description": "UPM module for the A110X (A1101, A1102, A1103, A1104, and A1106) Hall Effect sensors. It outputs a digital signal indicating whether it is detecting a magnetic field with south polarity perpendicular to the sensor element.",
     "Aliases": [
@@ -291,6 +297,8 @@
   },
   {
     "id": "a1104",
+    "Library": "a110x",
+    "LibraryDescription": "A110X Hall Effect Library",
     "Name": "API for the A110X Hall Effect Sensors",
     "Description": "UPM module for the A110X (A1101, A1102, A1103, A1104, and A1106) Hall Effect sensors. It outputs a digital signal indicating whether it is detecting a magnetic field with south polarity perpendicular to the sensor element.",
     "Aliases": [
@@ -387,6 +395,8 @@
   },
   {
     "id": "a1106",
+    "Library": "a110x",
+    "LibraryDescription": "A110X Hall Effect Library",
     "Name": "API for the A110X Hall Effect Sensors",
     "Description": "UPM module for the A110X (A1101, A1102, A1103, A1104, and A1106) Hall Effect sensors. It outputs a digital signal indicating whether it is detecting a magnetic field with south polarity perpendicular to the sensor element.",
     "Aliases": [
@@ -484,6 +494,8 @@
   },
   {
     "id": "ABP",
+    "Library": "abp",
+    "LibraryDescription": "Honeywell Basic Amplified Board mount Pressure(ABP) Sensor Library",
     "Name": "Honeywell ABP Pressure and Temperature Sensors",
     "Description": "This is the UPM Module for the ABP Honeywell Pressure and Temp sensor. This sensor uses an onboard ASIC to output values of pressure that are updated at approximately 2 KHz. It is capable of detecting pressure in the 0-5 psi range and it has an i2c based interface. Temperature calculation using this driver is possible but not all ABP sensors support that functionality.",
     "Aliases": [
@@ -624,6 +636,8 @@
   },
   {
     "id": "AD8232",
+    "Library": "ad8232",
+    "LibraryDescription": "Single Lead Heart Rate Monitor",
     "Name": "AD8232 Heart Rate Monitor Library",
     "Description": "This module simply spits out the ADC values reported by the sensor, with the intent to send that data, via serial or network port, somewhere to another piece of software running on a computer that plots the data for you, like an EKG.",
     "Aliases": [
@@ -696,6 +710,8 @@
   },
   {
     "id": "adafruitms1438",
+    "Library": "adafruitms1438",
+    "LibraryDescription": "Module for the Adafruit Motor Shield 1438",
     "Name": "API for the AdafruitMS1438 Motor Shield",
     "Description": "This class implements support for the stepper and DC motors that can be connected to this Motor Shield.",
     "Aliases": [
@@ -775,6 +791,8 @@
   },
   {
     "id": "adafruitss",
+    "Library": "adafruitss",
+    "LibraryDescription": "Adafruit Servo Shield",
     "Name": "Adafruit PCA9685-based Servo Shield library",
     "Description": "UPM library for the PCA9685-based Adafruit 16-channel servo shield.",
     "Aliases": [
@@ -843,6 +861,8 @@
   },
   {
     "id": "adc121c021",
+    "Library": "adc121c021",
+    "LibraryDescription": "I2C 12-bit Analog to Digital Converter with Alert Pin",
     "Name": "API for the ADC121C021 I2C Analog-to-Digital Converter",
     "Description": "UPM module for the ADC121C021 12-bit analog-to-digital converter (ADC). By constantly providing a reference voltage, this sensor helps increase the accuracy of a value collected from an analog sensor.",
     "Aliases": [
@@ -916,6 +936,8 @@
   },
   {
     "id": "adis16448",
+    "Library": "adis16448",
+    "LibraryDescription": "Industrial Grade Ten Degrees of Freedom Inertial Sensor",
     "Name": "API for the Analog Devices ADIS16448 Accelerometer",
     "Description": "This is an industrial-grade accelerometer by Analog Devices.",
     "Aliases": [
@@ -980,6 +1002,8 @@
   },
   {
     "id": "ADS1015",
+    "Library": "ADS1x15",
+    "LibraryDescription": "TI ADC Library",
     "Name": "12-bit ADC with Integrated MUX, PGA, Comparator, Oscillator, and Reference",
     "Description": "The ADS1013, ADS1014, and ADS1015 are precision analog-to-digital converters (ADCs) with 12 bits of resolution offered in an ultra-small, leadless QFN-10 package or an MSOP-10 package. The ADS1013/4/5 are designed with precision, power, and ease of implementation in mind. The ADS1013/4/5 feature an onboard reference and oscillator. Data is transferred via an I2C-compatible serial interface; four I2C slave addresses can be selected. The ADS1013/4/5 operate from a single power supply ranging from 2.0V to 5.5V. The ADS1013/4/5 can perform conversions at rates up to 3300 samples per second (SPS). An onboard PGA is available on the ADS1014 and ADS1015 that offers input ranges from the supply to as low as +/- 256mV, allowing both large and small signals to be measured with high resolution. The ADS1015 also features an input multiplexer (MUX) that provides two differential or four single-ended inputs. The ADS1013/4/5 operate either in continuous conversion mode or a single-shot mode that automatically powers down after a conversion and greatly reduces current consumption during idle periods. The ADS1013/4/5 are specified from -40 deg C to +125 deg C. Tested with Adafriut ADS1015 board.",
     "Aliases": [
@@ -1068,6 +1092,8 @@
   },
   {
     "id": "ADS1115",
+    "Library": "ADS1x15",
+    "LibraryDescription": "TI ADC Library",
     "Name": "16-bit ADC with Integrated MUX, PGA, Comparator, Oscillator, and Reference",
     "Description": "The ADS1113, ADS1114, and ADS1115 are precision analog-to-digital converters (ADCs) with 16 bits of resolution offered in an ultra-small, leadless QFN-10 package or an MSOP-10 package. The ADS1113/4/5 are designed with precision, power, and ease of implementation in mind. The ADS1113/4/5 feature an onboard reference and oscillator. Data is transferred via an I2C-compatible serial interface; four I2C slave addresses can be selected. The ADS1113/4/5 operate from a single power supply ranging from 2.0V to 5.5V. The ADS1113/4/5 can perform conversions at rates up to 860 samples per second (SPS). An onboard PGA is available on the ADS1114 and ADS1115 that offers input ranges from the supply to as low as +/- 256mV, allowing both large and small signals to be measured with high resolution. The ADS1115 also features an input multiplexer (MUX) that provides two differential or four single-ended inputs. The ADS1113/4/5 operate either in continuous conversion mode or a single-shot mode that automatically powers down after a conversion and greatly reduces current consumption during idle periods. The ADS1113/4/5 are specified from -40 deg C to +125 deg C. Tested with DIYMall ADS1115 board.",
     "Aliases": [
@@ -1149,6 +1175,8 @@
   },
   {
     "id": "adxl335",
+    "Library": "adxl335",
+    "LibraryDescription": "Low-power, 3-axis +/- 3 g Accelerometer",
     "Name": "API for the Analog Devices ADIS16448 Accelerometer",
     "Description": "UPM module for the ADXL335 3-axis analog accelerometer. This was tested on a Grove 3-axis Analog Accelerometer. It uses 3 analog pins, one for each axis: X, Y, and Z.",
     "Aliases": [
@@ -1217,6 +1245,8 @@
   },
   {
     "id": "adxl345",
+    "Library": "adxl345",
+    "LibraryDescription": "3-axis, +/- 2/4/8/16 g Digital Accelerometer",
     "Name": "API for the ADXL345 3-Axis Digital Accelerometer",
     "Description": "ADXL345 is a 3-axis digital accelerometer. The sensor has configurable resolutions to measure +/- 2g, +/- 4g, +/- 8g, or +/- 16g.",
     "Aliases": [
@@ -1286,6 +1316,8 @@
   },
   {
     "id": "adxrs610",
+    "Library": "adxrs610",
+    "LibraryDescription": "Gyro Breakout Board (300 Degrees/second)",
     "Name": "DFRobot ADXRS610 Gyro Breakout Board",
     "Description": "The ADXRS610 is a MEMS based single axis gyroscope with a range of +/- 300 degrees/sec.  It also incorporates a temperature sensing unit that can be used for advanced calibration. This sensor returns an analog voltage proportional to the rotation about the Z-axis in degrees/sec.  The temperature component returns a proportional analog values in degrees C. This driver was developed using the DFRobot ADXRS610 Gyro Beakout board.",
     "Aliases": [
@@ -1356,6 +1388,8 @@
   },
   {
     "id": "am2315",
+    "Library": "am2315",
+    "LibraryDescription": "Digital Temperature and Humidity Sensor",
     "Name": "API for the AM2315 Temperature & Humidity Sensor",
     "Description": "The AM2315 is a digital humidity sensor with temperature output. RH reports between 0 and 100%, and the temperature range is -40 to +125 degC. The sampling period of this sensor is 2 seconds. Reads occurring more often than that return cached data.",
     "Aliases": [
@@ -1431,6 +1465,8 @@
   },
   {
     "id": "APA102",
+    "Library": "apa102",
+    "LibraryDescription": "Adafruit apa102 iPixel LED library",
     "Name": "Adafruit apa102 iPixel LED",
     "Description": "This is the UPM Module for the Adafruit apa102 LED. This RGB LED package offers a PWM interface for fine tuning of colors, as well as offering shifting. Each LED module can read the top layer of commands, before shifting the next layer to the next LED, allowing you to communicate to a large string of LEDs.",
     "Aliases": [
@@ -1497,6 +1533,8 @@
   },
   {
     "id": "APDS9002",
+    "Library": "apds9002",
+    "LibraryDescription": "Seeed luminance sensor library",
     "Name": "Seeed luminance sensor",
     "Description": "This is the UPM Module for the apds9002, Seeed luminance sensor. This sensor offers a luminance sensor solution that has a responsitivity close to that of the human eye. Operates at 3.3 and 5 volts on a Seeed standard breakout board.",
     "Aliases": [
@@ -1582,6 +1620,8 @@
   },
   {
     "id": "APDS9930",
+    "Library": "apds9930",
+    "LibraryDescription": "SparkFun apds9930 ambient light and color sensor library",
     "Name": "SparkFun apds9930 ambient light and color sensor",
     "Description": "This is the UPM Module for the SparkFun RGB and ambient light sensor. This sensor also has gesture and proximity detection, coupled with IR and UV filters to reduce background noise. Uses i2c to communicate and can operate on 3.3 volts.",
     "Aliases": [
@@ -1644,6 +1684,8 @@
   },
   {
     "id": "AT42QT1070",
+    "Library": "at42qt1070",
+    "LibraryDescription": "Atmel Touch Sensor library",
     "Name": "Atmel AT42QT1070 touch sensor",
     "Description": "This is the UPM Module for the Atmel at42qt1070 touch sensor. This sensor is a single touch capacitive sensor, able to detect when a capacitive load is applied to one of the five pins offered. It has extensive exernal noise and RF suppression built in. When a capacitive load is detected, the corrisponding output is pulled low until the load is eliminated.",
     "Aliases": [
@@ -1722,6 +1764,8 @@
   },
   {
     "id": "BH1750",
+    "Library": "bh1750",
+    "LibraryDescription": "DFRobot BH1750 light intensity sensor library",
     "Name": "DFRobot BH1750 light intensity sensor",
     "Description": "This is the UPM Module for the DFRobot bh1750 light intensity sensor. This sensor outputs light level data directly in Lux(Lx), eliminating complicated voltage calculations from your program. Offers a large range of Lx sensativity, with high resolution and i2c communication.",
     "Aliases": [
@@ -1795,6 +1839,8 @@
   },
   {
     "id": "BISS0001",
+    "Library": "biss0001",
+    "LibraryDescription": "Seeed PIR motion sensor library",
     "Name": "Seeed BISS0001 PIR motion detector",
     "Description": "This is the UPM Module for the Seeed BISS0001 PIR motion detector. This sensor offers a 120 degree sensor arc, with a 3 to 6 meter detecting distance. It also offers adjustable detecting distance and hold times.",
     "Aliases": [
@@ -1896,6 +1942,8 @@
   },
   {
     "id": "BMA220",
+    "Library": "bma220",
+    "LibraryDescription": "Bosch Sensortec accelerometer library",
     "Name": "Bosch BMA220 accelerometer",
     "Description": "This is the UPM Module for the Bosch BMA220 accelerometer. A triaxis accelerometer which measures acceleration in three perpendicular axes. It offers interruption pins, as well as motion interrupts, which can be triggered via orientation, shock, or taps. DFRobot offers this on an evaluation board, known as SEN0168.",
     "Aliases": [
@@ -1974,6 +2022,8 @@
   },
   {
     "id": "BMA250E",
+    "Library": "bma250e",
+    "LibraryDescription": "Bosch Sensortec accelerometer library",
     "Name": "Bosch BMA250E accelerometer",
     "Description": "This is the UPM Module for the Bosch BMA250E accelerometer. This sensor offers triaxial low-g acceleration detection, and offers spi and i2c interfaces. It also offers interrupts, which can be activated by input, such as new data, motion, taps, or even different orientations.",
     "Aliases": [
@@ -2070,6 +2120,8 @@
   },
   {
     "id": "BMG160",
+    "Library": "bmg",
+    "LibraryDescription": "Bosch Sensortec 3-axis gyroscope library",
     "Name": "Bosch 3-Axis gyroscope",
     "Description": "This is the UPM Module for the Bosch BMG160 3-Axis gyroscope. Offers 16 bit digital resolution, with 5 scale ranges. Supports interrupts and low power modes. Offers i2c and SPI interfaces.",
     "Aliases": [
@@ -2153,6 +2205,8 @@
   },
   {
     "id": "BMI160",
+    "Library": "bmi160",
+    "LibraryDescription": "Bosch Sensortec accelerometer and gyroscope library.",
     "Name": "Bosch accelerometer and gyroscope",
     "Description": "This is the UPM Module for the BMI160 Bosch low power inertial measurement unit. High performance hardware synchronized accelerometer and gyroscope, with very low power consumption. Extended i2c mode with 1 MHz clock frequencies. This sensor is able to handle external sensor data from other Bosch sensors.",
     "Aliases": [
@@ -2241,6 +2295,8 @@
   },
   {
     "id": "BME280",
+    "Library": "bmx050",
+    "LibraryDescription": "Bosch 3-axis Magnetometer",
     "Name": "3-axis Geomagnetic Sensor",
     "Description": "The BMM150 is a standalone geomagnetic sensor for consumer market applications. It allows measurements of the magnetic field in three perpendicular axes. Based on Bosch's proprietary FlipCore technology, performance and features of BMM150 are carefully tuned and perfectly match the demanding requirements of all 3-axis mobile applications such as electronic compass, navigation or augmented reality. An evaluation circuitry (ASIC) converts the output of the geomagnetic sensor to digital results which can be read out over the industry standard digital interfaces (SPI and I2C). Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports both I2C (default) and SPI operation.",
     "Aliases": [
@@ -2320,6 +2376,8 @@
   },
   {
     "id": "BME280",
+    "Library": "bmp280",
+    "LibraryDescription": "Bosch Atmospheric Sensor Library",
     "Name": "Digital Humidity, Pressure, and Temperature Sensor",
     "Description": "The BME280 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package with a footprint of only 2.5 * 2.5 mm2 with a height of 0.93 mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets, GPS modules or watches. The BME280 is register and performance compatible to the Bosch Sensortec BMP280 digital pressure sensor",
     "Aliases": [
@@ -2410,6 +2468,8 @@
   },
   {
     "id": "BMP280",
+    "Library": "bmp280",
+    "LibraryDescription": "Bosch Atmospheric Sensor Library",
     "Name": "Digital Pressure Sensor",
     "Description": "The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications. The sensor module is housed in an extremely compact 8-pin metal-lid LGA package with a footprint of only 2.0 * 2.5 mm2 and 0.95 mm package height. Its small dimensions and its low power consumption of 2.7 uA @1Hz allow the implementation in battery driven devices such as mobile phones, GPS modules or watches. As the successor to the widely adopted BMP180, the BMP280 delivers high performance in all applications that require precise pressure measurement. The BMP280 operates at lower noise, supports new filter modes and an SPI interface within a footprint 63% smaller than the BMP180.",
     "Aliases": [
@@ -2501,6 +2561,8 @@
   },
   {
     "id": "bmpx8x",
+    "Library": "bmpx8x",
+    "LibraryDescription": "BMP Atmospheric Pressure Sensor",
     "Name": "BMP Atmospheric Pressure Sensor",
     "Description": "The BME280 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package with a footprint of only 2.5 * 2.5 mm2 with a height of 0.93 mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets, GPS modules or watches. The BME280 is register and performance compatible to the Bosch Sensortec BMP280 digital pressure sensor",
     "Aliases": [
@@ -2596,6 +2658,8 @@
   },
   {
     "id": "BME280",
+    "Library": "bmx055",
+    "LibraryDescription": "BMX055 9-axis Sensor Module",
     "Name": "BMX055 9-axis Sensor Module",
     "Description": "The BMX055 is an integrated 9-axis sensor for the detection of movements and rotations and magnetic heading. It comprises the full functionality of a triaxial, low-g acceleration sensor, a triaxial angular rate sensor and a triaxial geomagnetic sensor. The BMX055 senses orientation, tilt, motion, acceleration, rotation, shock, vibration and heading in cell phones, handhelds, computer peripherals, man-machine interfaces, virtual reality features and game controllers. The BMX055 is essentially 3 separate devices in one: the BMA250E Accelerometer, the BMG160 Gyroscope, and the BMM150 Magnetometer. They are completely independant of each other. This driver provides a very simple interface to these 3 devices. If finer control is desired, you should just use the separate BMA25E, BMG160, and BMM150 device classes directly.  This driver simply initializes all three devices, and provides a mechanism to read accelerometer, gyroscope and magnetometer data from them.",
     "Aliases": [
@@ -2688,6 +2752,8 @@
   },
   {
     "id": "bno055",
+    "Library": "bno055",
+    "LibraryDescription": "API for the BNO055 Absolute Orientation 9DOF Fusion Hub",
     "Name": "Intelligent 9-axis Absolute Orientation Sensor",
     "Description": "The BNO055 is a System in Package (SiP), integrating a triaxial 14-bit accelerometer, a triaxial 16-bit gyroscope with a range of +/- 2000 degrees per second, a triaxial geomagnetic sensor and a 32-bit cortex M0+ microcontroller running Bosch Sensortec sensor fusion software, in a single package. This sensor handles the hard problem of combining various sensor information into a reliable measurement of sensor orientation (refered to as 'sensor fusion'). The onboard MCU runs this software and can provide fusion output in the form of Euler Angles, Quaternions, Linear Acceleration, and Gravity Vectors in 3 axes. The focus on this driver has been on supporting the fusion components. Less support is available for use of this device as a generic accelerometer, gyroscope and magnetometer, however enough infrastructure is available to add any missing functionality. This device requires calibration in order to operate accurately. Methods are provided to retrieve calibration data (once calibrated) to be stored somewhere else, like in a file. A method is provided to load this data as well. Calibration data is lost on a power cycle. See one of the examples for a description of how to calibrate the device, but in essence: There is a calibration status register available (getCalibrationStatus()) that returns the calibration status of the accelerometer (ACC), magnetometer (MAG), gyroscope (GYR), and overall system (SYS). Each of these values range from 0 (uncalibrated) to 3 (fully calibrated). Calibration involves certain motions to get all 4 values at 3. The motions are as follows (though see the datasheet for more information): GYR: Simply let the sensor sit flat for a few seconds. ACC: Move the sensor in various positions. Start flat, then rotate slowly by 45 degrees, hold for a few seconds, then continue rotating another 45 degrees and hold, etc. 6 or more movements of this type may be required. You can move through any axis you desire, but make sure that the device is lying at least once perpendicular to the x, y, and z axis. MAG: Move slowly in a figure 8 pattern in the air, until the calibration values reaches 3. SYS: This will usually reach 3 when the other items have also reached 3. If not, continue slowly moving the device though various axes until it does.",
     "Aliases": [
@@ -2772,6 +2838,8 @@
   },
   {
     "id": "Button",
+    "Library": "button",
+    "LibraryDescription": "Generic library for buttons & switches",
     "Name": "Button",
     "Description": "Basic UPM module for buttons and switches. Allows attaching a callback function to state transitions.",
     "Aliases": [
@@ -2828,6 +2896,8 @@
   },
   {
     "id": "Buzzer",
+    "Library": "buzzer",
+    "LibraryDescription": "Generic library for piezoelectric buzzers",
     "Name": "Buzzer",
     "Description": "This module defines the Buzzer interface for libbuzzer. This sensor can make different tones when connected to a pin capable of analog pulse-width modulation. It emits sound using a piezoelectric material that vibrates at different frequencies based on the input voltage.",
     "Aliases": [
@@ -2892,6 +2962,8 @@
   },
   {
     "id": "cjq4435",
+    "Library": "cjq4435",
+    "LibraryDescription": "API for the CJQ4435 MOSFET",
     "Name": "CJQ4435 MOSFET",
     "Description": "UPM module for the CJQ4435 MOSFET. It was developed using the Grove MOSFET module, but could be used with any MOSFET.  A MOSFET is like a switch, but it can switch much faster than a mechanical relay.  Here, we implement support via MRAA pulse width modulation (PWM) functions.  Note: available periods vary depending on the capabilities of your platform.",
     "Aliases": [
@@ -2968,6 +3040,8 @@
   },
   {
     "id": "collision",
+    "Library": "collision",
+    "LibraryDescription": "API for the Collision Sensor",
     "Name": "Grove Collision Sensor",
     "Description": "The Collision Sensor can detect whether any collision movement or vibration happens. It outputs a low pulse signal when vibration is detected.",
     "Aliases": [
@@ -3036,6 +3110,8 @@
   },
   {
     "id": "curieimu",
+    "Library": "curieimu",
+    "LibraryDescription": "Bosch Atmospheric Sensor Library",
     "Name": "Digital Humidity, Pressure, and Temperature Sensor",
     "Description": "Curie IMU is a 6-axis accelerometer.",
     "Aliases": [
@@ -3080,6 +3156,8 @@
   },
   {
     "id": "cwlsxxa",
+    "Library": "cwlsxxa",
+    "LibraryDescription": "API for the Veris CWLSXXA CO2 Sensor Family",
     "Name": "Veris CWLSXXA CO2 Sensor",
     "Description": "The driver was developed using the CWLSHTA CO2 Gas sensor.  The 'T' variant supports a temperature transmitter, and the 'H' variant supports a humidity sensor.  All 3 signals are provided by the device as analog 0-5Vdc, 0-10Vdc, or 4-20ma loop current outputs.  For devices supporting temperature, the valid temperature range is 10C to 50C.  The humidity ranges from 0% to 100% (non-condensing).  The CO2 sensor ranges from 0 to 2000 ppm. This driver was developed using the 5Vdc outputs and the 4-20ma outputs.  For voltage outputs, your MCU must be configured for 5V operation.  In addition, you must configure the sensor (via it's configuration switches) to output 0-5VDC only.  Using any other analog reference voltage will require the appropriate external circuitry (such as a voltage divider) in order to interface safely with your MCU. In addition, the sensor can be configured for 4-20ma usage, by specifying the correct receiver resistance (in ohms) in the constructor.  This sensor was tested with a Cooking Hacks (Libelium) 4-channel 4-20ma Arduino interface shield.  For this interface, the receiver resistance was specified as 165.0 ohms. For devices which do not support temperature, use '-1' as the temperature pin number in the object constructor.  If temperature measurement is disabled, getTemperature() will always return 0C/32F. For devices which do not support humidity, use '-1' as the temperature pin number in the object constructor.  If humidity measurement is disabled, getHumidity() will always return 0.",
     "Aliases": [
@@ -3195,6 +3273,8 @@
   },
   {
     "id": "dfrec",
+    "Library": "dfrec",
+    "LibraryDescription": "DFRobot EC Meter Library",
     "Name": "Analog Electrical Conductivity (EC) Sensor",
     "Description": "The driver was tested with the DFRobot EC Analog Sensor. This device measure the electrical conductivity of an aqueous solution.  The included probe is a K=1 model. Calibration is somewhat complicated - see the DFRobot wiki for instructions on calibration.  Functions are provided to supply the appropriate values.  By default, the values used in the DFRobot arduino example are used.",
     "Aliases": [
@@ -3262,6 +3342,8 @@
   },
   {
     "id": "dfrorp",
+    "Library": "dfrorp",
+    "LibraryDescription": "UPM C++ API for the DFRobot ORP (Oxidation/Reduction Potential)",
     "Name": "Analog Oxidation Reduction Potential (ORP) Sensor",
     "Description": "This library was tested with the DFRobot ORP (Oxidation/Reduction Potential) Sensor. To calibrate: Disconnect the sensor probe (but leave the sensor interface board connected).  Then run one of the examples while holding down the 'calibrate' button on the device.  Read the ORP value reported (it should be fairly small). This value is what you should supply to setCalibrationOffset().  Then reconnect the probe to the interface board and you should be ready to go. DO NOT press the calibrate button on the interface board while the probe is attached or you can permanently damage the probe.",
     "Aliases": [
@@ -3328,6 +3410,8 @@
   },
   {
     "id": "dfrph",
+    "Library": "dfrph",
+    "LibraryDescription": "API for the DFRobot pH Sensors",
     "Name": "Analog pH Sensor",
     "Description": "TThis sensor family returns an analog voltage proportional to the acidity or alkalinity of a liquid -- it's pH value. This driver was developed using the DFRobot Analog pH meter and the DFRobot Analog pH Meter Pro. Calibration instructions, taken and slightly reworded from the DFRobot wiki at: http://dfrobot.com/wiki/index.php/PH_meter%28SKU:_SEN0161%29 1) Connect equipment: the pH electrode is connected to the BNC connector on the pH meter board, and then the pH meter board is connected to the analog port 0 of the controller. When the controller gets power, you will see the blue LED on board is on. 2) Put the pH electrode into the standard solution whose pH value is 7.00.  Run the dfrph example and note the pH output value.  Compare the value with 7.00, and calculate the difference.  This is the value you should supply to the setOffset() method. 3) Put the pH electrode into the pH standard solution whose value is 4.00. Then wait about one minute, and adjust the potentiometer on the interface board.  Let the value stabilise at around 4.00. At this time,the acidic calibration has been completed and you can measure the pH value of an acidic solution. 4) According to the linear characteristics of pH electrode itself, after the above calibration,you can directly measure the pH value of the alkaline solution. If you want to get better accuracy, you can recalibrate it. Alkaline calibration use the standard solution whose pH value is 9.18.  Also adjust the potentiometer and let the value stabilise at around 9.18. After this calibration, you can measure the pH value of an alkaline solution.",
     "Aliases": [
@@ -3393,6 +3477,8 @@
   },
   {
     "id": "ds1307",
+    "Library": "ds1307",
+    "LibraryDescription": "DS1307 Real-Time Clock library",
     "Name": "DS1307 Real Time Clock (RTC) Module",
     "Description": "UPM module for the DS1307-based real-time clock. The clock can provide information about seconds, minutes, hours, day of the week, day of the month, month, and year. It can operate in either a 24-hour or a 12-hour format. This device can also output a square wave at 1Khz, 4Khz, 8Khz, and 32Khz. However, this capability is not implemented in this module.",
     "Aliases": [
@@ -3463,6 +3549,8 @@
   },
   {
     "id": "ds1808lc",
+    "Library": "ds1808lc",
+    "LibraryDescription": "API for DS1808 Dual Log Digital Potentiometer as a Light Controller",
     "Name": "DS1808LC Lighting Controller",
     "Description": "The Maxim Integrated [DS1808](http://www.maximintegrated.com/en/products/analog/data-converters/digital-potentiometers/DS1808.html) Dual Log Digital Potentiometer",
     "Aliases": [
@@ -3520,6 +3608,8 @@
   },
   {
     "id": "ds18b20",
+    "Library": "ds18b20",
+    "LibraryDescription": "API for the DS18B20 1-Wire Temperature Sensor",
     "Name": "DS18B20 1-Wire Temperature Sensor",
     "Description": "The driver was tested with the DFRobot EC Analog Sensor. This device measure the electrical conductivity of an aqueous solution.  The included probe is a K=1 model. Calibration is somewhat complicated - see the DFRobot wiki for instructions on calibration.  Functions are provided to supply the appropriate values.  By default, the values used in the DFRobot arduino example are used.",
     "Aliases": [
@@ -3588,6 +3678,8 @@
   },
   {
     "id": "ds2413",
+    "Library": "ds2413",
+    "LibraryDescription": "1-Wire Dual Channel Addressable Switch Library",
     "Name": "1-Wire Dual Channel Addressable Switch",
     "Description": "The DS2413 is a dual-channel programmable I/O 1-Wire(r) chip. The PIO outputs are configured as open-drain and provide up to 20mA continuous sink capability and off-state operating voltage up to 28V.  Control and sensing of the PIO pins is performed with a dedicated device-level command protocol. This device requires the use of a UART to provide access to a Dallas 1-wire bus, via a new facility supported by MRAA (once the relevant PR is accepted), using the UartOW access class. It is important to realize that the UART is only being used to access and control a Dallas 1-wire compliant bus, it is not actually a UART device. Multiple DS2413 devices can be connected to this bus.  This module will identify all such devices connected, and allow you to access them using an index starting at 0.",
     "Aliases": [
@@ -3653,6 +3745,8 @@
   },
   {
     "id": "e50hx",
+    "Library": "e50hx",
+    "LibraryDescription": "UPM API for the Veris E50HX Energy Meter",
     "Name": "Veris E50HX (E50H2/E50H5) Energy Meter Module",
     "Description": "This module implements support for the Veris E50H2 and E50H5 BACnet Energy Meters. From the datasheet: The E50H5 BACnet MS/TP DIN Rail Meter with Data Logging combines exceptional performance and easy installation to deliver a cost-effective solution for power monitoring applications. Native serial communication via BACnet MS/TP provides complete accessibility of all measurements to your Building Automation System The data logging capability protects data in the event of a power failure. The E50H5 can be easily installed on standard DIN rail, surface mounted or contained in an optional NEMA 4 enclosure, as needed. The front-panel LCD display makes device installation and setup easy and provides local access to the full set of detailed measurements. This module was developed using the upm::BACNETMSTP module, based on libbacnet-stack 0.8.3.  Both libbacnet 0.8.3 and the upm::BACNETMSTP libraries must be present in order to build this module.  This driver was developed on the E50H5.  The Trend Log functionality is not currently supported. The Binary Input Objects are also not supported as these are only used for the Alarm bits which are already available from Analog Input Object 52 as an alarm bitfield incorporating all of the supported alarm indicators. It was connected using an RS232->RS485 interface.  You cannot use the built in MCU TTL UART pins for accessing this device -- you must use a full Serial RS232->RS485 or USB-RS485 interface connected via USB.",
     "Aliases": [
@@ -3723,6 +3817,8 @@
   },
   {
     "id": "ecezo",
+    "Library": "ecezo",
+    "LibraryDescription": "API for the EC-EZO EC Sensor",
     "Name": "Electrical Conductivity (EC) Circuit",
     "Description": "This driver was tested with the Atlas Scientific Electrical Conductivity kit. This device can operate in either UART or I2C modes.",
     "Aliases": [
@@ -3812,6 +3908,8 @@
   },
   {
     "id": "ecs1030",
+    "Library": "ecs1030",
+    "LibraryDescription": "ECS1030 Electricity Sensor Library",
     "Name": "Non-Invasive Current Sensor",
     "Description": "This non-invasive current sensor can be clamped around the supply line of an electrical load to tell you how much current is passing through it. It does this by acting as an inductor and responding to the magnetic field around a current-carrying conductor. This particular current sensor measures a load up to 30 A, which makes it great for building your own energy monitors.",
     "Aliases": [
@@ -3866,6 +3964,8 @@
   },
   {
     "id": "ehr",
+    "Library": "ehr",
+    "LibraryDescription": "API for the  Ear-clip Heart Rate Sensor",
     "Name": "Ear-clip Heart Rate Sensor",
     "Description": "UPM module for the  ear-clip heart rate sensor. It is used to measure your heart rate.",
     "Aliases": [
@@ -3929,6 +4029,8 @@
   },
   {
     "id": "eldriver",
+    "Library": "eldriver",
+    "LibraryDescription": "API for the  EL Driver Module",
     "Name": "Electroluminescent Wire (EL) Driver",
     "Description": "The  EL Driver allows you to easily light up an EL wire with just one single  cable.",
     "Aliases": [
@@ -3992,6 +4094,8 @@
   },
   {
     "id": "electromagnet",
+    "Library": "electromagnet",
+    "LibraryDescription": "Electromagnet Library",
     "Name": "API for the  Electromagnet",
     "Description": "The  Electromagnet can hold up to 1 kg (approximately 2.2 lbs)",
     "Aliases": [
@@ -4056,6 +4160,8 @@
   },
   {
     "id": "emg",
+    "Library": "emg",
+    "LibraryDescription": "Grove EMG Muscle Signal Reader Library",
     "Name": "Electromyography (EMG) Sensor",
     "Description": "Grove EMG muscle signal reader gathers small muscle signals, then processes them, and returns the result.",
     "Aliases": [
@@ -4116,6 +4222,8 @@
   },
   {
     "id": "enc03r",
+    "Library": "enc03r",
+    "LibraryDescription": "ENC03R Single Axis Gyro Library",
     "Name": "Single-axis Analog Gyro Module",
     "Description": "UPM module for the ENC03R single axis analog gyro. This gyroscope measures x-axis angular velocity, that is how fast the sensor is rotating around the x-axis. Calibration of the sensor is necessary for accurate readings.",
     "Aliases": [
@@ -4186,6 +4294,8 @@
   },
   {
     "id": "flex",
+    "Library": "flex",
+    "LibraryDescription": "API for the Spectra Symbol Flex Sensor",
     "Name": "Resistive Flex Sensor",
     "Description": "A simple flex sensor. The resistance across the sensor increases when flexed. Patented technology by Spectra Symbol, these sensors were used in the original Nintendo* Power Glove.",
     "Aliases": [
@@ -4247,6 +4357,8 @@
   },
   {
     "id": "mq2",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ2 Methane, Butane, Liquefied Petroleum Gas (LPG), and Smoke Sensor",
     "Description": "The MQ2 Gas Sensor module is useful for gas leakage detection (in home and industry). It can detect LPG, i-butane, methane, alcohol, hydrogen, smoke, and other combustible gases. It's a medium-sensitivity sensor with a detection range of 300-10,000 ppm.",
     "Aliases": [
@@ -4312,6 +4424,8 @@
   },
   {
     "id": "mq3",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ3 Alcohol, Ethanol, Smoke Sensor",
     "Description": "The MQ3 Gas Sensor module is useful for gas leakage detection (in home and industry). It can detect alcohol vapors and benzine. It's highly sensitive but has a long warm-up time of about 1 minute. It's detection range is 0.04-4 mg/L Alcohol.",
     "Aliases": [
@@ -4380,6 +4494,8 @@
   },
   {
     "id": "mq4",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ4 Methane and Connecticut Natural Gas (CNG) Sensor",
     "Description": "The MQ4 Gas Sensor module is useful for detecting CH4 (Methane), and natural gas concentrations in the air.  It has a detection range of 100-10000 ppm. For optimum use, it requires calibration after a pre-heat time of at least 24 hours.  See the datasheet for details.",
     "Aliases": [
@@ -4444,6 +4560,8 @@
   },
   {
     "id": "mq5",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ5 Natural Gas and Liquefied Petroleum Gas (LPG) Sensor",
     "Description": "The MQ5 Gas Sensor module is useful for gas leakage detection (in home and industry). It can detect LPG, natural gas, town gas, and so on. It is highly sensitive and has a detection range of 300-10,000 ppm.",
     "Aliases": [
@@ -4515,6 +4633,8 @@
   },
   {
     "id": "mq6",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ6 Liquefied Petroleum Gas (LPG) and Butane Sensor",
     "Description": "The MQ6 Gas Sensor module is useful for detecting LPG, iso-butane, propane, and LNG concentrations in the air.  It has a detection range of 200-10000 ppm. For optimum use, it requires calibration after a pre-heat time of at least 24 hours.  See the datasheet for details.",
     "Aliases": [
@@ -4586,6 +4706,8 @@
   },
   {
     "id": "mq7",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ7 Carbon Monoxide Sensor",
     "Description": "The Grove MQ7 Gas Sensor module is useful for detecting Carbon Monoxide (CO) concentrations in the air.  It has a detection range of 20-2000 ppm. For optimum use, it requires calibration after a pre-heat time of 48 hours.  See the datasheet for details.",
     "Aliases": [
@@ -4651,6 +4773,8 @@
   },
   {
     "id": "mq8",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ8 Flammable (Hydrogen) Gas Sensor",
     "Description": "The MQ8 Gas Sensor module is useful for detecting Hydrogen gas concentrations in the air.  It has a detection range of 100-10000 ppm. For optimum use, it requires calibration after a pre-heat time of at least 24 hours.  See the datasheet for details.",
     "Aliases": [
@@ -4721,6 +4845,8 @@
   },
   {
     "id": "mq9",
+    "Library": "gas",
+    "LibraryDescription": "Gas Sensor Library",
     "Name": "MQ9 Carbon Monoxide (CO) and Flammable Gas Sensor",
     "Description": "The Grove MQ9 Gas Sensor module is useful for gas leakage detection (in home and industry). It can detect carbon monoxide, coal gas, and liquefied gas. Its sensitivity is 10-1,000 ppm CO, and 100-10,000 ppm Gas.",
     "Aliases": [
@@ -4792,6 +4918,8 @@
   },
   {
     "id": "gp2y0a",
+    "Library": "gp2y0a",
+    "LibraryDescription": "API for the GP2Y0A family of IR Proximity Sensors",
     "Name": "Analog Infrared (IR) Based Distance Sensor",
     "Description": "Sensors of this family return an analog voltage corresponding to the distance of an object from the sensor. The voltage is lower when objects are far away; the voltage increases as objects get closer to the sensor.",
     "Aliases": [
@@ -4860,6 +4988,8 @@
   },
   {
     "id": "gprs",
+    "Library": "gprs",
+    "LibraryDescription": "API for the GPRS Module",
     "Name": "General Packet Radio Service (GPRS) Module",
     "Description": "The driver was tested with the  GPRS Module, V2.  It's a GSM GPRS module based on the SIM900.  This module uses a standard 'AT' command set.  See the datasheet for a full list of available commands and their possible responses.",
     "Aliases": [
@@ -4931,6 +5061,8 @@
   },
   {
     "id": "grovebase",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "Generic library for basic Grove sensors",
     "Description": "This is the Generic UPM Module for basic Grove sensors. This library is now deprecated and replaced by individual libraries for every sensor.",
     "Aliases": [
@@ -4975,6 +5107,8 @@
   },
   {
     "id": "grovebutton",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Button",
     "Description": "This is the UPM Module for the Grove button. This class is being replaced by the upm-button library and the Button class.",
     "Aliases": [
@@ -5053,6 +5187,8 @@
   },
   {
     "id": "groveled",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove LED",
     "Description": "This is the UPM Module for the Grove LED. This class is being replaced by the upm-led library and the Led class.",
     "Aliases": [
@@ -5135,6 +5271,8 @@
   },
   {
     "id": "grovelight",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Light Sensor",
     "Description": "This is the UPM Module for the Grove Light Sensor. This class is being replaced by the upm-light library and the Light class.",
     "Aliases": [
@@ -5220,6 +5358,8 @@
   },
   {
     "id": "groverelay",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Relay",
     "Description": "This is the UPM Module for the Grove relay switch. This class is being replaced by the upm-relay library and the Relay class.",
     "Aliases": [
@@ -5321,6 +5461,8 @@
   },
   {
     "id": "groverotary",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Rotary Angle Sensor (Knob)",
     "Description": "This is the UPM Module for the Grove Rotary Angle Sensor (Knob). This class is being replaced by the upm-rotary library and the Rotary class.",
     "Aliases": [
@@ -5403,6 +5545,8 @@
   },
   {
     "id": "groveslide",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Slide Potentiometer",
     "Description": "This is the UPM Module for the Grove Slide Potentiometer. This class is being replaced by the upm-slide library and the Slide class.",
     "Aliases": [
@@ -5484,6 +5628,8 @@
   },
   {
     "id": "grovetemp",
+    "Library": "grove",
+    "LibraryDescription": "Generic library for basic Grove sensors",
     "Name": "API for the Grove Temperature Sensor",
     "Description": "This is the UPM Module for the Grove Temperature Sensor. This class is being replaced by the upm-temperature library and the Temperature class.",
     "Aliases": [
@@ -5567,6 +5713,8 @@
   },
   {
     "id": "grovecollision",
+    "Library": "grovecollision",
+    "LibraryDescription": "API for the Grove Collision Sensor",
     "Name": "Grove Collision Sensor",
     "Description": "The Grove Collision Sensor can detect whether any collision movement or vibration happens. It outputs a low pulse signal when vibration is detected.",
     "Aliases": [
@@ -5639,6 +5787,8 @@
   },
   {
     "id": "groveehr",
+    "Library": "groveehr",
+    "LibraryDescription": "API for the  Ear-clip Heart Rate Sensor",
     "Name": "Ear-clip Heart Rate Sensor",
     "Description": "UPM module for the  ear-clip heart rate sensor. It is used to measure your heart rate.",
     "Aliases": [
@@ -5703,6 +5853,8 @@
   },
   {
     "id": "groveeldriver",
+    "Library": "groveeldriver",
+    "LibraryDescription": "API for the Grove EL Driver Module",
     "Name": "Grove Electroluminescent Wire (EL) Driver",
     "Description": "The Grove EL Driver allows you to easily light up an EL wire with just one single  cable.",
     "Aliases": [
@@ -5767,6 +5919,8 @@
   },
   {
     "id": "groveelectromagnet",
+    "Library": "groveelectromagnet",
+    "LibraryDescription": "Grove Electromagnet Library",
     "Name": "API for the Grove Electromagnet",
     "Description": "The Grove Electromagnet can hold up to 1 kg (approximately 2.2 lbs)",
     "Aliases": [
@@ -5832,6 +5986,8 @@
   },
   {
     "id": "groveemg",
+    "Library": "groveemg",
+    "LibraryDescription": "Grove EMG Muscle Signal Reader Library",
     "Name": "Grove Electromyography (EMG) Sensor",
     "Description": "Grove EMG muscle signal reader gathers small muscle signals, then processes them, and returns the result.",
     "Aliases": [
@@ -5890,6 +6046,8 @@
   },
   {
     "id": "grovegprs",
+    "Library": "grovegprs",
+    "LibraryDescription": "API for the Grove GPRS Module",
     "Name": "Grove General Packet Radio Service (GPRS) Module",
     "Description": "The driver was tested with the Grove GPRS Module, V2.  It's a GSM GPRS module based on the SIM900.  This module uses a standard 'AT' command set.  See the datasheet for a full list of available commands and their possible responses.",
     "Aliases": [
@@ -5961,6 +6119,8 @@
   },
   {
     "id": "grovegsr",
+    "Library": "grovegsr",
+    "LibraryDescription": "API for the Grove GSR Galvanic Skin Response Sensor",
     "Name": "Galvanic Skin Response (GSR) Sensor",
     "Description": "Measures the electrical conductance of skin to measure strong emotional reactions. In other words, it measures sweat on your fingers as an indicator of strong emotional reactions.",
     "Aliases": [
@@ -6030,6 +6190,8 @@
   },
   {
     "id": "grovelinefinder",
+    "Library": "grovelinefinder",
+    "LibraryDescription": "Grove Line Finder Sensor Library",
     "Name": "Infrared (IR) Based Line Finder",
     "Description": "UPM module for the Line Finder sensor. It outputs a digital signal indicating whether it is detecting black on a white background, or white on a black background.",
     "Aliases": [
@@ -6099,6 +6261,8 @@
   },
   {
     "id": "grovemoisture",
+    "Library": "grovemoisture",
+    "LibraryDescription": "API for the Grove Moisture Sensor",
     "Name": "Grove Moisture Sensor",
     "Description": "UPM module for the Grove Moisture Sensor. This sensor can be used to detect the moisture content of soil or whether there is water around the sensor. As the moisture content increases, so does the value that is read. Note: this sensor is not designed to be left in soil nor to be used outdoors.",
     "Aliases": [
@@ -6166,6 +6330,8 @@
   },
   {
     "id": "groveo2",
+    "Library": "groveo2",
+    "LibraryDescription": "Grove O2 Oxygen Gas Sensor Library",
     "Name": "Grove Oxygen (O2) Concentration Sensor",
     "Description": "The Grove O2 Oxygen Gas sensor measures the oxygen concentration in the air.",
     "Aliases": [
@@ -6234,6 +6400,8 @@
   },
   {
     "id": "grovescam",
+    "Library": "grovescam",
+    "LibraryDescription": "Grove Serial Camera Library",
     "Name": "Serial Camera Module",
     "Description": "UPM module for the  ear-clip heart rate sensor. It is used to measure your heart rate.",
     "Aliases": [
@@ -6293,6 +6461,8 @@
   },
   {
     "id": "grovespeaker",
+    "Library": "grovespeaker",
+    "LibraryDescription": "API for the Grove Speaker",
     "Name": "Grove Speaker Module",
     "Description": "UPM module for the Grove Speaker. This sensor can generate different tones and sounds depending on the frequency of the input signal.",
     "Aliases": [
@@ -6361,6 +6531,8 @@
   },
   {
     "id": "groveultrasonic",
+    "Library": "groveultrasonic",
+    "LibraryDescription": "Grove Ultrasonic Sensor Library",
     "Name": "Ultrasonic Proximity Sensor",
     "Description": "This Grove Ultrasonic sensor is a non-contact distance measurement module which is compatible with the Grove system. It is designed for easy modular project usage with industrial performance. Detection ranges from 3 cm (1.2\") to 4 m (13'1.5\") and works best when the object is within a 30 degree angle relative to the sensor.",
     "Aliases": [
@@ -6421,6 +6593,8 @@
   },
   {
     "id": "grovevdiv",
+    "Library": "grovevdiv",
+    "LibraryDescription": "API for the Grove Voltage Divider Sensor",
     "Name": "Grove Voltage Divider Sensor",
     "Description": "UPM module for the Grove Voltage Divider sensor.",
     "Aliases": [
@@ -6479,6 +6653,8 @@
   },
   {
     "id": "grovewater",
+    "Library": "grovewater",
+    "LibraryDescription": "Grove Water Sensor Library",
     "Name": "Grove Water Sensor",
     "Description": "UPM module for the Grove Water sensor.",
     "Aliases": [
@@ -6545,6 +6721,8 @@
   },
   {
     "id": "grovewfs",
+    "Library": "grovewfs",
+    "LibraryDescription": "API for the Grove Water Flow Sensor",
     "Name": "Water Flow Sensor",
     "Description": "This sensor is used to measure water flow in liters per minute (LPM). It incorporates a Hall Effect sensor. The UPM module defines an interrupt routine to be triggered on each low pulse, keeping count. This device requires a 10K pull-up resistor for the signal line (yellow wire). There is a schematic diagram on the SeeedStudio site (3/2015): http://www.seeedstudio.com/wiki/index.php?title=G1/2_Water_Flow_sensor However, be careful when wiring this up - the schematic appears to have a bug in it: the lower left connection of the signal line (yellow) to Vcc (red) should not be there. The sensor can work with this connection, but probably not for very long.",
     "Aliases": [
@@ -6616,6 +6794,8 @@
   },
   {
     "id": "gsr",
+    "Library": "gsr",
+    "LibraryDescription": "API for the Grove GSR Galvanic Skin Response Sensor",
     "Name": "Galvanic Skin Response (GSR) Sensor",
     "Description": "Measures the electrical conductance of skin to measure strong emotional reactions. In other words, it measures sweat on your fingers as an indicator of strong emotional reactions.",
     "Aliases": [
@@ -6688,6 +6868,8 @@
   },
   {
     "id": "guvas12d",
+    "Library": "guvas12d",
+    "LibraryDescription": "API for the GUVA-S12D UV Sensor",
     "Name": "Grove Analog UV Sensor",
     "Description": "UPM module for the GUVA-S12D UV sensor",
     "Aliases": [
@@ -6763,6 +6945,8 @@
   },
   {
     "id": "h3lis331dl",
+    "Library": "h3lis331dl",
+    "LibraryDescription": "H3LIS331DL I2C Accelerometer (400g) Library",
     "Name": "I2C 3-axis Digital Accelerometer (400g)",
     "Description": "This is a high-performance, high-range accelerometer for extreme applications.",
     "Aliases": [
@@ -6828,6 +7012,8 @@
   },
   {
     "id": "h803x",
+    "Library": "h803x",
+    "LibraryDescription": "UPM API for the Veris H803X Energy Meter",
     "Name": "Veris H803X Energy Meter Module",
     "Description": "The H8036 is similar to the H8035, but provides much more data. The Enercept H8035/H8036 is an innovative three-phase networked (Modbus RTU) power transducer that combines electronics and high accuracy industrial grade CTs in a single package. The need for external electrical enclosures is eliminated, greatly reducing installation time and cost. Color-coordination between voltage leads and CTs makes phase matching easy. Additionally, these transducers automatically detect and compensate for phase reversal, eliminating the concern of CT load orientation. Up to 63 Transducers can be daisy-chained on a single RS-485 network. This module was developed using libmodbus 3.1.2, and the H8035. The H8036 has not been tested.  libmodbus 3.1.2 must be present for this module to build. It was developed using an RS232->RS485 interface.  You cannot use the built in MCU TTL UART pins for accessing this device -- you must use a full Serial RS232->RS485 or USB-RS485 interface connected via USB.",
     "Aliases": [
@@ -6890,6 +7076,8 @@
   },
   {
     "id": "hcsr04",
+    "Library": "hcsr04",
+    "LibraryDescription": "HC-SR04 Ultrasonic Sensor Library",
     "Name": "HC-SR04 Ultrasonic Distance Measuring Sensor",
     "Description": "This module defines the HC-SR04 interface for libhcsr04.",
     "Aliases": [
@@ -6955,6 +7143,8 @@
   },
   {
     "id": "hdc1000",
+    "Library": "hdc1000",
+    "LibraryDescription": "API for the HDC1000 Temperature & Humidity Sensor",
     "Name": "HDC1000 Temperature and Humidity Sensor",
     "Description": "The HDC1000 is a digital humidity sensor with integrated temperature sensor that provides excellent measurement accuracy at very low power. The device measures humidity based on a novel capacitive sensor. The humidity and temperature sensors are factory calibrated. The innovative WLCSP (Wafer Level Chip Scale Package) simplifies board design with the use of an ultra-compact package. The sensing element of the HDC1000 is placed on the bottom part of the device, which makes the HDC1000 more robust against dirt, dust, and other environmental contaminants. The HDC1000 is functional within the full -40 to +125 [degC] temperature range.",
     "Aliases": [
@@ -7016,6 +7206,8 @@
   },
   {
     "id": "hdxxvxta",
+    "Library": "hdxxvxta",
+    "LibraryDescription": "API for the Veris HDXXVXTA Humidity Transmitter",
     "Name": "Veris HDXXVXTA Humidity Transmitter",
     "Description": "The driver was developed using the HD2NVSTA1 humidity transmitter.  The 'T' variant supports a temperature transmitter as well.  Both signals are provided by the device as analog 0-5Vdc or 0-10Vdc outputs.  The A1 variant supports a temperature range of -40C-50C, while the A2 variant supports a range of 0C-50C.  Humidity ranges for all devices in this device family range from 0% to 100% (non-condensing). This driver used the 5Vdc outputs for obvious reasons.  Your MCU must be configured for 5V operation.  Using any other analog reference voltage will require the appropriate external circuitry (such as a voltage divider) in order to interface safely with your MCU. For devices which do not support temperature, use '-1' as the temperature pin number in the object constructor.  If temperature measurement is disabled, getTemperature() will always return 0C/32F.",
     "Aliases": [
@@ -7057,6 +7249,8 @@
   },
   {
     "id": "hka5",
+    "Library": "hka5",
+    "LibraryDescription": "API for the DFRobot Laser Particulate Matter (PM) Sensor",
     "Name": "DFRobot Laser Particulate Matter (PM) Sensor",
     "Description": "This driver was tested with a DFRobot Laser PM2.5 Sensor.  It connects to a UART at 9600 baud.  This is the only baud rate supported.  It optionally supports Reset and Set/Sleep gpios as well.",
     "Aliases": [
@@ -7117,6 +7311,8 @@
   },
   {
     "id": "HLG150H",
+    "Library": "hlg150h",
+    "LibraryDescription": "Light Controller Library",
     "Name": "Lighting Power Supply Controller",
     "Description": "HLG series single output LED power supply features universal AC input, protection for short circuit, overload, over voltage and over temperature",
     "Aliases": [
@@ -7188,6 +7384,8 @@
   },
   {
     "id": "hm11",
+    "Library": "hm11",
+    "LibraryDescription": "HM-11 Bluetooth 4.0 Low Energy Module Library",
     "Name": "Bluetooth Low Energy Module",
     "Description": "The driver was tested with the Grove BLE module.  It's an HM-11 BLE 4.0 module based on a TI CC2541 chip.  It operates using a standard 'AT' command set.  See the datasheet for a full list of available commands and their possible responses: http://www.seeedstudio.com/wiki/images/c/cd/Bluetooth4_en.pdf It is connected via a UART at 9,600 baud.",
     "Aliases": [
@@ -7253,6 +7451,8 @@
   },
   {
     "id": "hmc5883l",
+    "Library": "hmc5883l",
+    "LibraryDescription": "HMC5883L Magnetometer Library",
     "Name": "Grove 3-Axis Digital Compass",
     "Description": "Honeywell [HMC5883L] (http://www.adafruit.com/datasheets/HMC5883L_3-Axis_Digital_Compass_IC.pdf) is a 3-axis digital compass. Communication with HMC5883L is simple and all done through an I2C interface. Different breakout boards are available. Typically, a 3V supply is all that is needed to power the sensor.",
     "Aliases": [
@@ -7322,6 +7522,8 @@
   },
   {
     "id": "hmtrp",
+    "Library": "hmtrp",
+    "LibraryDescription": "API for the HM-TRP Serial RF Pro Transceiver",
     "Name": "Serial RF Pro Module",
     "Description": "UPM support for the HM-TRP Serial RF Pro transceiver. This was tested specifically with the Grove Serial RF Pro transceiver. In theory, this class should work with the following devices: HM-TRP-433: 414000000-454000000Hz HM-TRP-470: 450000000-490000000Hz HM-TRP-868: 849000000-889000000Hz HM-TRP-915: 895000000-935000000Hz  The only difference is the transmit and receive frequencies supported. By default, the device simply sends and receives any data presented on its UART interface. It can be put into a configuration mode by grounding the CONFIG pin on the transceiver.",
     "Aliases": [
@@ -7391,6 +7593,8 @@
   },
   {
     "id": "hp20x",
+    "Library": "hp20x",
+    "LibraryDescription": "API for the HP20X-based Grove Barometer (High-Accuracy)",
     "Name": "HP20X Barometer (High-Accuracy)",
     "Description": "This is a high-accuracy barometer providing pressure, altitude, and temperature data. It can be calibrated for a given altitude offset, and a wide range of interrupt generating capabilities are supported. As usual, see the HP20X datasheet for more details. This module was developed using a Grove Barometer (High-Accuracy) based on an HP206C chip.",
     "Aliases": [
@@ -7455,6 +7659,8 @@
   },
   {
     "id": "ht9170",
+    "Library": "ht9170",
+    "LibraryDescription": "API for the HT9170 DTMF Decoder",
     "Name": "Dual Tone Multi Frequency (DTMF) Decoder",
     "Description": "This driver was developed using the DTMF (Dual-Tone Multi-Frequency) Shield by Seeed Studio*. It can decode DTMF signals presented at its audio input. It does not generate DTMF signals.",
     "Aliases": [
@@ -7512,6 +7718,8 @@
   },
   {
     "id": "htu21d",
+    "Library": "htu21d",
+    "LibraryDescription": "API for the HTU21D Temperature & Humidity Sensor",
     "Name": "Digital Relative Humidity Sensor with Temperature",
     "Description": "HTU21D by Measurement Specialties is a digital humidity sensor with temperature output. RH reports between 0 and 100%, and the temperature range is -40 to +125 degC. Note: getCompRH is the preferred function below (passing true to cause a measurement cycle). If actual values used for the compensated ready are necessary, use the getHumidity(false) and getTemperature(false) functions following the getCompRH call. Also note the sensor should not perform more than a couple of measurements per second to limit the heating of the sensor.",
     "Aliases": [
@@ -7557,6 +7765,8 @@
   },
   {
     "id": "hwxpxx",
+    "Library": "hwxpxx",
+    "LibraryDescription": "UPM API for the Veris HWXPXX Hardware Protocol Humidity and Temperature Sensor",
     "Name": "Veris HWXPXX Hardware Protocol Humidity and Temperature Sensor",
     "Description": "This module implements support for the Veris HWXPHTX Hardware Protocol Humidity and Temperature Sensor family.  It uses MODBUS over an RS485 interface.  You must have libmodbus v3.1.2 (or greater) installed to compile and use this driver. This module was developed using libmodbus 3.1.2, and the HWXPHTX. This sensor supports humidity, and optionally, temperature, slider switch, and override switch reporting.  The HWXPHTX used to develop this driver did not include the optional slider or override switches, however support for them is provided. It was developed using an RS232->RS485 inteface.  You cannot use the built in MCU TTL UART pins for accessing this device -- you must use a full serial RS232->RS485 interface connected via USB.",
     "Aliases": [
@@ -7626,6 +7836,8 @@
   },
   {
     "id": "hx711",
+    "Library": "hx711",
+    "LibraryDescription": "API for the HX711 Analog-to-Digital Converter",
     "Name": "24-bit Analog-to-digital Converter",
     "Description": "HX711 is a precision 24-bit analog-to-digital converter (ADC) designed for weight scales and industrial control applications to interface directly with a bridge sensor. This module was tested on the Intel(R) Galileo Gen 2 board.",
     "Aliases": [
@@ -7676,6 +7888,8 @@
   },
   {
     "id": "ili9341",
+    "Library": "ili9341",
+    "LibraryDescription": "API for the ILI9342 LCD",
     "Name": "SPI Based LCD",
     "Description": "This module defines the interface for the ILI9341 display library.",
     "Aliases": [
@@ -7730,6 +7944,8 @@
   },
   {
     "id": "ims",
+    "Library": "ims",
+    "LibraryDescription": "API for the Catnip Electronics I2C Moisture Sensor",
     "Name": "I2C Moisture Sensor",
     "Description": "I2C Sensor which can be used to read moisture, light, and temperature which must run at 100kHz.",
     "Aliases": [
@@ -7793,6 +8009,8 @@
   },
   {
     "id": "ina132",
+    "Library": "ina132",
+    "LibraryDescription": "API for the INA132 Differential Amplifier Sensor",
     "Name": "Grove Differential Amplifier",
     "Description": "The INA132 Differential Amplifier Sensor is designed for precise differential-input amplification. This sensor was tested amplifying the signal from a Weight Sensor (Load Cell) 0-500g",
     "Aliases": [
@@ -7845,6 +8063,8 @@
   },
   {
     "id": "isd1820",
+    "Library": "isd1820",
+    "LibraryDescription": "API support for the ISD1820-based Grove Voice Recorder",
     "Name": "Grove Voice Recording and Playback Module",
     "Description": "This class implements support for the Grove Voice Recorder. There are two digital pins: one that enables recording, and the other that plays back what was previously recorded.",
     "Aliases": [
@@ -7891,6 +8111,8 @@
   },
   {
     "id": "itg3200",
+    "Library": "itg3200",
+    "LibraryDescription": "API for the ITG-3200 3-Axis Digital Gyroscope",
     "Name": "Grove 3-Axis Digital Gyroscope",
     "Description": "InvenSense* ITG-3200 is a 3-axis digital gyroscope. (https://www.sparkfun.com/datasheets/Sensors/Gyro/PS-ITG-3200-00-01.4.pdf) This sensor has been tested and can run at either 3.3V or 5V on Intel(R) Galileo.<br> <strong>However</strong>, it is incompatible with and not detected on the I2C bus by Intel(R) Edison using the Arduino* breakout board.",
     "Aliases": [
@@ -7953,6 +8175,8 @@
   },
   {
     "id": "jhd1313m1",
+    "Library": "jhd1313m1",
+    "LibraryDescription": "API for the JHD1313M1 I2C LCD Controller",
     "Name": "LCD Display Driver for the JHD1313M1 Controller for HD44780-based Displays",
     "Description": "JHD1313M1 has two I2C addreses: one belongs to a controller, very similar to the upm::Lcm1602 LCD driver, that controls the HD44780-based display, and the other controls only the backlight. This module was tested with the Seeed Grove LCD RGB Backlight v2.0 display that requires 5V to operate.",
     "Aliases": [
@@ -8014,6 +8238,8 @@
   },
   {
     "id": "joystick12",
+    "Library": "joystick12",
+    "LibraryDescription": "API for the ElecFreaks* Joystick v 1.2-1.4 Breakout",
     "Name": "2-axis Analog Joystick",
     "Description": "This module defines the Joystick API, and implementation for the X and Y buttons could be treated as normal GPIO - this enables easier interrupt support. This driver should be compatible with any 2-axis analog joystick.",
     "Aliases": [
@@ -8067,6 +8293,8 @@
   },
   {
     "id": "kxcjk1013",
+    "Library": "kxcjk1013",
+    "LibraryDescription": "KXCJK1013 Tri-axis Digital Accelerometer API",
     "Name": "Tri-axis Digital Accelerometer",
     "Description": "he KXCJK is a tri-axis +/-2g, +/-4g or +/-8g silicon micromachined accelerometer.",
     "Aliases": [
@@ -8124,6 +8352,8 @@
   },
   {
     "id": "l298",
+    "Library": "l298",
+    "LibraryDescription": "API for the L298 Dual H-Bridge Motor Driver",
     "Name": "Dual H-bridge Motor Driver",
     "Description": "It was developed using the RobotBase Dual H-Bridge module. This module can support 2 DC motors, or one 2-phase stepper motor. It requires 3 pins per DC motor (or H-bridge), or 4 pins for the stepper motor (uses both H-bridges).",
     "Aliases": [
@@ -8183,6 +8413,8 @@
   },
   {
     "id": "l3gd20",
+    "Library": "l3gd20",
+    "LibraryDescription": "L3GD20 Tri-axis Digital Gyroscope API",
     "Name": "L3GD20 Tri-axis Digital Gyroscope",
     "Description": "The L3GD20 The L3GD20 is a low-power three-axis angular rate sensor. This driver supports IIO and I2C modes. Some methods will only work in one mode or the other. See the documentation on the methods to determine whether a given method is operation in a given mode. Both the I2C and IIO mechanisms make use of the calibration and denoise algorithms. For I2C mode, not all capabilities of the device are supported, but a complete register map and low level read/write methods are provided to add any missing functionality.",
     "Aliases": [
@@ -8241,6 +8473,8 @@
   },
   {
     "id": "lcdks",
+    "Library": "lcdks",
+    "LibraryDescription": "API for the generic LCD Keypad Shield",
     "Name": "LCD Keypad Shield",
     "Description": "The LCD Keypad Shield uses 7 digital outputs and 1 analog input (for the keypad). The outputs are used to drive an attached LCM1602 LCD controller. This driver should be compatible with the similar LCD keypad shields from Sainsmart, DFRobot and Sparkfun.",
     "Aliases": [
@@ -8298,6 +8532,8 @@
   },
   {
     "id": "lcm1602",
+    "Library": "lcm1602",
+    "LibraryDescription": "API for the LCM1602 I2C controller for HD44780-based displays",
     "Name": "LCD Display Driver for the LCM1602 Controller for HD44780-based Displays",
     "Description": "UPM module for the  ear-clip heart rate sensor. It is used to measure your heart rate.",
     "Aliases": [
@@ -8357,6 +8593,8 @@
   },
   {
     "id": "ldt0028",
+    "Library": "ldt0028",
+    "LibraryDescription": "API for LDT0-028 PZT Film-Based Sensors",
     "Name": "Piezo Vibration Sensor",
     "Description": "This module defines the LDT0-028 interface for libupm-ldt0028",
     "Aliases": [
@@ -8414,6 +8652,8 @@
   },
   {
     "id": "Led",
+    "Library": "led",
+    "LibraryDescription": "LED library",
     "Name": "Light-emitting Diode (LED)",
     "Description": "UPM module for the LED (or other similar light-emitting diodes). An LED is a p-n junction semiconductor which emits light in response to voltage. The longer wire of an LED connects to the positive seat (anode); the shorter wire connects to the negative seat (cathode). The flat side of the bulb corresponds to the cathode, while the rounded side corresponds to the anode.",
     "Aliases": [
@@ -8468,6 +8708,8 @@
   },
   {
     "id": "lidarlitev3",
+    "Library": "lidarlitev3",
+    "LibraryDescription": "API for the LIDARLITEV3 Optical Distance Measurement Sensor",
     "Name": "Optical Distance Measurement Sensor",
     "Description": "It is a compact, high-performance optical distance measurement sensor from Garmin.",
     "Aliases": [
@@ -8521,6 +8763,8 @@
   },
   {
     "id": "light",
+    "Library": "light",
+    "LibraryDescription": "API for the Light Sensor",
     "Name": "Analog Light Sensor",
     "Description": "The light sensor detects the intensity of the ambient light. As the light intensity of the environment increases, the resistance of the sensor decreases. This means the raw value from the analog pin is larger in bright light and smaller in the dark. A very approximate lux value can also be returned.",
     "Aliases": [
@@ -8591,6 +8835,8 @@
   },
   {
     "id": "linefinder",
+    "Library": "linefinder",
+    "LibraryDescription": "Grove Line Finder Sensor Library",
     "Name": "Infrared (IR) Based Line Finder",
     "Description": "UPM module for the Line Finder sensor. It outputs a digital signal indicating whether it is detecting black on a white background, or white on a black background.",
     "Aliases": [
@@ -8662,6 +8908,8 @@
   },
   {
     "id": "lis2ds12",
+    "Library": "lis2ds12",
+    "LibraryDescription": "API for the LIS2DS12 3-axis Accelerometer",
     "Name": "Digital 3-axis Accelerometer",
     "Description": "The LIS2DS12 is an ultra-low-power high performance three-axis linear accelerometer belonging to the \"pico\" family which leverages on the robust and mature manufacturing processes already used for the production of micromachined accelerometers. The LIS2DS12 has user-selectable full scales of 2g/4g/8g/16g and is capable of measuring accelerations with output data rates from 1 Hz to 6400 Hz. Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports both I2C (default) and SPI operation.",
     "Aliases": [
@@ -8729,6 +8977,8 @@
   },
   {
     "id": "lm35",
+    "Library": "lm35",
+    "LibraryDescription": "API for the DFRobot LM35 Linear Temperature Sensor",
     "Name": "Analog Temperature Sensor",
     "Description": "This sensor returns an analog voltage proportional to the temperature of the ambient environment. This driver was developed using the DFRobot LM35 Linear Temperature Sensor",
     "Aliases": [
@@ -8790,6 +9040,8 @@
   },
   {
     "id": "lol",
+    "Library": "lol",
+    "LibraryDescription": "API for the Olimex LoL Array",
     "Name": "Lots of LEDs (LoL) Array Rev A",
     "Description": "This module defines the LoL API and implementation for a simple framebuffer.",
     "Aliases": [
@@ -8830,6 +9082,8 @@
   },
   {
     "id": "loudness",
+    "Library": "loudness",
+    "LibraryDescription": "API for the Loudness Sensor",
     "Name": "Loudness Sensor",
     "Description": "This sensor family returns an analog voltage proportional to the loudness of the ambient environment.  It's output does not correspond to a particular sound level in decibels.  The higher the output voltage, the louder the ambient noise level. This device uses an electret microphone for sound input. This driver was developed using the DFRobot Loudness Sensor V2 and the Grove Loudness sensor.",
     "Aliases": [
@@ -8893,6 +9147,8 @@
   },
   {
     "id": "LP8860",
+    "Library": "lp8860",
+    "LibraryDescription": "LED Light Controller Library",
     "Name": "API for LP8860 LED Lighting Controller",
     "Description": "The LP8860-Q1 is an automotive high-efficiency LED driver with boost controller. It has 4 high-precision current sinks that can be controlled by a PWM input signal, an SPI or I2C master, or both ",
     "Aliases": [
@@ -8960,6 +9216,8 @@
   },
   {
     "id": "lpd8806",
+    "Library": "lpd8806",
+    "LibraryDescription": "API for the LPD8806 RGB LED Strip Controller",
     "Name": "Digital RGB LED Strip Controller",
     "Description": "FastPixel* LPD8806 is an RGB LED strip controller.",
     "Aliases": [
@@ -9008,6 +9266,8 @@
   },
   {
     "id": "lsm303agr",
+    "Library": "lsm303agr",
+    "LibraryDescription": "API for the LSM303AGR 3-Axis Geomagnetic Sensor",
     "Name": "Ultra-Compact High-Performance eCompass Module",
     "Description": "The LSM303AGR is an ultra-low-power high-performance system-in-package featuring a 3D digital linear acceleration sensor and a 3D digital magnetic sensor.  The LSM303AGR has linear acceleration full scales of 2g/4g/8g/16g and a magnetic field dynamic range of 50 Gauss. Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports only I2C operation.",
     "Aliases": [
@@ -9068,6 +9328,8 @@
   },
   {
     "id": "lsm303d",
+    "Library": "lsm303d",
+    "LibraryDescription": "API for the LSM303D 3-Axis Geomagnetic Sensor",
     "Name": "Ultra-compact high-performance eCompass module",
     "Description": "The LSM303D is an ultra-low-power high-performance system-in-package featuring a 3D digital linear acceleration sensor and a 3D digital magnetic sensor.  The LSM303D has linear acceleration full scales of 2g/4g/8g/16g and a magnetic field dynamic range of 50 Gauss. Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports only I2C operation.",
     "Aliases": [
@@ -9132,6 +9394,8 @@
   },
   {
     "id": "lsm303dlh",
+    "Library": "lsm303dlh",
+    "LibraryDescription": "API for the LSM303DLH Accelerometer & Compass",
     "Name": "Triaxial Accelerometer/magnetometer",
     "Description": "This module defines the LSM303DLH 3-axis magnetometer/3-axis accelerometer. This module was tested with the Seeed Studio* Grove 6-Axis Accelerometer & Compass module used over I2C. The magnetometer and acceleromter are accessed at two seperate I2C addresses.",
     "Aliases": [
@@ -9187,6 +9451,8 @@
   },
   {
     "id": "lsm6ds3h",
+    "Library": "lsm6ds3h",
+    "LibraryDescription": "API for the LSM6DS3H 3-axis Accelerometer and Gyroscope",
     "Name": "Digital 3-axis Accelerometer and Gyroscope",
     "Description": "The LSM6DS3H is a system-in-package featuring a 3D digital accelerometer and a 3D digital gyroscope performing at 1.1 mA (up to 1.6 kHz ODR) in high performance mode and enabling always-on low-power features for an optimal motion experience for the consumer. Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports both I2C (default) and SPI operation.",
     "Aliases": [
@@ -9255,6 +9521,8 @@
   },
   {
     "id": "lsm6dsl",
+    "Library": "lsm6dsl",
+    "LibraryDescription": "API for the LSM6DSL 3-axis Accelerometer and Gyroscope",
     "Name": "Digital 3-axis Accelerometer and Gyroscope",
     "Description": "The LSM6DSL is a system-in-package featuring a 3D digital accelerometer and a 3D digital gyroscope performing at 0.65 mA in high performance mode and enabling always-on low-power features for an optimal motion experience for the consumer. Not all functionality of this chip has been implemented in this driver, however all the pieces are present to add any desired functionality.  This driver supports both I2C (default) and SPI operation.",
     "Aliases": [
@@ -9323,6 +9591,8 @@
   },
   {
     "id": "lsm9ds0",
+    "Library": "lsm9ds0",
+    "LibraryDescription": "API for the LSM9DS0 Gyroscope/Accelerometer/Magnetometer",
     "Name": "Triaxial Gyroscope/Accelerometer/Magnetometer Sensor",
     "Description": "The LSM9DS0 is a system-in-package featuring a 3D digital linear acceleration sensor, a 3D digital angular rate sensor, and a 3D digital magnetic sensor. The LSM9DS0 has a linear acceleration full scale of 2g/4g/6g/8g/16g, a magnetic field full scale of 2/4/8/12 gauss and an angular rate of 245/500/2000 dps. While not all of the functionality of this device is supported initially, methods and register definitions are provided that should allow an end user to implement whatever features are required. This driver was developed on a Sparkfun 9DOF edison block.",
     "Aliases": [
@@ -9390,6 +9660,8 @@
   },
   {
     "id": "m24lr64e",
+    "Library": "m24lr64e",
+    "LibraryDescription": "API for the M24LR64E NFC Tag",
     "Name": "Dynamic NFC/RFID Tag Module",
     "Description": "The M24LR64E NFC tag is an 8KB electrically erasable programmable read-only memory (EEPROM) that can be written to or read from using I2C and NFC-equipped devices. The user mode (default) allows read and write access to all 8KB of space, provided the sector security status (SSS) allows it. The root mode allows modification of the SSS data and other information, provided the proper password is submitted.  The default password for a new tag is 0x00000000. See the datasheet for more details. The Seeed Studio* wiki page for this device includes a link to an Android* application that can be used to also read and write the device via NFC, as well as set NFC passwords, which cannot be done via I2C.",
     "Aliases": [
@@ -9454,6 +9726,8 @@
   },
   {
     "id": "mag3110",
+    "Library": "mag3110",
+    "LibraryDescription": "API for the MAG3110 Three-Axis Digital Magnetometer",
     "Name": "MAG3110 Three-Axis Digital Magnetometer",
     "Description": "The MAG3110 is a small, low-power digital 3D magnetic sensor with a wide dynamic range to allow operation in PCBs with high extraneous magnetic fields. It measures the components of the local magnetic field, the sum of the geomagnetic field and the magnetic field created by components on the circuit board. It can be used in conjunction with a 3-axis accelerometer so that orientation-independent accurate compass heading information may be achieved It is capable of measuring local magnetic fields up to 10 Gauss with output data rates up to 80 Hz.",
     "Aliases": [
@@ -9513,6 +9787,8 @@
   },
   {
     "id": "max30100",
+    "Library": "max30100",
+    "LibraryDescription": "API for the Pulse Oximeter and Heart-Rate Sensor",
     "Name": "Pulse Oximeter and Heart-rate Sensor",
     "Description": "The MAX30100 is an integrated pulse oximetry and heartrate monitor sensor solution. It combines two LEDs, a photodetector, optimized optics, and low-noise analog signal processing to detect pulse oximetry and heart-rate signals.",
     "Aliases": [
@@ -9576,6 +9852,8 @@
   },
   {
     "id": "max31723",
+    "Library": "max31723",
+    "LibraryDescription": "API for the MAX31723 Temperature Sensor",
     "Name": "SPI/3-wire Digital Thermometer",
     "Description": "Maxim Integrated* [MAX31723](http://datasheets.maximintegrated.com/en/ds/MAX31722-MAX31723.pdf) is a low-voltage 3-wire/SPI temperature sensor controller. This module was tested on the Maxim Integrated [MAX31732PMB1 PMOD module](http://datasheets.maximintegrated.com/en/ds/MAX31723PMB1.pdf) from the analog PMOD kit.",
     "Aliases": [
@@ -9633,6 +9911,8 @@
   },
   {
     "id": "max31855",
+    "Library": "max31855",
+    "LibraryDescription": "API for the MAX31855 Thermocouple Amplifier",
     "Name": "Thermocouple-to-Digital Converter",
     "Description": "Maxim Integrated* [MAX31855](http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf) is a cold-junction compensated thermocouple-to-digital converter. This module was tested on the Maxim Integrated  [MAX31855PMB1 PMOD module] (http://datasheets.maximintegrated.com/en/ds/MAX31855PMB1.pdf) from the analog PMOD kit.",
     "Aliases": [
@@ -9688,6 +9968,8 @@
   },
   {
     "id": "max44000",
+    "Library": "max44000",
+    "LibraryDescription": "API for the MAX44000 Ambient and Infrared Proximity Sensor",
     "Name": "Ambient and Infrared Proximity Sensor",
     "Description": "Maxim Integrated* [MAX44000](http://datasheets.maximintegrated.com/en/ds/MAX44000.pdf) is an ambient and infrared proximity sensor. This module was tested on the Maxim Integrated  [MAX44000PMB1 PMOD module] (http://datasheets.maximintegrated.com/en/ds/MAX44000PMB1.pdf) from the analog PMOD kit.",
     "Aliases": [
@@ -9747,6 +10029,8 @@
   },
   {
     "id": "MAX44009",
+    "Library": "max44009",
+    "LibraryDescription": "Ambient Light Sensor Library",
     "Name": "Digital Humidity, Pressure, and Temperature Sensor",
     "Description": "The MAX44009 ambient light sensor features an i2c digital output that is ideal for a number of portable applications such as smartphones, notebooks and industrial sensors",
     "Aliases": [
@@ -9806,6 +10090,8 @@
   },
   {
     "id": "MAX5487",
+    "Library": "max5487",
+    "LibraryDescription": "MAX5487 Digital Potentiometer library",
     "Name": "MAX5487 Digital Potentiometer",
     "Description": "This is the UPM Module for the Maxim dual, linear-taper, digital potentiometer. It offers 256 Tap positions, as well as a 10 kiloohm end to end resistance. It interfaces using 3 wire spi, and feature nonvolatile memory.",
     "Aliases": [
@@ -9878,6 +10164,8 @@
   },
   {
     "id": "MAXDS3231M",
+    "Library": "maxds3231m",
+    "LibraryDescription": "maxds3231m Realtime Clock (RTC) Sensor Library",
     "Name": "maxds3231m Realtime Clock (RTC) Sensor",
     "Description": "This is the UPM Module for the Maxim Realtime Clock module. It offers i2c connectivity, with a temperature compensated crystal and crystal oscillator. It offers 12 and 24 hour clock formats, as built in battery backup support.",
     "Aliases": [
@@ -9956,6 +10244,8 @@
   },
   {
     "id": "EZ0",
+    "Library": "maxsonarez",
+    "LibraryDescription": "API for the MaxBotix LV-MaxSonar-EZ Family of Ultrasonic Rangers",
     "Name": "LV-MaxSonar-EZ0 Ultrasonic range finder",
     "Description": "This is the UPM Module for the MaxBotix Ultrasonic Range Finder series. The EZ0 offers the widest beam of the EZ collection.",
     "Aliases": [
@@ -10037,6 +10327,8 @@
   },
   {
     "id": "EZ1",
+    "Library": "maxsonarez",
+    "LibraryDescription": "API for the MaxBotix LV-MaxSonar-EZ Family of Ultrasonic Rangers",
     "Name": "LV-MaxSonar-EZ1 Ultrasonic range finder",
     "Description": "This is the UPM Module for the MaxBotix Ultrasonic Range Finder series. The EZ1 offers the second widest beam of the EZ collection, as well as high sensativity and side object rejectoin.",
     "Aliases": [
@@ -10118,6 +10410,8 @@
   },
   {
     "id": "EZ2",
+    "Library": "maxsonarez",
+    "LibraryDescription": "API for the MaxBotix LV-MaxSonar-EZ Family of Ultrasonic Rangers",
     "Name": "LV-MaxSonar-EZ2 Ultrasonic range finder",
     "Description": "This is the UPM Module for the MaxBotix Ultrasonic Range Finder series. The EZ2 offers a good balance of high sensativity and side object rejection.",
     "Aliases": [
@@ -10199,6 +10493,8 @@
   },
   {
     "id": "EZ3",
+    "Library": "maxsonarez",
+    "LibraryDescription": "API for the MaxBotix LV-MaxSonar-EZ Family of Ultrasonic Rangers",
     "Name": "LV-MaxSonar-EZ3 Ultrasonic range finder",
     "Description": "This is the UPM Module for the MaxBotix Ultrasonic Range Finder series. The EZ3 offers a very narrow beam, with good side object rejection.",
     "Aliases": [
@@ -10280,6 +10576,8 @@
   },
   {
     "id": "EZ4",
+    "Library": "maxsonarez",
+    "LibraryDescription": "API for the MaxBotix LV-MaxSonar-EZ Family of Ultrasonic Rangers",
     "Name": "LV-MaxSonar-EZ4 Ultrasonic range finder",
     "Description": "This is the UPM Module for the MaxBotix Ultrasonic Range Finder series. The EZ4 is the narrowest beam sensor, with the best side object rejection, which provides good detection for large objects.",
     "Aliases": [
@@ -10361,6 +10659,8 @@
   },
   {
     "id": "MB704X",
+    "Library": "mb704x",
+    "LibraryDescription": "API for the MaxBotix MB704x MaxSonar-WR Ultrasonic Ranger",
     "Name": "MB704x MaxSonar-WR Ultrasonic Ranger",
     "Description": "This is the UPM Module for the API for the MB704x MaxSonar-WR Ultrasonic Ranger. It was tested with a long distance weather resistant horn, others are offered however giving this sensor a large range of uses.",
     "Aliases": [
@@ -10446,6 +10746,8 @@
   },
   {
     "id": "MCP2515",
+    "Library": "mcp2515",
+    "LibraryDescription": "API for the Microchip MCP2515 CAN bus controller",
     "Name": "Microchip MCP2515 CAN bus controller",
     "Description": "This is the UPM Module for the Microchip MCP2515 CAN bus controller. This Arduino/Genuino compatable shield offers the ability to communicate over CAN-BUS. This offers a good medium speed, long distance and high reliablity communication solution for Arduino/Genuino projects.",
     "Aliases": [
@@ -10531,6 +10833,8 @@
   },
   {
     "id": "MCP9808",
+    "Library": "mcp9808",
+    "LibraryDescription": "MCP9808 precision temperature sensor library",
     "Name": "Microchip MCP9808 precision temperature sensor",
     "Description": "This is the UPM Module for the Microchip MCP9808 precision temperature sensor. The MCP9808 digital temperature sensor converts temperatures between -20 deg C and +100 deg C to a digital word with +/- 0.5 deg C (max.) accuracy. The MCP9808 comes with user-programmable registers that provide flexibility for temperature sensing applications. The registers allow user-selectable settings such as Shutdown or low-power modes and the specification of temperature Event and Critical output boundaries. When the temperature changes beyond the specified boundary limits, the MCP9808 outputs an Event signal. The user has the option of setting the event output signal polarity as an active-low or active-high comparator output for thermostat operation, or as temperature event interrupt outputfor microprocessor-based systems. The event output can also be configured as a Critical temperature output.",
     "Aliases": [
@@ -10614,6 +10918,8 @@
   },
   {
     "id": "MD",
+    "Library": "md",
+    "LibraryDescription": "I2C Motor Driver library",
     "Name": "Grove I2C Motor Driver",
     "Description": "This class implements support for the I2C Motor Driver. This device can support a single 4-wire stepper motor, or two 2-wire DC motors. The device contains an Atmel* ATmega8L microcontroller that manages an L298N H-bridge driver chip. This device supports an I2C bus speed of 100Khz only. The module does not provide any telemetry or status - it only accepts I2C commands for its various operations. This module was tested with version 1.3 of the I2C Motor Driver. For stepper operation, this driver can run in one of two modes - Mode 1, where this driver handles the stepping operation, and Mode 2, where this driver simply sends commands to the Motor Driver, and it handles the stepping operation. Mode2 requires updated (and working) firmware to be loaded onto the device. The default stepper operation mode is Mode1, which is generally more flexible and is supported on all firmware revisions.",
     "Aliases": [
@@ -10697,6 +11003,8 @@
   },
   {
     "id": "MG811",
+    "Library": "mg811",
+    "LibraryDescription": "API for the DFRobot CO2 Sensor",
     "Name": "DFRobot CO2 Sensor",
     "Description": "This sensor returns an an analog voltage that falls as the concentration of CO2 increases.  It contains a heater that must be allowed to 'warm' up the sensor before measurements are stable (hours to days is the recommendation).  It requires that the MCU be powered from an external power supply (not USB) at 5v, since the heater will consume significant current. The sensor should be allowed to 'heat' up for some time before beginning use, typically a couple of hours minimum.  It also needs fairly precise calibration at 400ppm and 1000ppm to return meaningful results. The sensor also incorporates a potentiometer that can be adjusted to specific threshold.  Once that threshold is reached, an LED on the sensor will light, and the digital pin will be driven high.",
     "Aliases": [
@@ -10773,6 +11081,8 @@
   },
   {
     "id": "MHZ16",
+    "Library": "mhz16",
+    "LibraryDescription": "MHZ16 Serial CO2 Sensor library",
     "Name": "MHZ16 Serial CO2 Sensor library",
     "Description": "This is the UPM Module for the Seeed/Zhengzhou Winsen Electronics Technology MHZ16 Serial CO2 Sensor. This class implements support for the Grove CO2 sensor. Its CO2 detection range is 0-2,000 ppm. It requires a 2-3 minute warm-up time before reporting valid data.",
     "Aliases": [
@@ -10871,6 +11181,8 @@
   },
   {
     "id": "Microphone",
+    "Library": "mic",
+    "LibraryDescription": "Generic analog microphone library",
     "Name": "Analog Microphone",
     "Description": "This module defines the Analog Microphone sensor.",
     "Aliases": [
@@ -10922,6 +11234,8 @@
   },
   {
     "id": "micsv89",
+    "Library": "micsv89",
+    "LibraryDescription": "MICS-VZ89 environmental sensor library",
     "Name": "API for the MICS-VZ89 Gas Sensor",
     "Description": "This is the UPM Module for the SGX Sensortech MICS-VZ-89. The MiCS-VZ-86/89 combines state-of-the-art MOS sensor technology with intelligent detection algorithms to monitor VOCs and CO2 equivalent variations in confined spaces. This library only supports the i2c variants of this sensor.",
     "Aliases": [
@@ -10978,6 +11292,8 @@
   },
   {
     "id": "mlx90614",
+    "Library": "mlx90614",
+    "LibraryDescription": "MLX90614 Temperature Sensor library",
     "Name": "API for the Melexis MLX90614 Temperature Sensor",
     "Description": "This is the UPM Module for the Melexis mlx90614 temperature sensor. The MLX90614 is an infrared thermometer for non-contact temperature measurements. Both the IR sensitive thermopile detector chip and the signal conditioning ASIC are integrated in the same TO-39 can. Integrated into the MLX90614 are a low noise amplifier, 17-bit ADC and powerful DSP unit thus achieving high accuracy and resolution of the thermometer.",
     "Aliases": [
@@ -11064,6 +11380,8 @@
   },
   {
     "id": "mma7361",
+    "Library": "mma7361",
+    "LibraryDescription": "UPM API for the DFRobot MMA7361 Analog Accelerometer",
     "Name": "API for the DFRobot MMA7361 Analog Accelerometer",
     "Description": "This is the UPM Module for the DFRobot mma7361 analog accelerometer. This triaxial accelerometer has variable sensitivity, and offers an easy to read analog interface. This library was tested with the DFRobot MMA7361 Analog Accelerometer.",
     "Aliases": [
@@ -11156,6 +11474,8 @@
   },
   {
     "id": "mma7455",
+    "Library": "mma7455",
+    "LibraryDescription": "NXP MMA7455 Accelerometer library",
     "Name": "API for the NXP MMA7455 Accelerometer",
     "Description": "This is the UPM Module for the NXP MMA7455 Accelerometer. The MMA7455L 3-Axis Digital Output Accelerometer is a low power, micro machined sensor capable of measuring acceleration along its X, Y, and Z axes. It offers several convenient integrated features including an analog to digital converter (ADC), digital low-pass filter, and selectable sensitivity ranges of ±2g, ±4g, or ±8g. This device can be easily configured to detect quick motion pulses as single taps, double taps, and 0g (free fall) conditions on any or all axes and provides configurable interrupt pins (INT1 and INT2) for each type of event.",
     "Aliases": [
@@ -11241,6 +11561,8 @@
   },
   {
     "id": "mma7660",
+    "Library": "mma7660",
+    "LibraryDescription": "MMA7660 I2C 3-Axis Digital Accelerometer library",
     "Name": " API for the Seeed/NXP MMA7660 I2C 3-Axis Digital Accelerometer",
     "Description": "This is the UPM Module for the Seeed/NXP MMA7660 i2c 3-axis digital accelerometer. This device supports a variety of capabilities, including the generation of interrupts for various conditions, tilt and basic gesture detection, and X/Y/Z-axis measurements of g-forces being applied",
     "Aliases": [
@@ -11324,6 +11646,8 @@
   },
   {
     "id": "mma8451",
+    "Library": "mma8x5x",
+    "LibraryDescription": "MMA8X5X Family Three-Axis Accelerometer Library",
     "Name": "API for the Adafruit/Freescale MMA8451 Three-Axis Accelerometer",
     "Description": "This is the UPM Module for the Adafruit/Freescale mma8451 three-axis accelerometer. This simple accelerometer and breakout board are a great starting point for working with accelerometers in general. This is the most percise of the mma8x5x series, offering a 14-bit analog to digital converter onboard. The Adafruit breakout board makes it easy to mount to breadboard or perfboard.",
     "Aliases": [
@@ -11408,6 +11732,8 @@
   },
   {
     "id": "mma8452q",
+    "Library": "mma8x5x",
+    "LibraryDescription": "MMA8X5X Family Three-Axis Accelerometer Library",
     "Name": "API for the Sparkfun/Freescale MMA8451Q Three-Axis Accelerometer",
     "Description": "This is the UPM Module for the Sparkfun/Freescale mma8452 three-axis accelerometer. This breakout board makes it easy to use the tiny MMA8452Q accelerometer in your project. The MMA8452Q is a smart low-power, three-axis, capacitive MEMS accelerometer with 12 bits of resolution. The MMA8452Q has user-selectable full scales of ±2g/±4g/±8g.",
     "Aliases": [
@@ -11492,6 +11818,8 @@
   },
   {
     "id": "mma8453q",
+    "Library": "mma8x5x",
+    "LibraryDescription": "MMA8X5X Family Three-Axis Accelerometer Library",
     "Name": "API for the NXP MMA8453Q Three-Axis Accelerometer",
     "Description": "This is the UPM Module for the NXP mma8453q three-axis accelerometer. This accelerometer is packed with embedded functions with flexible user-programmable options configurable to two interrupt pins. Embedded interrupt functions allow for overall power savings relieving the host processor from continuously polling data. The MMA8453Q has user-selectable full scales of ±2g/±4g/±8g.",
     "Aliases": [
@@ -11575,6 +11903,8 @@
   },
   {
     "id": "mma8652fc",
+    "Library": "mma8x5x",
+    "LibraryDescription": "MMA8X5X Family Three-Axis Accelerometer Library",
     "Name": "API for the NXP MMA8652FC Three-Axis Accelerometer",
     "Description": "This is the UPM Module for the NXP mma8652fc three-axis accelerometer. This accelerometer is packed with embedded functions with flexible user-programmable options configurable to two interrupt pins. Embedded interrupt functions allow for overall power savings relieving the host processor from continuously polling data. The MMA8453Q has user-selectable full scales of ±2g/±4g/±8g.",
     "Aliases": [
@@ -11658,6 +11988,8 @@
   },
   {
     "id": "mma8653fc",
+    "Library": "mma8x5x",
+    "LibraryDescription": "MMA8X5X Family Three-Axis Accelerometer Library",
     "Name": "API for the NXP MMA8653FC Three-Axis Accelerometer",
     "Description": "This is the UPM Module for the NXP mma8653fc three-axis accelerometer. This accelerometer is packed with embedded functions with flexible user-programmable options configurable to two interrupt pins. Embedded interrupt functions allow for overall power savings relieving the host processor from continuously polling data. The MMA8453Q has user-selectable full scales of ±2g/±4g/±8g.",
     "Aliases": [
@@ -11741,6 +12073,8 @@
   },
   {
     "id": "MMC35240",
+    "Library": "mmc35240",
+    "LibraryDescription": "Memsic MMC35240 Tri-axis Magnetic Sensor Library",
     "Name": "Memsic MMC35240 Tri-axis Magnetic Sensor API",
     "Description": "This is the UPM Module for the Memsic MMC35240 Tri-axis Magnetic Sensor. Fully integrated 3-axis magnetic sensor and electronic circuits requiring fewer external components.",
     "Aliases": [
@@ -11814,6 +12148,8 @@
   },
   {
     "id": "moisture",
+    "Library": "moisture",
+    "LibraryDescription": "Moisture Sensor library",
     "Name": "API for the Grove Moisture Sensor ",
     "Description": "This is the UPM Module for the Grove moisture sensor. This sensor can be used to detect the moisture content of soil or whether there is water around the sensor. As the moisture content increases, so does the value that is read. Note: this sensor is not designed to be left in soil nor to be used outdoors.",
     "Aliases": [
@@ -11893,6 +12229,8 @@
   },
   {
     "id": "mpl3115a2",
+    "Library": "mpl3115a2",
+    "LibraryDescription": "NXP/Adafruit MPL3115A2 Atmospheric Pressure Sensor library",
     "Name": "NXP/Adafruit MPL3115A2 Atmospheric Pressure Sensor",
     "Description": "This is the UPM Module for the NXP/Adafruit MPL3115A2 Atmospheric Pressure Sensor. This sensor is a compact absolute pressure sensor, with a wide operating range and high operating accuracy, offering a 24-bit ADC onboard. It also offers internal compensation, and a fast i2c interface.",
     "Aliases": [
@@ -11985,6 +12323,8 @@
   },
   {
     "id": "mpr121",
+    "Library": "mpr121",
+    "LibraryDescription": "Seeed/FreeScale MPR121 Touch Sensor library",
     "Name": "Seeed/FreeScale MPR121 Touch Sensor",
     "Description": "This is the UPM Module for the Seeed/FreeScale MPR121 Touch Sensor. The MPR121 is a capacitive touch sensor controller,features internal intelligence, include an hardware configurable I2C address, an expended filtering system with debounce, and completely independent electrodes with auto-configuration built in. Note: Each touch sensor comes with 4 \"feelers\" that act as capacitive pads for touch detection.",
     "Aliases": [
@@ -12065,6 +12405,8 @@
   },
   {
     "id": "mpu9150",
+    "Library": "mpu9150",
+    "LibraryDescription": "InvenSense/Seeed MPU9150 accelerometer library",
     "Name": "InvenSense/Seeed MPU9150 accelerometer",
     "Description": "This is the UPM Module for the InvenSense/Seeed MPU9150 accelerometer. The MPU-9150 is the world's first integrated 9-axis motion tracking device designed for the low power, low cost, and high performance requirements of consumer electronics equipment including smartphones, tablets and wearable sensors. MPU-9150 features three 16-bit ADC for digitizing the gyroscope outputs and three 16-bit ADCs for digitizing the accelerometer outputs and three 13-bit ADCs for digitizing the magnetometer outputs",
     "Aliases": [
@@ -12155,6 +12497,8 @@
   },
   {
     "id": "mq303a",
+    "Library": "mq303a",
+    "LibraryDescription": "Seeed MQ303A Alcohol Sensor library",
     "Name": "API for the Seeed MQ303A Alcohol Sensor",
     "Description": "This is the UPM Module for the Seeed MQ303A Alcohol Sensor. It has good sensitivity and fast response to alcohol. It is suitable for making Breathalyzer. This Grove implements all the necessary circuitry for MQ303A like power conditioning and heater power supply. This sensor outputs a voltage inversely proportional to the alcohol concentration in air.",
     "Aliases": [
@@ -12250,6 +12594,8 @@
   },
   {
     "id": "ms5611",
+    "Library": "ms5611",
+    "LibraryDescription": "Amsys ms5611 Barometric Pressure Sensor library",
     "Name": "API for Amsys MS5611 Barometric Pressure Sensor library",
     "Description": "This is the UPM Module for the Amsys ms5611 barometric pressure sensor. The MS5611 is a new generation of high resolution altimeter sensors from MEAS Switzerland with SPI and I2C bus interface. This module implements I2C only.",
     "Aliases": [
@@ -12363,6 +12709,8 @@
   },
   {
     "id": "ms5803",
+    "Library": "ms5803",
+    "LibraryDescription": "Measurement Specialties/Sparkfun MS5803 Pressure and Temperature sensor Library",
     "Name": "API for the Measurement Specialties/Sparkfun MS5803 Pressure and Temperature sensor",
     "Description": "This is the UPM Module for the Measurement Specialties/Sparkfun MS5803 Pressure and Temperature sensor. The MS5803-14BA is a new generation of high resolution pressure sensors with SPI and I2C bus interface. It is optimized for depth measurement systems with a water depth resolution of 1cm and below. The sensor module includes a high linear pressure sensor and an ultra low power 24 bit delta-sigma ADC with internal factory calibrated coefficients. It provides a precise digital 24 bit pressure and temperature value and different operation modes that allow the user to optimize for conversion speed and current consumption. A high resolution temperature output allows the implementation of a depth measurement systems and thermometer function without any additional sensor.",
     "Aliases": [
@@ -12486,6 +12834,8 @@
   },
   {
     "id": "grovecircularled",
+    "Library": "my9221",
+    "LibraryDescription": "My-semi MY9221 12-channel LED driver Library",
     "Name": "API for the Grove Circular LED module/My-semi MY9221 12-channel LED driver",
     "Description": "This is the UPM Module for the Grove Circular LED module/My-semi MY9221 12-channel LED driver. This is a circular LED ring based on the MY9221 chip. It is often used with a rotary encoder and has 24 controllable LEDs.",
     "Aliases": [
@@ -12562,6 +12912,8 @@
   },
   {
     "id": "groveledbar",
+    "Library": "my9221",
+    "LibraryDescription": "My-semi MY9221 12-channel LED driver Library",
     "Name": "API for the Grove - LED Bar/My-semi MY9221 12-channel LED driver",
     "Description": "This is the UPM Module for the Grove - LED Bar/My-semi MY9221 12-channel LED driver. This is a 10-segment LED bar, with 8 green segments, 1 yellow segment, and one red segment.  They can be daisy chained together so that this module can control multiple LED bars.",
     "Aliases": [
@@ -12645,6 +12997,8 @@
   },
   {
     "id": "my9221 ",
+    "Library": "my9221",
+    "LibraryDescription": "My-semi MY9221 12-channel LED driver Library",
     "Name": "API for the My-semi MY9221 12-channel LED driver",
     "Description": "This is the UPM Module for the My-semi MY9221 12-channel LED driver. This is the base for several grove LED modules, allowing finite control of individual LEDs",
     "Aliases": [
@@ -12722,6 +13076,8 @@
   },
   {
     "id": "nlgpio16",
+    "Library": "nlgpio16",
+    "LibraryDescription": "Numato NLGPIO16 16 Channel USB GPIO Module Library",
     "Name": "API for the Numato NLGPIO16 16 channel USB GPIO Module",
     "Description": "This is the UPM Module for the Numato NLGPIO16 16 channel USB GPIO Module. The NLGPIO16 is a USB adapter providing access to 16 GPIO's, 7 of which can be used as analog inputs.  The GPIO's are 3.3v only.  An external power supply can be connected to provide more current if the need arises. It is recommended to use a series resistor with the GPIO/ADC pins when interfacing with other circuits. In output mode, GPIOs can source up to 8mA (gpio8-gpio15). So no additional circuitry is needed to drive regular LEDs. A 470 Ohms series resistor is recommended for current limiting when connecting an LED to a GPIO. In contrast to GPIOs, analog inputs can read voltages at any level between 0 to 3.3V volts. It is recommended to use a series resistor to protect the input from stray voltages and spikes. The internal Analog to Digital converter supports 10 bits resolution which is adequate for most applications.",
     "Aliases": [
@@ -12802,6 +13158,8 @@
   },
   {
     "id": "nmea_gps",
+    "Library": "nmea_gps",
+    "LibraryDescription": "UPM C++ API for a generic GPS serial device reporting NMEA data",
     "Name": "API for the NMEA GPS Module",
     "Description": "This is the UPM Module for a generic GPS serial device reporting NMEA data. This driver was tested with a number of GPS devices that emit NMEA data via a serial interface of some sort (typically a UART). The I2C capablity was tested with a UBLOX LEA-6H based GPS shield from DFRobot.  Currently, the I2C capability is only supported for UBLOX devices (or compatibles) that conform to the specifications outlined in the u-blox6 Receiver Description Protocol Specification, Chapter 4, DDC Port.",
     "Aliases": [
@@ -12892,6 +13250,8 @@
   },
   {
     "id": "nrf24l01",
+    "Library": "nrf24l01",
+    "LibraryDescription": "Nordic Semiconductor NRF24L01 Transceiver library",
     "Name": "API for the Nordic Semiconductor NRF24L01 Transceiver Module",
     "Description": "This is the UPM Module for the Nordic Semiconductor NRF24L01 Transceiver Module. This transceiver IC operates in the 2.4GHz band and has many new features! Take all the coolness of the nRF2401A and add some extra pipelines, buffers, and an auto-retransmit feature.",
     "Aliases": [
@@ -12991,6 +13351,8 @@
   },
   {
     "id": "nrf8001",
+    "Library": "nrf8001",
+    "LibraryDescription": "Nordic Semiconductor NRF8001 Bluetooth Low Energy library",
     "Name": "API for the Nordic Semiconductor NRF8001 Bluetooth Low Energy Module",
     "Description": "This is the UPM Module for the Nordic Semiconductor NRF8001 Bluetooth Low Energy Module. These files define the NRF8001 interface for lib-nrf8001. Interaction with this device is done through the ACI routines included with the library. You can use the nRF UART app in Apple* App Store and Google* Play* on Samsung* Galaxy S*4 running Android* 4.3 to interact with a microcontroller running the 'hello world' example.",
     "Aliases": [
@@ -13070,6 +13432,8 @@
   },
   {
     "id": "nunchuck",
+    "Library": "nunchuck",
+    "LibraryDescription": "Wii Nunchuk library",
     "Name": "API for the Wii* Nunchuk controller",
     "Description": "UPM module for the Wii Nunchuk controller. This module was tested with Wii Nunchuck connected to I2C via a Grove Wii Nunchuck adapter. See http://wiibrew.org/wiki/Wiimote/Extension_Controllers and http://wiibrew.org/wiki/Wiimote/Extension_Controllers/Nunchuck for more details on the controller and its protocol. A warning for the Grove Wii Nunchuk adapter: it has 2 traces on one side, and 3 traces on the other. Do not match these up with the Nunchuk connector's traces. The connector's 'groove' should be on the same side as the Grove interface socket on the adapter.",
     "Aliases": [
@@ -13146,6 +13510,8 @@
   },
   {
     "id": "o2",
+    "Library": "o2",
+    "LibraryDescription": "O2 Oxygen Gas Sensor Library",
     "Name": "Oxygen (O2) Concentration Sensor",
     "Description": "The Grove O2 Oxygen Gas sensor measures the oxygen concentration in the air.",
     "Aliases": [
@@ -13215,6 +13581,8 @@
   },
   {
     "id": "otp538u",
+    "Library": "otp538u",
+    "LibraryDescription": "Oriental System Technology OTP538U IR Temperature Sensor library",
     "Name": "API for the Oriental System Technology OTP538U IR Temperature Sensor",
     "Description": "This is the UPM Module for the Oriental System Technology OTP538U IR Temperature Sensor. This Grove-Infrared temperature sensor is a non-contact temperature measure model.The sensor is composed of 116 elements of thermocouple in series on a floating micro-membrane having an active diameter of 545μm and with blacken surface to absorb the incident thermal infrared radiation, which induces a voltage response at output terminals.",
     "Aliases": [
@@ -13313,6 +13681,8 @@
   },
   {
     "id": "ozw",
+    "Library": "ozw",
+    "LibraryDescription": "UPM OpenZWave library",
     "Name": "API for the OpenZWave library",
     "Description": "This module implements a singleton wrapper around the OpenZWave library. OpenZWave must be compiled and installed on your machine in order to use this library. This module was developed with OpenZWave 1.3/1.4, and an Aeon Z-Stick Gen5 configured as a Primary Controller. It provides the ability to query and set various values that can be used to control ZWave devices. It does not concern itself with configuration of devices. It is assumed that you have already setup your ZWave network using a tool like the OpenZWave control panel, and have already configured your devices as appropriate. To avoid exposing some of the internals of OpenZWave, devices (nodes) and their values, are accessed via a nodeId and a value index number. The ozwdump example will run dumpNodes() which will list the currently connected devices and the values that are available to them, along with an index number for that value. It is through these values (nodeId and index) that you can query and set device values at a low level. In addition to querying values from a device (such as state (on/off), or temperature, etc), methods are provided to allow you to control these devices to the extent they allow, for example, using a ZWave connected switch to turn on a lamp. Access to this class by OZW drivers is handled by the ozwInterface class. It is that class that drivers use for access to ozw, and therefore the Z-Wave network. This class is not intended to be used directly by end users. When writing an OZW driver, the ozwInterface class should be used (inherited) by your driver, and your driver should wrap and expose only those methods needed by the user. Take a look at some of the drivers (like aeotecss6) to see how this works.",
     "Aliases": [
@@ -13366,6 +13736,8 @@
   },
   {
     "id": "dsb09104",
+    "Library": "ozw",
+    "LibraryDescription": "UPM OpenZWave library",
     "Name": "API for Aeon Labs Aeotec Home Energy Meter Gen 1",
     "Description": "This is the UPM Module for the Aeon Labs Aeotec Home Energy Meter Gen 1. This module allows for monitoring certain elements of an Aeotec Home Energy Meter Gen 1.",
     "Aliases": [
@@ -13416,6 +13788,8 @@
   },
   {
     "id": "DSB29",
+    "Library": "ozw",
+    "LibraryDescription": "UPM OpenZWave library",
     "Name": "API for the Aeon Labs Aeotec Door/Window Sensor 2nd Edition",
     "Description": "This is the UPM Module for the Aeon Labs Aeotec Door/Window Sensor 2nd Edition. This module allows for monitoring certain elements of an Aeotec Door/Window Sensor 2nd Edition Z-Wave device. NOTE: This is a battery powered device that spends most of it's time sleeping (sort of like a cat). This means that on initial startup, there is not enough information known about the device to reliably query anything.  Use isDeviceAvailable() to test whether the device has responded to OZW's probe request before requesting information for it.",
     "Aliases": [
@@ -13455,6 +13829,8 @@
   },
   {
     "id": "dg2",
+    "Library": "ozw",
+    "LibraryDescription": "UPM OpenZWave library",
     "Name": "API for Aeon Labs Aeotec Smart Dimmer Gen 2",
     "Description": "This is the UPM Module for the Aeon Labs Aeotec Smart Dimmer Gen 2. This module allows for controlling and monitoring certain elements of an Aeotec Smart Dimmer Gen 2.",
     "Aliases": [
@@ -13494,6 +13870,8 @@
   },
   {
     "id": "ss6",
+    "Library": "ozw",
+    "LibraryDescription": "UPM OpenZWave library",
     "Name": "API for the Aeon Labs Aeotec Smart Switch 6",
     "Description": "This is the UPM Module for the Aeon Labs Aeotec Smart Switch 6. This module allows for controlling and monitoring certain elements of an Aeotec Smart Switch 6.",
     "Aliases": [
@@ -13533,6 +13911,8 @@
   },
   {
     "id": "p9813",
+    "Library": "p9813",
+    "LibraryDescription": "Shiji Lighting P9813 Chainable RGB LEDs driver library",
     "Name": "API for controlling Shiji Lighting P9813/Chainable RGB LEDs",
     "Description": "This is the UPM Module for the Shiji Lighting P9813/Chainable RGB LEDs. This LED controller provides individually controllable LEDs through a two pin protocol",
     "Aliases": [
@@ -13619,6 +13999,8 @@
   },
   {
     "id": "pca9685",
+    "Library": "pca9685",
+    "LibraryDescription": "NXP/Adafruit PCA9685 PWM Controller library",
     "Name": "API for the NXP/Adafruit PCA9685 16-channel, 12-bit PWM Controller",
     "Description": "This is the UPM Module for the NXP/Adafruit PCA9685 16-channel, 12-bit PWM Controller. You want to make a cool robot, maybe a hexapod walker, or maybe just a piece of art with a lot of moving parts. Or maybe you want to drive a lot of LEDs with precise PWM output. Then you realize that your microcontroller has a limited number of PWM outputs! What now? You could give up OR you could just get this handy PWM and Servo driver breakout.",
     "Aliases": [
@@ -13699,6 +14081,8 @@
   },
   {
     "id": "pn532",
+    "Library": "pn532",
+    "LibraryDescription": "Adafruit PN532 NFC/RFID reader/writer Library",
     "Name": "API for the PN532 based Adafruit NFC/RFID reader/writer",
     "Description": "This is the UPM Module for the PN532 based Adafruit NFC/RFID reader/writer. The PN532 is the most popular NFC chip, and is what is embedded in pretty much every phone or device that does NFC. It can pretty much do it all, such as read and write to tags and cards, communicate with phones (say for payment processing), and 'act' like a NFC tag. If you want to do any sort of embedded NFC work, this is the chip you'll want to use!",
     "Aliases": [
@@ -13767,6 +14151,8 @@
   },
   {
     "id": "ppd42ns",
+    "Library": "ppd42ns",
+    "LibraryDescription": "Seeed/Shinyei PPD42NS Dust Sensor library",
     "Name": "API for the Seeed/Shinyei PPD42NS Dust Sensor",
     "Description": "This is the UPM Module for the Seeed/Shinyei PPD42NS Dust Sensor. This Dust Sensor gives a good indication of the air quality in an environment by measuring the dust concentration. The Particulate Matter level (PM level) in the air is measured by counting the Low Pulse Occupancy time (LPO time) in given time unit. LPO time is proportional to PM concentration. This sensor can provide reliable data for air purifier systems; it is responsive to PM of diameter 1μm.",
     "Aliases": [
@@ -13864,6 +14250,8 @@
   },
   {
     "id": "pulsensor",
+    "Library": "pulsensor",
+    "LibraryDescription": "Pulse Sensor library",
     "Name": "C++ API for the Adafruit 3-Wire Pulse Sensor",
     "Description": "This is the UPM Module for the Adafruit 3-Wire Pulse Sensor. It can be used by students, artists, athletes, makers, and game & mobile developers who want to easily incorporate live heart-rate data into their projects.",
     "Aliases": [
@@ -13918,6 +14306,8 @@
   },
   {
     "id": "relay",
+    "Library": "relaylib",
+    "LibraryDescription": "Grove Relay library",
     "Name": "API for the Grove Relay",
     "Description": "This is the UPM Module for the Grove Relay. UPM module for the relay switch. The relay is a digital normally-open switch that uses low voltage or current to control a higher voltage and/or higher current.  When closed, the indicator LED (if present) lights up and current is allowed to flow.",
     "Aliases": [
@@ -14015,6 +14405,8 @@
   },
   {
     "id": "rf22",
+    "Library": "rf22",
+    "LibraryDescription": "SparkFun/HopeRF RF22 Wireless Transceiver library",
     "Name": "API for the SparkFun/HopeRF RF22 Transceiver Module",
     "Description": "This is the UPM Module for the SparkFun/HopeRF RF22 Transceiver Module. This base class provides basic functions for sending and receiving unaddressable, unreliable datagrams of arbitrary length to 255 octets per packet. Subclasses may use this class to implement reliable, addressed datagrams and streams,  mesh routers, repeaters, translators etc. On transmission, the TO and FROM addresses default to 0x00, unless changed by a subclass.  On reception the TO addressed is checked against the node address (defaults to 0x00) or the broadcast address (which is 0xff). The ID and FLAGS are set to 0, and not checked by this class. This permits use of the this base RF22 class as an unaddressable, unreliable datagram service. Subclasses are expected to change this behavior to add node address, ids, retransmission etc. Naturally, for any 2 radios to communicate that must be configured to use the same frequency and  modulation scheme.",
     "Aliases": [
@@ -14099,6 +14491,8 @@
   },
   {
     "id": "rfr359f",
+    "Library": "rfr359f",
+    "LibraryDescription": "Seeed RFR359 Distance Interrupter library",
     "Name": "API for the RFR359F-based Grove Distance Interrupter",
     "Description": "This is the UPM Module for the RFR359F-based Grove Distance Interrupter. The sensitivity can be adjusted with the potentiometer on the sensor module. It has a range of approximately 4 inches and a quick response time.",
     "Aliases": [
@@ -14184,6 +14578,8 @@
   },
   {
     "id": "rgbringcoder",
+    "Library": "rgbringcoder",
+    "LibraryDescription": "SparkFun RGB RingCoder Library",
     "Name": "API for the SparkFun RGB RingCoder",
     "Description": "This is the UPM Module for the SparkFun RGB RingCode. RGB RingCoder is a breakout board, a circular LED containing 16 LEDs arranged in a ring, and a rotary encoder. The encoder contains an RGB LED as well as a push button function. NOTE: This SparkFun product is retired, and no longer for sale.",
     "Aliases": [
@@ -14255,6 +14651,8 @@
   },
   {
     "id": "rhusb",
+    "Library": "rhusb",
+    "LibraryDescription": "Omega RH-USB Temperature and Humidity Sensor Library",
     "Name": "API for the Omega RH-USB Temperature and Humidity Sensor",
     "Description": "This is the UPM Module for the Omega RH-USB Temperature and Humidity Sensor. It connects via an integrated USB cable, and is accessed via a serial port.  It is suitable for wall or duct mounting.",
     "Aliases": [
@@ -14333,6 +14731,8 @@
   },
   {
     "id": "rn2903",
+    "Library": "rn2903",
+    "LibraryDescription": "Microchip RN2903 LoRa radio Library",
     "Name": "API for the Microchip RN2903 LoRa radio",
     "Description": "This is the UPM Module for the Microchip RN2903 LoRa radio. The RN2903 is a fully-certified 915 MHz module based on wireless LoRa technology.  The RN2903 utilizes a unique spread spectrum modulation within the Sub-GHz band to enable long range, low power, and high network capacity.",
     "Aliases": [
@@ -14416,6 +14816,8 @@
   },
   {
     "id": "rotary",
+    "Library": "rotary",
+    "LibraryDescription": "Seeed Rotary Angle Sensor library",
     "Name": "API for the Seeed Rotary Angle Sensor",
     "Description": "This is the UPM Module for the Seeed Rotary Angle Sensor. Provides a set of functions to read the absolute pin value, degrees or radians, and another set to do the same relative to the center of the knob's range.",
     "Aliases": [
@@ -14492,6 +14894,8 @@
   },
   {
     "id": "rotaryencoder",
+    "Library": "rotaryencoder",
+    "LibraryDescription": "Grove Rotary Encoder library",
     "Name": "API for the Grove Rotary Encoder",
     "Description": "This is the UPM Module for the Grove Rotary Encoder. This rotary encoder encodes a rotation signal into electronic pulses that can be used to measure rotation and direction. It is useful in cases where a rotary knob is required, but using a potentiometer is not desirable. A rotary encoder can turn a full 360 degrees without a stop and does not place a resistive load on the circuit, as is the case with a potentiometer.",
     "Aliases": [
@@ -14578,6 +14982,8 @@
   },
   {
     "id": "rpr220",
+    "Library": "rpr220",
+    "LibraryDescription": "ROHM Semiconductor RPR220 IR Reflective Sensor library",
     "Name": "API for the ROHM Semiconductor RPR220-based Grove IR Reflective Sensor",
     "Description": "This is the UPM Module for the ROHM Semiconductor RPR220-based Grove IR Reflective Sensor. The reflectivity of infrared light varies with the color and distance of the reflecting surface. According to this principle, Grove - Infrared Reflective Sensor utilizes a RPR220 reflective photosensor module to detect color and distance. When a light-colored object approaches,the signal intensity received by infrared reflective sensor increases and the indicator LED on board turns red. When a dark-colored object approaches, the intensity decreases and the LED turns off.",
     "Aliases": [
@@ -14674,6 +15080,8 @@
   },
   {
     "id": "RSC",
+    "Library": "rsc",
+    "LibraryDescription": "Honeywell TruStability Pressure and Temperature Sensor Library",
     "Name": "SPI based Board Mount Pressure and Temperature",
     "Description": "The RSC Series is a piezoresistive silicon pressure sensor offering a digital output for reading pressure over the specified full scale pressure span and temperature range. It is calibrated and temperature compensated for sensor offset, sensitivity, temperature effects, and non-linearity using a 24-bit analog-todigital converter with integrated EEPROM. Pressure data may be acquired at rates between 20 and 2000 samples per second over an SPI interface. It is intended for use with non-corrosive, non-ionic gases, such as air and other dry gases, designed and and RoHS compliant. Most of the functionality available on this chip has been implemented. The driver calculates the compensated pressure and temperature values based on the information provided in the datasheet. The user must not mess around with the coefficient and adc init value readings from the EEPROM as these are used to calculate the compensated pressure and temperature values. In order to get the sensor to work properly on an Edison, you would need to turn off the Edison SPI power management, this can be done with the command: echo on > /sys/devices/pci0000\\:00/0000\\:00\\:07.1/power/control. You might have to use external pull up resistors on all the lines. More info about this has been provided in the datasheet with a table and a diagram.",
     "Aliases": [
@@ -14885,6 +15293,8 @@
   },
   {
     "id": "scam",
+    "Library": "scam",
+    "LibraryDescription": "Seeed Serial Camera library",
     "Name": "API for the Seeed Serial Camera",
     "Description": "This is the UPM Module for the Seeed Serial Camera. There is no protocol documentation currently available, so this module was developed based completely on the Seeed Studio* Arduino* sketch.",
     "Aliases": [
@@ -14957,7 +15367,245 @@
     }
   },
   {
+    "id": "// TemplateItem",
+    "Library": "sensortemplate",
+    "LibraryDescription": "This is a sensor library template used for new sensors",
+    "comment": "Template Item",
+    "type": "object",
+    "required": true
+  },
+  {
+    "id": "TemplateItem",
+    "Library": "sensortemplate",
+    "LibraryDescription": "This is a sensor library template used for new sensors",
+    "// Name": {
+      "comment": "Sensor display name as indicated by the datasheet or manufacturer",
+      "type": "string",
+      "required": true
+    },
+    "Name": "Template Sensor",
+    "// Description": {
+      "comment": "In-depth description of the C++ sensor/actuator class. Include any necessary information on what is required for this implementation to work.",
+      "type": "string",
+      "required": true
+    },
+    "Description": "This sensor template can be used to generate code stubs for new sensor library development",
+    "// Aliases": {
+      "comment": "Known vendor/manufacturer part numbers or names for the sensor/actuator/s supported by this class. Part numbers/IDs are preferred when available.",
+      "type": "array",
+      "required": false
+    },
+    "Aliases": [
+      "template"
+    ],
+    "// Categories": {
+      "comment": "One or more categories that his sensor class fits in.",
+      "type": "array",
+      "required": true
+    },
+    "Categories": [
+      "other"
+    ],
+    "// Connections": {
+      "comment": "One or more connection types for this sensor class.",
+      "type": "array",
+      "required": true
+    },
+    "Connections": [
+      "i2c"
+    ],
+    "// Project Type": {
+      "comment": "One or more application fields or project types sensor is suited for (e.g. prototyping, industrial)",
+      "type": "array",
+      "required": true
+    },
+    "Project Type": [
+      "prototyping"
+    ],
+    "// Manufacturers": {
+      "comment": "One or more manufacturers for the hardware supported by this class.",
+      "type": "array",
+      "required": true
+    },
+    "Manufacturers": [
+      "generic"
+    ],
+    "// Kits": {
+      "comment": "One or more retail kits that provide this sensor",
+      "type": "array",
+      "required": false
+    },
+    "Kits": [],
+    "// Image": {
+      "comment": "A single small (0-20k) html-viewable image file (located in docs/images). Please do not use existing, copyrighted images with your sensors.",
+      "type": "string",
+      "required": false
+    },
+    "Image": "sensortemplate.jpg",
+    "// Examples": {
+      "comment": "Functional examples showing the main use cases for this sensor class. At least one is required.",
+      "type": "object",
+      "required": true
+    },
+    "Examples": {
+      "// Java": {
+        "comment": "One or more Java examples.",
+        "type": "array",
+        "required": false
+      },
+      "Java": [
+        "SensorTemplateSample.java"
+      ],
+      "// Python": {
+        "comment": "One or more Python examples.",
+        "type": "array",
+        "required": false
+      },
+      "Python": [
+        "sensortemplate.py"
+      ],
+      "// Node.js": {
+        "comment": "One or more Node.js examples.",
+        "type": "array",
+        "required": false
+      },
+      "Node.js": [
+        "sensortemplate.js"
+      ],
+      "// C++": {
+        "comment": "One or more C++ examples.",
+        "type": "array",
+        "required": true
+      },
+      "C++": [
+        "sensortemplate.cxx"
+      ],
+      "// C": {
+        "comment": "One or more C examples.",
+        "type": "array",
+        "required": false
+      },
+      "C": null
+    },
+    "// Specifications": {
+      "comment": "Catch-all for HW specifications.",
+      "type": "object",
+      "required": false
+    },
+    "Specifications": {
+      "// Vdd": {
+        "comment": "Example specification. Provides unit value and range.",
+        "type": "object",
+        "required": false
+      },
+      "Vdd": {
+        "// unit": {
+          "comment": "Example specification. Provides unit value and range.",
+          "type": "string",
+          "required": false
+        },
+        "unit": "v",
+        "low": 1.7,
+        "high": 3.6
+      },
+      "// Ioff": {
+        "comment": "Example specification. Provides unit value and range.",
+        "type": "object",
+        "required": false
+      },
+      "Ioff": {
+        "unit": "mA",
+        "typical": 0
+      },
+      "// Iavg": {
+        "comment": "Example specification. Provides unit value and range.",
+        "type": "object",
+        "required": false
+      },
+      "Iavg": {
+        "unit": "mA",
+        "low": 1,
+        "high": 2
+      },
+      "// Measured Range": {
+        "comment": "Example specification. Provides unit value and range.",
+        "type": "object",
+        "required": false
+      },
+      "Measured Range": {
+        "unit": "raw",
+        "low": 0,
+        "high": 1023
+      },
+      "// Other Specs": {
+        "comment": "Example specification. Provides unit value and range.",
+        "type": "object",
+        "required": false
+      },
+      "Other Specs": {}
+    },
+    "// Platforms": {
+      "comment": "Catch-all for listing platforms used to validate this sensor class.",
+      "type": "object",
+      "required": false
+    },
+    "Platforms": {
+      "// Intel Joule Module": {
+        "comment": "Example platform.",
+        "type": "object",
+        "required": false
+      },
+      "Intel Joule Module": {
+        "// Notes": {
+          "comment": "JSON Object or Array which documents this platform.",
+          "type": "array",
+          "required": false
+        },
+        "Notes": [
+          "Requires pull-up resistors with carrier board"
+        ],
+        "// Images": {
+          "comment": "JSON Object or Array which documents this platform.",
+          "type": "array",
+          "required": false
+        },
+        "Images": [
+          ""
+        ]
+      }
+    },
+    "// Urls": {
+      "comment": "Collection of external URLs which provide additional documentation for this sensor class.",
+      "type": "object",
+      "required": true
+    },
+    "Urls": {
+      "// Product Pages": {
+        "comment": "Provide at least one URL for a product web-site where users can get additional information on this sensor.",
+        "type": "array",
+        "required": true
+      },
+      "Product Pages": [
+        "https://software.intel.com/en-us/iot/hardware/sensors/short-title-case-description-from-datasheet-manditory"
+      ],
+      "// Datasheets": {
+        "comment": "Array of product datasheets",
+        "type": "array",
+        "required": false
+      },
+      "Datasheets": [],
+      "// Schematics": {
+        "comment": "Array of product schematic pages.",
+        "type": "array",
+        "required": false
+      },
+      "Schematics": []
+    }
+  },
+  {
     "id": "es08a",
+    "Library": "servo",
+    "LibraryDescription": "Servo Library",
     "Name": "API for the EMAX/Seeed ES08A Servo",
     "Description": "This is the UPM Module for the EMAX/Seeed ES08A Servo. Like other servos, the ES08A servo has a shaft that can be controlled by setting the desired angle. There are also routines for setting and getting the minimum and maximum pulse width as well as the maximum period.",
     "Aliases": [
@@ -15026,6 +15674,8 @@
   },
   {
     "id": "es9257",
+    "Library": "servo",
+    "LibraryDescription": "Servo Library",
     "Name": "API for the EMAX ES9257 Servo",
     "Description": "This is the UPM Module for the EMAX ES9257 Servo. The ES9257 servo is a fast, heavy duty servo that is popular for moving the control surfaces on RC models.",
     "Aliases": [
@@ -15088,6 +15738,8 @@
   },
   {
     "id": "servo",
+    "Library": "servo",
+    "LibraryDescription": "Servo Library",
     "Name": "Servo library",
     "Description": "This is the UPM Module for the Servo library. The base Servo class provides routines for setting the angle of the shaft as well as setting and getting the minimum and maximum pulse width and  the maximum period.",
     "Aliases": [
@@ -15156,6 +15808,8 @@
   },
   {
     "id": "sht1x",
+    "Library": "sht1x",
+    "LibraryDescription": "DFRobot SHT1X Temperature and Humidity Sensor Library",
     "Name": "API for the DFRobot SHT1X Temperature and Humidity Sensor",
     "Description": "This is the UPM Module for the DFRobot SHT1X Temperature and Humidity Sensor. SHT1x is individually calibrated in a precision humidity chamber. The calibration coefficients are programmed into an OTP memory on the chip. These coefficients are used to internally calibrate the signals from the sensors. The 2-wire serial interface and internal voltage regulation allows for easy and fast system integration. The tiny size and low power consumption makes SHT1x the ultimate choice for even the most demanding applications.",
     "Aliases": [
@@ -15267,6 +15921,8 @@
   },
   {
     "id": "si1132",
+    "Library": "si1132",
+    "LibraryDescription": "Silicon Labs Si1132 UV and visible light sensor library",
     "Name": "API for the Silicon Labs Si1132 UV and Visible Light Sensor",
     "Description": "This is the UPM Module for the Silicon Labs Si1132 UV and Visible Light Sensor. The Silicon Labs Si1132 is a low-power, ultraviolet (UV) index, and ambient light sensor with I2C digital interface and programmable-event interrupt output.",
     "Aliases": [
@@ -15329,6 +15985,8 @@
   },
   {
     "id": "si114x",
+    "Library": "si114x",
+    "LibraryDescription": "Silicon Labs SI1145 UV Light Sensor library",
     "Name": "API for the Silicon Labs SI1145 UV Light Sensor",
     "Description": "This is the UPM Module for the Silicon Labs SI1145 UV Light Sensor. This device is capable of measuring IR and visible ambient light as well. It also supports the ability to use externally attached LEDs to perform proximity detection on 3 separate channels. Currently, this class only supports the retrieving of the calculated UV index measured by the device, but enough infrastructure is provided to make it easy to enhance this driver in the future to support additional capabilities, including interrupt support.",
     "Aliases": [
@@ -15417,6 +16075,8 @@
   },
   {
     "id": "si7005",
+    "Library": "si7005",
+    "LibraryDescription": "Silicon Labs SI7005 digital I2C humidity and temperature sensor library",
     "Name": "API for the Silicon Labs SI7005 digital I2C humidity and temperature sensor",
     "Description": "This is the UPM Module for the Silicon Labs SI7005 digital I2C humidity and temperature sensor. The Si7005 sensor integrates humidity and temperature sensor elements and offers an analog-to-digital converter and signal processing in a single monolithic CMOS sensor IC. Both the humidity and temperature sensors are factory-calibrated and the data is stored in on-chip non-volatile memory.",
     "Aliases": [
@@ -15484,6 +16144,8 @@
   },
   {
     "id": "slide",
+    "Library": "slide",
+    "LibraryDescription": "Seeed Slide Sensor library",
     "Name": "API for the Seeed Slide Potentiometer",
     "Description": "This is the UPM Module for the Seeed Slide Potentiometer. Basic UPM module for the slide potentiometer on analog that returns either a raw value or a scaled voltage value.",
     "Aliases": [
@@ -15573,6 +16235,8 @@
   },
   {
     "id": "sm130",
+    "Library": "sm130",
+    "LibraryDescription": "SonMicro SM130 RFID Reader Module library",
     "Name": "API for the SonMicro SM130 RFID Reader Module",
     "Description": "This is the UPM Module for the SonMicro SM130 RFID Reader Module. This module defines the SM130 interface for the sm130 RFID library This module was developed using an SM130 and a Sparkfun RFID Evaluation shield using a UART for communications.  It should be fairly trivial to add support for I2C communication in the future, if you have the correct firmware on the SM130.",
     "Aliases": [
@@ -15636,6 +16300,8 @@
   },
   {
     "id": "smartdrive",
+    "Library": "smartdrive",
+    "LibraryDescription": "SmartDrive library",
     "Name": "API for the SmartDrive advanced motor controller from OpenElectronics",
     "Description": "This is the UPM Module for the OpenElectronics SmartDrive advanced motor controller. SmartDrive is a multiplexer to control high current DC motors This module has been tested on the SmartDrive.",
     "Aliases": [
@@ -15689,6 +16355,8 @@
   },
   {
     "id": "speaker",
+    "Library": "speaker",
+    "LibraryDescription": "Seeed Speaker library",
     "Name": "API for the Seeed Speaker",
     "Description": "This is the UPM Module for the Seeed Speaker. This speaker can generate different tones and sounds depending on the frequency of the input signal. It can operate in one of two modes: GPIO (default) and PWM. Depending on which mode is selected, some methods may not be usable.  In GPIO mode, the playAll() and playSound() methods are supported.  In PWM mode, setFrequency(), emit(), on() and off() are supported.  Calling a method not appropriate for the mode will have no effect.",
     "Aliases": [
@@ -15775,6 +16443,8 @@
   },
   {
     "id": "ssd1351",
+    "Library": "ssd1351",
+    "LibraryDescription": "Adafruit SSD1351 OLED library",
     "Name": "API for the Adafruit SSD1351 OLED displays",
     "Description": "This is the UPM Module for the Adafruit SSD1351 OLED displays. It was tested with the Adafruit 1.5\" OLED Display, but should work with any SSD1351 display running in SPI mode. On the Intel Edison don't forget to disable SPI Power Management (PM) for this driver to work, you can find more details on this topic here: http://iotdk.intel.com/docs/master/mraa/edison.html",
     "Aliases": [
@@ -15840,6 +16510,8 @@
   },
   {
     "id": "st7735",
+    "Library": "st7735",
+    "LibraryDescription": "Adafruit ST7735 LCD library",
     "Name": "API for the Adafruit ST7735 LCD",
     "Description": "This is the UPM Module for the Adafruit ST7735 LCD. This lovely little display breakout is the best way to add a small, colorful and bright display to any project. Since the display uses 4-wire SPI to communicate and has its own pixel-addressable frame buffer, it can be used with every kind of microcontroller. Even a very small one with low memory and few pins available!",
     "Aliases": [
@@ -15911,6 +16583,8 @@
   },
   {
     "id": "stepmotor",
+    "Library": "stepmotor",
+    "LibraryDescription": "Stepper Motor library",
     "Name": "API for the Stepper Motor",
     "Description": "This is the UPM Module for the API for the Stepper Motor. This module defines the Stepper Motor interface. It is compatible with stepper motor drivers that use 2 pins to control the motor, like an Easy Driver from Brian Schmalz or the STR driver series from Applied Motion. It can also control an enable pin if one is available and connected. The implementation is synchronous and thus blocking while the stepper motor is in motion. However it is possible to send the commands via threading and the performance of the library will be very good given a low CPU load. On a busy system though you will notice some jitter especially at higher speeds. It is possible to reduce this effect to some extent by using smoothing and/or microstepping on stepper drivers that support such features.",
     "Aliases": [
@@ -15981,6 +16655,8 @@
   },
   {
     "id": "SX1276",
+    "Library": "sx1276",
+    "LibraryDescription": "Semtech SX1276 LoRa/FSK Modem Library",
     "Name": "Semtech SX1276 LoRa/FSK Module",
     "Description": "The SX1276 is a FSK/OOK/LoRa modem capable of both Low Frequency and High Frequency communication. It requires a 3.3v power supply, do not use 5v. Frequency Hopping Spread Spectrum (FHSS) is not currently supported.",
     "Aliases": [
@@ -16126,6 +16802,8 @@
   },
   {
     "id": "sx6119",
+    "Library": "sx6119",
+    "LibraryDescription": "Seeed SX6119-based FM Receiver library",
     "Name": "API support for the Seeed SX6119-based Grove FM Receiver",
     "Description": "This is the UPM Module for the Seeed SX6119-based Grove FM Receiver. There are two digital pins: one that toggles power on/off, and the other that does a seek to the next station.",
     "Aliases": [
@@ -16203,6 +16881,8 @@
   },
   {
     "id": "t3311",
+    "Library": "t3311",
+    "LibraryDescription": "T3311 Temperature and Humidity Sensor Library",
     "Name": "API for the T3311 MODBUS Temperature and Humidity Sensor",
     "Description": "This is the UPM Module for the T3311 MODBUS Temperature and Humidity Sensor. This module implements support for the Comet System T3311 Temperature and Humidity transmitter.  It uses MODBUS over an RS232 serial port.  You must have libmodbus v3.1.2 (or greater) installed to compile and use this driver. This module was developed using libmodbus 3.1.2, and T3311 Firmware revison 2.66 connected via a Prolific RS232 Serial to USB adaptor. You cannot use the built in TTL UART pins for accessing this device -- you must use a full serial RS232 interface connected via USB.",
     "Aliases": [
@@ -16280,6 +16960,8 @@
   },
   {
     "id": "t6713",
+    "Library": "t6713",
+    "LibraryDescription": "Amphenol Telaire 6713 Series CO2 Module Sensor Library",
     "Name": "API for the Amphenol Telaire 6713 Series CO2 Module",
     "Description": "This is the UPM Module for the Amphenol Telaire 6713 Series CO2 Module. The new T6700 series is a miniature NDIR CO2 sensor that has accuracy and reliability of many larger sensors. The new small size allows OEM’s to integrate in to smaller enclosures and equipment and uses significantly less power than many other devices on the market.",
     "Aliases": [
@@ -16360,6 +17042,8 @@
   },
   {
     "id": "t8100",
+    "Library": "t8100",
+    "LibraryDescription": "Amphenol Telaire Ventostat T8100 Ventilation Controller Library",
     "Name": "API for the Amphenol Telaire Ventostat T8100 Ventilation Controller",
     "Description": "This is the UPM Module for the Amphenol Telaire Ventostat T8100 Ventilation Controller. This module implements support for the Amphenol Telaire Ventostat T8100 Ventilation Controller with BACnet interface.  It may also support the T8200 and T8300 models, but they have not been tested. The Telaire Ventostat T8100 reports Temperature, Humidity and CO2 concentrations.  It supports an optional relay with a settable trigger point.  The unit this driver was tested under did not support the optional relay.",
     "Aliases": [
@@ -16464,6 +17148,8 @@
   },
   {
     "id": "ta12200",
+    "Library": "ta12200",
+    "LibraryDescription": "Seeed TA12-200 Current Transformer library",
     "Name": "API for the Seeed TA12-200 Current Transformer",
     "Description": "This is the UPM Module for the Seeed TA12-200 Current Transformer. The Electricity sensor module is based on the TA12-200 current transformer which can change large alternating current into a small amplitude. You can use it to test large alternating current upto 5A.",
     "Aliases": [
@@ -16542,6 +17228,8 @@
   },
   {
     "id": "tb7300",
+    "Library": "tb7300",
+    "LibraryDescription": "Honeywell TB7300 Communicating Fan Coil Thermostat Library",
     "Name": "API for the Honeywell TB7300 Communicating Fan Coil Thermostat",
     "Description": "This is the UPM Module for the Honeywell TB7300 Communicating Fan Coil Thermostat. It may also support the TB7200, though only the TB7300 was available for development of this driver. The TB7200 Series PI thermostats are designed for zoning applications, and the TB7300 Series PI thermostats are designed for fan coil control. Both Series are communicating thermostats with models available in BACnet(r) MS/TP protocol and can be easily integrated into a WEBs-AX building automation system based on the NiagaraAX(r) platform. TB7200 and TB7300 Series thermostats are compatible with the Honeywell Occupancy Sensor Cover. Thermostats equipped with an occupancy sensor cover provide advanced active occupancy logic, which will automatically switch occupancy levels from Occupied to Stand-By and Unoccupied as required by local activity being present or not. This advanced occupancy functionality provides advantageous energy savings during occupied hours without sacrificing occupant comfort. All thermostats can be ordered with or without a factory installed PIR cover.",
     "Aliases": [
@@ -16605,6 +17293,8 @@
   },
   {
     "id": "TCA9548A",
+    "Library": "tca9548",
+    "LibraryDescription": "TI tca9548a multiplexer library",
     "Name": "API for the TI TCA9548A Multiplexer Breakout",
     "Description": "This is the UPM Module for the Texas Instruments TCA9548A Multiplexer Breakout.",
     "Aliases": [
@@ -16684,6 +17374,8 @@
   },
   {
     "id": "tcs3414cs",
+    "Library": "tcs3414cs",
+    "LibraryDescription": "Seeed TCS3414CS Color Sensor library",
     "Name": "API for the Seeed TCS3414CS Color Sensor",
     "Description": "This is the UPM Module for the Seeed TCS3414CS Color Sensor. This module is based on the color sensor TCS3414CS with digital output I2C. Based on the 8*2 array of filtered photodiodes and 16-bit analog-to-digital converters, you can measure the color chromaticity of ambient light or the color of objects. Of the 16 photodiodes, 4 have red filters, 4 have green filters, 4 have blue filters and 4 have no filter(clear). With the synchronization input pin, an external pulsed light source can provide precise synchronous conversion control.",
     "Aliases": [
@@ -16756,6 +17448,8 @@
   },
   {
     "id": "tcs37727",
+    "Library": "tcs37727",
+    "LibraryDescription": "AMS TCS37727 Color Light-To-Digital Converter Library",
     "Name": "API for the AMS TCS37727 Color Light-To-Digital Converter",
     "Description": "This is the UPM Module for the AMS TCS37727 Color Light-To-Digital Converter. The TCS3772 device family provides red, green, blue, and clear (RGBC) light sensing and, when coupled with an external IR LED, proximity detection. These devices detect light intensity under a variety of lighting conditions and through a variety of attenuation materials, including dark glass. The proximity detection feature allows a large dynamic range of operation for accurate short distance detection, such as in a cell phone, for detecting when the user positions the phone close to their ear. An internal state machine provides the ability to put the device into a low power state in between proximity and RGBC measurements providing very low average power consumption.",
     "Aliases": [
@@ -16811,6 +17505,8 @@
   },
   {
     "id": "teams",
+    "Library": "teams",
+    "LibraryDescription": "Veris TEAMS Temperature Transmitter Library",
     "Name": "API for the Veris TEAMS Temperature Transmitter",
     "Description": "This is the UPM Module for the Veris TEAMS Temperature Transmitter. The Veris TEAMS temperature sensor provides it's output via a 4-20ma current loop. The supported temperature range is 10C to 35C. This sensor was developed with a Cooking Hacks (Libelium) 4-channel 4-20ma Arduino interface shield.  For this interface, the receiver resistance (rResistor) was specified as 165.0 ohms. When using a 4-20ma current loop interface which scales the sensors' values to a 0-5vdc range, you can supply 0.0 as the rResistor value in the constructor (default), and it will act just like a normal analog input.",
     "Aliases": [
@@ -16876,6 +17572,8 @@
   },
   {
     "id": "Temperature",
+    "Library": "temperature",
+    "LibraryDescription": "Temperature sensor library",
     "Name": "Analog Temperature Sensor",
     "Description": "Basic UPM module for analog temperature sensors. These sensors use a NTC thermistor to measure ambient temperature. This driver was developed using the Grove Temperature Sensor. The conversion formula has been updated to work with versions 1.1 and 1.2 of the sensor. For the older v1.0 sensor you will have to specify R0 and B values when initializing the device. The range of this sensor is -40 to 125 C and accuracy is +/- 1.5 C.",
     "Aliases": [
@@ -16937,6 +17635,8 @@
   },
   {
     "id": "tex00",
+    "Library": "tex00",
+    "LibraryDescription": "Veris TEX00 Temperature Sensor Library",
     "Name": "API for the Veris TEX00 Temperature Sensor",
     "Description": "This is the UPM Module for the Veris TEX00 Temperature Sensor. The Veris TEX00 temperature sensor family is made up of a series of RTD thermistors in wall mount packaging.    This driver was developed using the TED00, which utilizes a 10K Ohm Type 2 thermistor.  However, this driver can support the other 12 variants of the TE series as well by providing the correct sensor type to the class constructor.  These other sensor types have not been tested.  Only the TED00 was tested with this driver.",
     "Aliases": [
@@ -17008,6 +17708,8 @@
   },
   {
     "id": "th02",
+    "Library": "th02",
+    "LibraryDescription": "Seeed TH02 Temperature & Humidity Sensor Library",
     "Name": "API for the Seeed TH02 Temperature & Humidity Sensor",
     "Description": "This is the UPM Module for the Seeed TH02 Temperature & Humidity Sensor. This is a multifunctional sensor that gives you temperature and relative humidity information at the same time. It utilizes a TH02 sensor that can meet measurement needs of general purposes. It provides reliable readings when environment humidity condition inbetween 0-80% RH, and temperature condition inbetween 0-70°C, covering needs in most home and daily applications that don't contain extreme conditions.",
     "Aliases": [
@@ -17107,6 +17809,8 @@
   },
   {
     "id": "tm1637",
+    "Library": "tm1637",
+    "LibraryDescription": "Seeed TM1637 based 7-Segment Display Library",
     "Name": "API for the Seeed TM1637 based 7-Segment Display",
     "Description": "This is the UPM Module for the Seeed TM1637 based 7-Segment Display. It can be used to address and write data to multiple display digits. This driver is based on the Grove version of the TM1637 display that uses 4 digits, thus making it ideal for clock displays, timers, counters, or even score displays in a two-player arcade game.",
     "Aliases": [
@@ -17186,6 +17890,8 @@
   },
   {
     "id": "tmp006",
+    "Library": "tmp006",
+    "LibraryDescription": "Texas Instruments TMP006 Infrared-Thermopile Sensor Library",
     "Name": "API for the Texas Instruments TMP006 IR-Thermopile Sensor",
     "Description": "This is the UPM Module for the Texas Instruments TMP006 IR-Thermopile Sensor. The TMP006 and TMP006B are fully integrated MEMs thermopile sensors that measure the temperature of an object without having to be in direct contact. The thermopile absorbs passive infrared energy from an object at wavelengths between 4 um to 16 um within the end-user defined field of view. The corresponding change in voltage across the thermopile is digitized and reported with the on-chip die thermal sensor measurement through an I2C- and SMBus-compatible interface. With this data, the target object temperature can be calculated by an external processor.",
     "Aliases": [
@@ -17252,6 +17958,8 @@
   },
   {
     "id": "tsl2561",
+    "Library": "tsl2561",
+    "LibraryDescription": "TSL2561 Digital Light Sensor library",
     "Name": "API for the TSL2561 Digital Light Sensor",
     "Description": "This is the UPM Module for the TSL2561 Digital Light Sensor. TSL2560 and TSL2561 are light-to-digital converters that transform light intensity to a digital signal output capable of a direct I2C (TSL2561) interface",
     "Aliases": [
@@ -17349,6 +18057,8 @@
   },
   {
     "id": "ttp223",
+    "Library": "ttp223",
+    "LibraryDescription": "Seeed TTP223 Touch Detector Sensor library",
     "Name": "API for the Seeed TTP223 Touch Sensor",
     "Description": "This is the UPM Module for the Seeed TTP223 Touch Sensor. This touch sensor detects when a finger is near the metallic pad by the change in capacitance. It can replace a more traditional push button. The touch sensor can still function when placed under a  non-metallic surface like glass or plastic.",
     "Aliases": [
@@ -17435,6 +18145,8 @@
   },
   {
     "id": "uartat",
+    "Library": "uartat",
+    "LibraryDescription": "Generic AT Command Based UART Device Library",
     "Name": "API for a Generic AT command based UART device",
     "Description": "This is the UPM Module for a Generic AT command based UART device. This is a generic UART device driver for accessing UART based devices that utilize an \"AT\" command set.  Typically these devices are Radios, Modems, and similar devices that are configured and controlled by emitting \"AT\" commands.",
     "Aliases": [
@@ -17477,6 +18189,8 @@
   },
   {
     "id": "uln200xa",
+    "Library": "uln200xa",
+    "LibraryDescription": "ULN200XA Stepper Driver Library",
     "Name": "UPM module for the ULN200XA Darlington Stepper Driver",
     "Description": "This is the UPM Module for the ULN200XA Darlington Stepper Driver. This module was developed on a ULN2003A Stepper Driver. It should also support the ULN2001A, ULN2002A, and ULN2004A devices, when using to drive the 28BYJ-48 unipolar stepper motor.",
     "Aliases": [
@@ -17561,6 +18275,8 @@
   },
   {
     "id": "ultrasonic",
+    "Library": "ultrasonic",
+    "LibraryDescription": "Grove ultrasonic sensor Library",
     "Name": "API for the Grove Ultrasonic Ranger",
     "Description": "This is the UPM Module for the Grove Ultrasonic Ranger. This Grove Ultrasonic sensor is a non-contact distance measurement module which is compatible with the Grove system. It is designed for easy modular project usage with industrial performance. Detection ranges from 3 cm (1.2\") to 4 m (13'1.5\") and works best when the object is within a 30 degree angle relative to the sensor.",
     "Aliases": [
@@ -17641,6 +18357,8 @@
   },
   {
     "id": "urm37",
+    "Library": "urm37",
+    "LibraryDescription": "DFRobot URM37 Ultrasonic Ranger Library",
     "Name": "API for the DFRobot URM37 Ultrasonic Ranger",
     "Description": "This is the UPM Module for the DFRobot URM37 Ultrasonic Ranger. This library was tested with the DFRobot URM37 Ultrasonic Ranger, V4.  It has a range of between 5 and 500 centimeters (cm).  It supports both analog distance measurement, and UART based temperature and distance measurements.  This driver does not support PWM measurement mode. For UART operation, the only supported baud rate is 9600.  In addition, you must ensure that the UART TX/RX pins are configured for TTL operation (the factory default) rather than RS232 operation, or permanent damage to your URM37 and/or MCU will result.  On power up, the LED indicator will blink one long pulse, followed by one short pulse to indicate TTL operation.",
     "Aliases": [
@@ -17716,6 +18434,8 @@
   },
   {
     "id": "vcap",
+    "Library": "vcap",
+    "LibraryDescription": "Take a snapshot from a video camera and save as a JPEG",
     "Name": "API for the Video Capture driver",
     "Description": "This is the UPM Module for the Video Capture driver. This UPM module captures a still frame from a Linux V4L device, such as a USB webcam, and and then allows you to save it as a JPEG image into a file. The camera and driver in use must support streaming, mmap-able buffers and must provide data in YUYV format.  This should encompass most video cameras out there.  It has been tested with a few off the shelf cameras without any problems.",
     "Aliases": [
@@ -17758,6 +18478,8 @@
   },
   {
     "id": "vdiv",
+    "Library": "vdiv",
+    "LibraryDescription": "Grove Voltage Divider Sensor Library",
     "Name": "API for the Grove Voltage Divider Sensor",
     "Description": "This is the UPM Module for the Grove Voltage Divider Sensor. The Grove – Voltage Divider provides an interface for measuring extern voltage, eliminating the need to connect a resistance to input interface. Besides, The voltage gain can select by dial switch.They are easy to use.",
     "Aliases": [
@@ -17859,6 +18581,8 @@
   },
   {
     "id": "veml6070",
+    "Library": "veml6070",
+    "LibraryDescription": "Vishay VEML6070 UV Sensor Library",
     "Name": "API for the Vishay VEML6070 UV Sensor",
     "Description": "This is the UPM Module for the Vishay VEML6070 UV Sensor. VEML6070 is an advanced ultraviolet (UV) light sensor with I2C protocol interface and designed by the CMOS process. It is easily operated via a simple I2C command. The active acknowledge (ACK) feature with threshold windows setting allows the UV sensor to send out a UVI alert message. Under a strong solar UVI condition, the smart ACK signal can be easily implemented by the software programming. VEML6070 incorporates a photodiode, amplifiers, and analog / digital circuits into a single chip. VEML6070's adoption of FiltronTM UV technology provides the best spectral sensitivity to cover UV spectrum sensing. It has an excellent temperature compensation and a robust refresh rate setting that does not use an external RC low pass filter. VEML6070 has linear sensitivity to solar UV light and is easily adjusted by an external resistor.",
     "Aliases": [
@@ -17936,6 +18660,8 @@
   },
   {
     "id": "water",
+    "Library": "water",
+    "LibraryDescription": "Grove Water Sensor Library",
     "Name": "API for the Grove Water Sensor",
     "Description": "This is the UPM Module for the Grove Water Sensor. This sensor detects the presence of water using exposed PCB traces. The sensor is made up of interlaced traces of Ground and Sensor signals. The sensor traces are weakly pulled up using 1 MΩ resistor. The resistor will pull the sensor trace value high until a drop of water shorts the sensor trace to the ground trace. This circuit will work with digital I/O pins of Arduino or you can use it with the analog pins to detect the amount of water induced contact between the grounded and sensor traces.",
     "Aliases": [
@@ -18020,6 +18746,8 @@
   },
   {
     "id": "waterlevel",
+    "Library": "waterlevel",
+    "LibraryDescription": "Grove Water Level Switch Library",
     "Name": "API for the Grove Water Level Switch",
     "Description": "This is the UPM Module for the Grove Water Level Switch. This switch is a device used to sense the level of liquid within a tank, it may actuate a pump, an indicator, an alarm, or other devices. When the float ball rises or falls with the liquid to the level of the switch, The magnetic force of magnet which inside of the float ball will cause the reed switch to turn ON. When the float ball move away from the reed switch, the reed switch will turn OFF.",
     "Aliases": [
@@ -18078,6 +18806,8 @@
   },
   {
     "id": "wfs",
+    "Library": "wfs",
+    "LibraryDescription": "Grove Water Flow Sensor Library",
     "Name": "API for the Grove Water Flow Sensor",
     "Description": "This is the UPM Module for the Grove Water Flow Sensor. This sensor is used to measure water flow in liters per minute (LPM). It incorporates a Hall Effect sensor. The UPM module defines an interrupt routine to be triggered on each low pulse, keeping count. This device requires a 10K pull-up resistor for the signal line (yellow wire). However, be careful when wiring this up - the schematic appears to have a bug in it: the lower left connection of the signal line (yellow) to Vcc (red) should not be there. The sensor can work with this connection, but probably not for very long.",
     "Aliases": [
@@ -18180,6 +18910,8 @@
   },
   {
     "id": "wheelencoder",
+    "Library": "wheelencoder",
+    "LibraryDescription": "FRobot Wheel Encoder Library",
     "Name": "API for the DFRobot Wheel Encoder",
     "Description": "This is the UPM Module for the DFRobot Wheel Encoder. This sensor was developed for the DFRobot Wheel Encoder, though it could be used for any counting time-based task.  When you instantiate a class of this type, the gpio pin specified is connected to an interrupt.  Whenever a low to high transition occurs on the gpio pin, the internal counter is incremented by one. This class also includes a millisecond counter, so that you can correlate the number of counts to a time period for calculating an RPM or other value as needed.",
     "Aliases": [
@@ -18256,6 +18988,8 @@
   },
   {
     "id": "wt5001",
+    "Library": "wt5001",
+    "LibraryDescription": "WT5001 Serial MP3 module Library",
     "Name": "API for the WT5001 Serial MP3 Module",
     "Description": "This is the UPM Module for the WT5001 Serial MP3 Module. Grove-Serial MP3 Player is a kind of simple MP3 player device whose design is based on a high-quality MP3 audio chip---WT5001. It can support 8KHZ~44.1KHZ sampling frequency MP3 and WAV file formats. This product has several peripheral ports: a standard UART Grove interface, a dual track headphone jack, an external interface and also a  micro SD card interface. You can control the MP3 playback state by sending commands to module via serial port tools, such as switch songs, change the volume and play mode and so on. It seems a simple module, but it owns such strong function. Want to know how the sound quality? Please come to experience it! NOTE: This product is retired, please consider the Grove - MP3 v2.0 as your alternative choice. This UPM module has not been tested with V2.0.",
     "Aliases": [
@@ -18330,6 +19064,8 @@
   },
   {
     "id": "xbee",
+    "Library": "xbee",
+    "LibraryDescription": "XBee modules Library",
     "Name": "API for the XBee modules",
     "Description": "This is the UPM Module for the XBee modules. This is a generic UART driver for use with Digi XBee modules. It was tested with the XBee S1 802.15.4 module and the XBee S6B WiFi module. It provides basic UART support for sending and receiving data to and from the device.  It is controlled by an AT or API command set. It is connected at 9600 baud by default.",
     "Aliases": [
@@ -18414,6 +19150,8 @@
   },
   {
     "id": "yg1006",
+    "Library": "yg1006",
+    "LibraryDescription": "YG1006 Flame Sensor Library",
     "Name": "API for the YG1006 Flame Sensor",
     "Description": "This is the UPM Module for the YG1006 Flame Sensor. The Grove - Flame Sensor can be used to detect fire source or other light sources of the wavelength in the range of 760nm - 1100 nm. It is based on the YG1006 sensor which is a high speed and high sensitive NPN silicon phototransistor. Due to its black epoxy, the sensor is sensitive to infrared radiation. In fire fighting robot game, The sensor plays a very important role, it can be used as a robot eyes to find the fire source.",
     "Aliases": [
@@ -18513,6 +19251,8 @@
   },
   {
     "id": "zfm20",
+    "Library": "zfm20",
+    "LibraryDescription": "ZFM-20 Fingerprint Sensor Module",
     "Name": "API for the ZFM-20 Fingerprint Sensor Module",
     "Description": "This is the UPM Module for the ZFM-20 Fingerprint Sensor Module. The Fingerprint Sensor is one optical fingerprint sensor which will make adding fingerprint detection and verification super simple.There's a high powered DSP chip AS601 that does the image rendering, calculation, feature-finding and searching. You can also enroll new fingers directly - up to 162 finger prints can be stored in the onboard FLASH memory. There's a red LED in the lens that lights up during a photo so you know its working.",
     "Aliases": [

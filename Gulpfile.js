@@ -231,7 +231,11 @@ gulp.task('build:sensordata', function() {
     let sensorData = jsonFilePaths.reduce((memo, jsonFilePath) => {
         let obj = require(jsonFilePath);
         let sensor = Object.keys(obj['Sensor Class']).map(key =>
-            Object.assign({ id: key }, obj['Sensor Class'][key]));
+            Object.assign({
+                id: key,
+                Library: obj.Library,
+                LibraryDescription: obj.Description
+            }, obj['Sensor Class'][key]));
 
         return memo.concat(sensor);
     }, []);
