@@ -37,11 +37,17 @@ markdown:    kramdown
 lsi:         false
 excerpt_separator: "\n\n"
 
-# Serving upm.mraa.io
+# Serving from https://upm.mraa.io
 detach:  false
 port:    443
 host:    upm.mraa.io
 baseurl: "" # does not include hostname
+
+# Serving from https://intel-iot-devkit.github.io
+#detach:  false
+#port:    443
+#host:    https://intel-iot-devkit.github.io
+#baseurl: "/upm" # does not include hostname
 
 # Serving from https://intel-iot-devkit.github.io/upm-site
 #detach:  false

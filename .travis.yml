@@ -1,10 +1,13 @@
 dist: trusty
 sudo: required
 
-language: cpp
-
 services:
   - docker
+
+cache:
+  directories:
+    - ./node_modules
+    - ./vendor
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
@@ -20,7 +23,7 @@ script:
 
 deploy:
   - provider: pages
-    repo: https://github.com/intel-iot-devkit/upm
+    repo: intel-iot-devkit/upm
     target_branch: gh-pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN

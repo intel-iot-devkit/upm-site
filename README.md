@@ -1,6 +1,6 @@
 # UPM Website [![Build Status](https://travis-ci.org/intel-iot-devkit/upm-site.svg?branch=master)](https://travis-ci.org/intel-iot-devkit/upm-site)
 
-## GitHub Pages URL: https://intel-iot-devkit.github.io/upm/
+## GitHub Pages URL: https://upm.mraa.io
 ## Dependencies:
 * [NodeJs](https://nodejs.org/en/)
 * [Gulp](https://github.com/gulpjs/gulp)
