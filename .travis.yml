@@ -24,6 +24,7 @@ script:
 deploy:
   - provider: pages
     repo: intel-iot-devkit/upm
+    fqdn: upm.mraa.io
     target_branch: gh-pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
