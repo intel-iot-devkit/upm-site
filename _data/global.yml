@@ -25,7 +25,7 @@ codeSnippetUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/upm/master/e
 imageUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/upm/master/docs/images'
 
 # Cache breaking for AJAX Calls i.e. SensorDetail and Facets
-ajaxVersion: '1'
+ajaxVersion: '2'
 
 # Cache breaking for static resources like CSS/JS and Images
 resourceVersion: '1'

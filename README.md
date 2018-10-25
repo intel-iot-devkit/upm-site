@@ -22,14 +22,18 @@
 
 ## Global.yml
 * Urls defined for fetching images, source code, and apis
-* Whenever there are changes in facets.json/sensordetail.json files, increments the value in ajaxVersion to refresh the cache
-* Whenever there are changes in css/js resources, increments the value in resourceVersion to refresh the cache
+* Whenever there are changes in facets.json/sensordetail.json files, increment the value in ajaxVersion to refresh the cache
+* Whenever there are changes in css/js resources, increment the value in resourceVersion to refresh the cache
 
 ## _assets/gulp_config/paths.js
 * Set paths.sensorDataSrc to the root of UPM /src
 
 ## Static Content:
-* The sensor data is kept under /_assets/content/sensordetail.json
+* The sensor data is kept under /_assets/content/sensorDetail.json
+  To generate this file with `jq` and latest `upm` sources use:
+  ```
+  find upm/src/ -iname "*.json" | sort | xargs jq -s -c '.' >sensorDetail.json
+  ```
 * The facets data is kept under /_assets/content/facets.json
 * If images are missing, copy it over from _assets/gulp_config/images to _/site/assets/images
 
