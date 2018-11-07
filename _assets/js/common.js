@@ -32,8 +32,13 @@
   // Concatenate Array
   Handlebars.registerHelper('concat', function(context, options) {
     var ret = "";
+    try {
+        j=context.length
+    } catch (err) {
+        j=0
+    }
 
-    for(var i=0, j=context.length; i<j; i++) {
+    for(var i=0, j; i<j; i++) {
 
       if(i == 0){
         ret = SanitizeToken(context[i]);

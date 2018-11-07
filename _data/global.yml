@@ -28,4 +28,4 @@ imageUrl: 'https://raw.githubusercontent.com/intel-iot-devkit/upm/master/docs/im
 ajaxVersion: '2'
 
 # Cache breaking for static resources like CSS/JS and Images
-resourceVersion: '1'
+resourceVersion: '2'
